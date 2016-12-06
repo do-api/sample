@@ -1,0 +1,35 @@
+{ "SM":[
+        {
+            "MSG":"应用类",
+            "NAME":"do_App",
+            "TYPE":"SM",
+            "ISPUBLISH":"false"
+        },{
+            "MSG":"应用全局类",
+            "NAME":"do_Global",
+            "TYPE":"SM" 
+        }
+    ],
+ "UI":[
+	    {
+	        "MSG":"加速传感器",
+	        "NAME":"do_AccelerometerSensor",
+	        "TYPE":"UI" 
+	    },{
+	        "MSG":"按钮",
+	        "NAME":"do_Button",
+	        "TYPE":"UI" 
+	    }
+ 	],
+"MM":[
+	    {
+	        "MSG":"加速传感器",
+	        "NAME":"do_AccelerometerSensor",
+	        "TYPE":"SM"
+	    },{
+	        "MSG":"辅助按钮",
+	        "NAME":"do_AssistiveTouch",
+	        "TYPE":"SM"
+	    }
+     ]
+}

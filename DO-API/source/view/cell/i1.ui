@@ -1,0 +1,29 @@
+{
+	"RootView":{
+		"width":"750",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"354",
+				"width":"348",
+				"y":"37",
+				"fontSize":"28",
+				"id":"msg",
+				"type":"do_Label",
+				"fontStyle":"bold",
+				"height":"95"
+			},
+			{
+				"x":"27",
+				"width":"327",
+				"y":"32",
+				"fontSize":"28",
+				"id":"name",
+				"type":"do_Label",
+				"fontStyle":"italic",
+				"height":"101"
+			}
+		],
+		"height":"166"
+	}
+}
