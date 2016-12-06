@@ -24,8 +24,11 @@ var do_SeekBar_1 = ui("do_SeekBar_1"); //获取与实例化当前组件对象
 
 /**
  * 组件--属性
- * progress
- * secondaryProgress
+ * 基本属性：
+ *    参考网址：http://store.deviceone.net/Documents/Base/UI.html#property
+ * 特殊属性： 
+ * 	progress
+ * 	secondaryProgress
  * */
 //
 do_SeekBar_1.set("progress",10);

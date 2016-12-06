@@ -13,8 +13,8 @@
 			{
 				"bgColor":"C0C0C0FF",
 				"width":"168",
-				"x":"95",
-				"y":"63",
+				"x":"123",
+				"y":"71",
 				"id":"do_Button_1",
 				"text":"关于我",
 				"type":"do_Button",
@@ -27,16 +27,6 @@
 				"id":"do_SeekBar_1",
 				"type":"do_SeekBar",
 				"height":"76"
-			},
-			{
-				"bgColor":"C0C0C0FF",
-				"x":"433",
-				"width":"188",
-				"y":"66",
-				"id":"do_Button_2",
-				"text":"重置",
-				"type":"do_Button",
-				"height":"64"
 			}
 		],
 		"height":"1334"
