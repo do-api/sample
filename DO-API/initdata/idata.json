@@ -3,7 +3,7 @@
             "MSG":"应用类",
             "NAME":"do_App",
             "TYPE":"SM",
-            "ISPUBLISH":"false"
+            "ISPUBLISH":true
         },{
             "MSG":"应用全局类",
             "NAME":"do_Global",
@@ -18,6 +18,10 @@
 	    },{
 	        "MSG":"按钮",
 	        "NAME":"do_Button",
+	        "TYPE":"UI" 
+	    },{
+	        "MSG":"开关",
+	        "NAME":"do_SwitchView",
 	        "TYPE":"UI" 
 	    }
  	],
