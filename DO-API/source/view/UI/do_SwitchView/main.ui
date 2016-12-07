@@ -11,44 +11,45 @@
 				"type":"do_ALayout",
 				"views":[
 					{
-						"bgColor":"D4D4D4FF",
-						"textAlign":"center",
-						"x":"10",
-						"width":"730",
-						"y":"1124",
-						"fontSize":"30",
-						"id":"do_Label_1",
-						"type":"do_Label",
-						"height":"200"
-					},
-					{
 						"bgColor":"00000000",
 						"x":"230",
 						"width":"300",
-						"y":"337",
+						"y":"324",
 						"id":"do_SwitchView_1",
-						"type":"do_SwitchView",
-						"height":"129"
+						"type":"do_SwitchView"
 					},
 					{
 						"shape":"rect",
 						"x":"230",
 						"width":"300",
-						"y":"564",
+						"y":"593",
 						"id":"do_SwitchView_2",
 						"type":"do_SwitchView",
-						"colors":"0080FFFF,FF0000FF,FFFF00FF",
-						"height":"129"
+						"colors":"0080FFFF,FF0000FF,FFFF00FF"
 					},
 					{
-						"bgColor":"C0C0C0FF",
-						"x":"275",
-						"width":"200",
-						"y":"40",
-						"fontSize":"30",
-						"id":"do_Button_1",
-						"text":"关于组件",
-						"type":"do_Button"
+						"textAlign":"center",
+						"width":"750",
+						"y":"194",
+						"maxLines":"-1",
+						"fontSize":"24",
+						"id":"do_Label_2",
+						"text":"默认样式（style属性为circle），已订阅changed事件，切换开关有弹出提示",
+						"type":"do_Label",
+						"fontStyle":"italic",
+						"fontColor":"808080FF"
+					},
+					{
+						"textAlign":"center",
+						"width":"750",
+						"y":"465",
+						"maxLines":"-1",
+						"fontSize":"24",
+						"id":"do_Label_3",
+						"text":"矩形样式（style属性为rect），并修改了配色（通过colors属性）",
+						"type":"do_Label",
+						"fontStyle":"italic",
+						"fontColor":"808080FF"
 					}
 				],
 				"height":"1334"
