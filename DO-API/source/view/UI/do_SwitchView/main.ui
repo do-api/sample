@@ -12,16 +12,16 @@
 				"views":[
 					{
 						"bgColor":"00000000",
-						"x":"230",
-						"width":"300",
+						"x":"300",
+						"width":"150",
 						"y":"324",
 						"id":"do_SwitchView_1",
 						"type":"do_SwitchView"
 					},
 					{
 						"shape":"rect",
-						"x":"230",
-						"width":"300",
+						"x":"300",
+						"width":"150",
 						"y":"593",
 						"id":"do_SwitchView_2",
 						"type":"do_SwitchView",
