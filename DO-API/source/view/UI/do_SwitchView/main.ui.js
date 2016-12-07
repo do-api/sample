@@ -1,11 +1,16 @@
-/***********************************************************************************************************
+/**
+ * related to main.ui
+ * 
  * @Author : child
- **********************************************************************************************************/
-var global = sm("do_Global");
+ * @Timestamp : 2016-12-07
+ */ 
+ var global = sm("do_Global");
 var app = sm("do_App");
 var page = sm("do_Page");
 var nf = sm("do_Notification");
-/***********************************************************************************************************/
+
+/**************/
+
 //定义SwitchView对象
 var target_1 = ui("do_SwitchView_1");
 
@@ -30,3 +35,11 @@ target_1.on("changed",function(data,e){
 	nf.alert({text:data, title:"当前状态"}, function(data, e) {})
 })
 /***********************************************************************************************************/
+
+//关于组件按钮信息
+var do_Button_1 = ui("do_Button_1");
+do_Button_1.on("touch",function(){
+	nf.alert({text:"", title:""}, function(data, e) {
+		
+	})
+})

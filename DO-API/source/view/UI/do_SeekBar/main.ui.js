@@ -20,7 +20,7 @@ do_Button_1.on("touch", function(data, e) {
  * 
  * */
 
-var do_SeekBar_1 = ui("do_SeekBar_1"); //获取与实例化当前组件对象
+var target_1 = ui("do_SeekBar_1"); //获取与实例化当前组件对象
 
 /**
  * 组件--属性
@@ -31,8 +31,8 @@ var do_SeekBar_1 = ui("do_SeekBar_1"); //获取与实例化当前组件对象
  * 	secondaryProgress
  * */
 //
-do_SeekBar_1.set("progress",10);
-do_SeekBar_1.set("secondaryProgress",2);
+target_1.set("progress",10);
+target_1.set("secondaryProgress",2);
 
 /**
  * 组件--方法
@@ -44,14 +44,14 @@ do_SeekBar_1.set("secondaryProgress",2);
  * 组件--事件
  * */
 //点击事件
-do_SeekBar_1.on("touch", function(data, e) {
-	var a=target.progress;
-    target.progress=a+10; 
+target_1.on("touch", function(data, e) {
+	var a=target_1.progress;
+	target_1.progress=a+10; 
 	
     
 }) 
 //更改事件：进度变化时候触发
-do_SeekBar_1.on("progressChanged", function(data) {
+target_1.on("progressChanged", function(data) {
 	deviceone.print("progressChanged");
 	nf.toast("do_SeekBar_1更改了"+data);
 }) 

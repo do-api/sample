@@ -20,6 +20,10 @@
 	        "NAME":"do_Button",
 	        "TYPE":"UI" 
 	    },{
+	        "MSG":"拖动条",
+	        "NAME":"do_SeekBar",
+	        "TYPE":"UI" 
+	    },{
 	        "MSG":"开关",
 	        "NAME":"do_SwitchView",
 	        "TYPE":"UI" 

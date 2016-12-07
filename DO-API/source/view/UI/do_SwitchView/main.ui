@@ -11,19 +11,6 @@
 				"type":"do_ALayout",
 				"views":[
 					{
-						"bgColor":"FFFFDFFF",
-						"textAlign":"center",
-						"width":"730",
-						"x":"10",
-						"maxLines":"-1",
-						"y":"10",
-						"fontSize":"30",
-						"id":"notice",
-						"text":"手动切换SwitchView状态",
-						"type":"do_Label",
-						"height":"200"
-					},
-					{
 						"bgColor":"D4D4D4FF",
 						"textAlign":"center",
 						"x":"10",
@@ -52,6 +39,16 @@
 						"type":"do_SwitchView",
 						"colors":"0080FFFF,FF0000FF,FFFF00FF",
 						"height":"129"
+					},
+					{
+						"bgColor":"C0C0C0FF",
+						"x":"275",
+						"width":"200",
+						"y":"40",
+						"fontSize":"30",
+						"id":"do_Button_1",
+						"text":"关于组件",
+						"type":"do_Button"
 					}
 				],
 				"height":"1334"
