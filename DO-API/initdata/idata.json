@@ -20,6 +20,10 @@
 	        "NAME":"do_Button",
 	        "TYPE":"UI" 
 	    },{
+	        "MSG":"手写板",
+	        "NAME":"do_PainterView",
+	        "TYPE":"UI" 
+	    },{
 	        "MSG":"拖动条",
 	        "NAME":"do_SeekBar",
 	        "TYPE":"UI" 
