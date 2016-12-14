@@ -28,7 +28,6 @@
 						"colors":"0080FFFF,FF0000FF,FFFF00FF"
 					},
 					{
-						"textAlign":"center",
 						"width":"750",
 						"y":"194",
 						"maxLines":"-1",
@@ -40,7 +39,6 @@
 						"fontColor":"808080FF"
 					},
 					{
-						"textAlign":"center",
 						"width":"750",
 						"y":"465",
 						"maxLines":"-1",
