@@ -35,13 +35,9 @@
  	],
 "MM":[
 	    {
-	        "MSG":"加速传感器",
-	        "NAME":"do_AccelerometerSensor",
-	        "TYPE":"SM"
-	    },{
-	        "MSG":"辅助按钮",
-	        "NAME":"do_AssistiveTouch",
-	        "TYPE":"SM"
+	        "MSG":"定时器",
+	        "NAME":"do_Timer",
+	        "TYPE":"MM"
 	    }
      ]
 }
