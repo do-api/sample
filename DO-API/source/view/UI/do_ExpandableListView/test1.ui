@@ -1,0 +1,23 @@
+{
+	"RootView":{
+		"width":"750",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"216",
+				"x":"85",
+				"y":"32",
+				"fontSize":"24",
+				"id":"do_Label_1",
+				"type":"do_Label"
+			},
+			{
+				"x":"630",
+				"y":"26",
+				"id":"do_ImageView_1",
+				"type":"do_ImageView"
+			}
+		],
+		"height":"150"
+	}
+}

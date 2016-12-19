@@ -5,6 +5,10 @@
             "TYPE":"SM",
             "ISPUBLISH":true
         },{
+            "MSG":"常用算法",
+            "NAME":"do_Algorithm",
+            "TYPE":"SM" 
+        },{
             "MSG":"应用全局类",
             "NAME":"do_Global",
             "TYPE":"SM" 
@@ -20,6 +24,10 @@
 	        "NAME":"do_Button",
 	        "TYPE":"UI" 
 	    },{
+	         "MSG":"List分组视图",
+	        "NAME":"do_ExpandableListView",
+	        "TYPE":"UI" 
+	    },{ 
 	        "MSG":"手写板",
 	        "NAME":"do_PainterView",
 	        "TYPE":"UI" 
@@ -37,11 +45,15 @@
 	    {
 	        "MSG":"加速传感器",
 	        "NAME":"do_AccelerometerSensor",
-	        "TYPE":"SM"
+	        "TYPE":"MM"
 	    },{
 	        "MSG":"辅助按钮",
 	        "NAME":"do_AssistiveTouch",
-	        "TYPE":"SM"
+	        "TYPE":"MM"
+	    },{
+	        "MSG":"位图",
+	        "NAME":"do_Bitmap",
+	        "TYPE":"MM"
 	    }
      ]
 }
