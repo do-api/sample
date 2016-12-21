@@ -1,0 +1,32 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"x":"0",
+		"width":"190",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"textAlign":"center",
+				"width":"190",
+				"y":"130",
+				"fontSize":"30",
+				"id":"do_Label_1",
+				"type":"do_Label",
+				"fontColor":"666666FF",
+				"height":"40"
+			},
+			{
+				"bgColor":"00000000",
+				"x":"49",
+				"width":"96",
+				"y":"22",
+				"scale":"centercrop",
+				"id":"do_ImageView_1",
+				"type":"do_ImageView",
+				"height":"96"
+			}
+		],
+		"height":"190"
+	}
+}

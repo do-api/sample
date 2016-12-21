@@ -39,6 +39,10 @@
 	        "MSG":"开关",
 	        "NAME":"do_SwitchView",
 	        "TYPE":"UI" 
+	    },{
+	        "MSG":"九宫格视图",
+	        "NAME":"do_GridView",
+	        "TYPE":"UI" 
 	    }
  	],
 "MM":[

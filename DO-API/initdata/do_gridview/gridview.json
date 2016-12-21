@@ -1,0 +1,29 @@
+[{                
+	"imgSource": "source://view/UI/do_GridView/images/icon0.png",
+	"labelSource": "渔之蓝数字校园1"
+
+},{
+	"imgSource": "source://view/UI/do_GridView/images/icon1.png",
+	"labelSource": "魔树熊外送"
+},{
+	"imgSource": "source://view/UI/do_GridView/images/icon2.png",
+	"labelSource": "蒙尚品"
+},{
+	"imgSource": "source://view/UI/do_GridView/images/icon3.png",
+	"labelSource": "三号铺"
+},{
+	"imgSource": "source://view/UI/do_GridView/images/icon4.png",
+	"labelSource": "优汇圈"
+},
+	{
+		"imgSource": "source://view/UI/do_GridView/images/icon5.png",
+		"labelSource": "合伙人金融App"
+	},
+	{
+		"imgSource": "source://view/UI/do_GridView/images/icon6.png",
+		"labelSource": "多彩旅程"
+	},
+	{
+		"imgSource": "source://view/UI/do_GridView/images/icon7.png",
+		"labelSource": "援宝"
+	}]
