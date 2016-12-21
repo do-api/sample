@@ -1,0 +1,22 @@
+[
+    {
+        "imgSource": "source://view/UI/do_GridView/images/icon9.png",
+        "labelSource": "赢话费夺宝"
+    },
+    {
+        "imgSource": "source://view/UI/do_GridView/images/icon10.png",
+        "labelSource": "四季旅游网"
+    },
+    {
+        "imgSource": "source://view/UI/do_GridView/images/icon11.png",
+        "labelSource": "爱抢券"
+    },
+    {
+        "imgSource": "source://view/UI/do_GridView/images/icon12.png",
+        "labelSource": "慧影时光流"
+    },
+    {
+        "imgSource": "source://view/UI/do_GridView/images/icon13.png",
+        "labelSource": "易经造梦"
+    }
+]
