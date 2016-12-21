@@ -33,9 +33,17 @@
 						"height":"-1"
 					},
 					{
+						"margin":"10,0,15,0",
+						"width":"700",
+						"y":"114",
+						"id":"do_Label_3",
+						"type":"do_Label",
+						"height":"-1"
+					},
+					{
 						"border":"CCCCCCFF,1,[0,0,0,0]",
 						"width":"700",
-						"y":"104",
+						"y":"128",
 						"id":"do_ALayout_1",
 						"type":"do_ALayout",
 						"height":"2"
@@ -43,7 +51,7 @@
 					{
 						"templates":"source://view/cell/do_gridview/gridview0.ui",
 						"width":"700",
-						"y":"106",
+						"y":"130",
 						"id":"do_GridView_1",
 						"type":"do_GridView",
 						"numColumns":"4",

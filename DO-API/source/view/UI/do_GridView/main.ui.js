@@ -19,3 +19,5 @@ initdata.readFile("initdata://do_gridview/gridview.json", function(data, e){
 //组件描述
 var do_Label_2  = ui("do_Label_2");
 do_Label_2.text = "GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell，若设置为多模版，需要模板的大小相同";
+var do_Label_3 = ui("do_Label_3");
+do_Label_3.text ="支持平台及最低版本 :IOS 7.0  Android 4.0  Windows Phone 10  Windows 10   "
