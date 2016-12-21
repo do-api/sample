@@ -4,16 +4,45 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"width":"500",
-				"x":"125",
-				"y":"34",
-				"fontSize":"28",
-				"id":"LABEL",
-				"fontStyle":"bold",
+				"width":"72",
+				"x":"30",
+				"y":"40",
+				"scale":"fillxory",
+				"id":"do_img",
+				"type":"do_ImageView",
+				"height":"72"
+			},
+			{
+				"x":"120",
+				"width":"270",
+				"y":"45",
+				"fontSize":"32",
+				"id":"do_name",
 				"type":"do_Label",
-				"height":"100"
+				"fontColor":"080808FF",
+				"height":"60"
+			},
+			{
+				"textAlign":"right",
+				"x":"420",
+				"width":"264",
+				"y":"45",
+				"fontSize":"27",
+				"id":"do_msg",
+				"type":"do_Label",
+				"fontColor":"8C8C8CFF",
+				"height":"60"
+			},
+			{
+				"border":"CCCCCCFF,1,[0,0,0,0]",
+				"width":"720",
+				"x":"30",
+				"y":"135",
+				"id":"line",
+				"type":"do_ALayout",
+				"height":"2"
 			}
 		],
-		"height":"168"
+		"height":"140"
 	}
 }

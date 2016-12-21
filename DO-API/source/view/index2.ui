@@ -6,27 +6,28 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"64B1FFFF",
+				"bgColor":"184682FF",
 				"width":"750",
 				"id":"lay1",
 				"type":"do_ALayout",
 				"views":[
 					{
-						"x":"34",
-						"width":"85",
-						"y":"25",
+						"x":"30",
+						"width":"62",
+						"y":"19",
 						"id":"img1",
-						"source":"source://image/common/back.jpg",
+						"source":"source://image/common/back.png",
 						"type":"do_ImageView",
 						"enabled":"true",
-						"height":"53"
+						"height":"62"
 					},
 					{
+						"bgColor":"00000000",
 						"textAlign":"center",
-						"x":"203",
-						"width":"404",
-						"fontSize":"30",
-						"id":"lb1",
+						"x":"140",
+						"width":"470",
+						"y":"5",
+						"fontSize":"40",
 						"text":"示例代码",
 						"type":"do_Label",
 						"fontStyle":"bold",
@@ -34,7 +35,7 @@
 						"height":"100"
 					}
 				],
-				"height":"100"
+				"height":"110"
 			},
 			{
 				"width":"750",

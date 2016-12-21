@@ -18,9 +18,9 @@ listdata = mm("do_ListData");
 listview.bindItems(listdata);
 
 var data0 = [
-	{"$txt":"可视化组件 \\ User Interface","$tag":"UI" },
-	{"$txt":"单实例组件 \\ Singleton Module","$tag":"SM" },
-	{"$txt":"多实例组件 \\ Multiple Module","$tag":"MM" }
+	{"$txt":"可视化组件","$msg":"User Interface","$source":"source://image/common/view.png","$tag":"UI" },
+	{"$txt":"单实例组件","$msg":"Singleton Module","$source":"source://image/common/single.png","$tag":"SM" },
+	{"$txt":"多实例组件","$msg":"Multiple Module","$source":"source://image/common/multipe.png","$tag":"MM" }
 ];
 
 listdata.addData(data0);
