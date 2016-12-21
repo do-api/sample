@@ -1,22 +1,22 @@
 [
-    {
-        "imgSource": "source://view/UI/do_GridView/images/icon9.png",
-        "labelSource": "赢话费夺宝"
+   {
+        "imgSource": "source://view/UI/do_GridView/images/icon1.png",
+        "labelSource": "数字校园"
     },
     {
-        "imgSource": "source://view/UI/do_GridView/images/icon10.png",
-        "labelSource": "四季旅游网"
+        "imgSource": "source://view/UI/do_GridView/images/icon2.png",
+        "labelSource": "魔树熊外送"
     },
     {
-        "imgSource": "source://view/UI/do_GridView/images/icon11.png",
-        "labelSource": "爱抢券"
+        "imgSource": "source://view/UI/do_GridView/images/icon3.png",
+        "labelSource": "蒙尚品"
     },
     {
-        "imgSource": "source://view/UI/do_GridView/images/icon12.png",
-        "labelSource": "慧影时光流"
+        "imgSource": "source://view/UI/do_GridView/images/icon4.png",
+        "labelSource": "三号铺"
     },
     {
-        "imgSource": "source://view/UI/do_GridView/images/icon13.png",
-        "labelSource": "易经造梦"
+        "imgSource": "source://view/UI/do_GridView/images/icon5.png",
+        "labelSource": "优汇圈"
     }
 ]

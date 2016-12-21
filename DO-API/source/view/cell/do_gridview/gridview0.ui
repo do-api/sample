@@ -1,6 +1,6 @@
 {
 	"RootView":{
-		"bgColor":"FFFFFFFF",
+		"bgColor":"FFFFFF00",
 		"x":"0",
 		"width":"190",
 		"y":"0",
@@ -24,6 +24,7 @@
 				"scale":"centercrop",
 				"id":"do_ImageView_1",
 				"type":"do_ImageView",
+				"radius":"8",
 				"height":"96"
 			}
 		],
