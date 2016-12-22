@@ -41,7 +41,7 @@ result.text = " 获取设置后的值： " + target_1.get("bgImage") ;
 /***********************************************************************************************************/
 //touch事件
 target_2.on("touch",function(data,e){
-	var Type = typeof(data);
+	var Type = typeof(data); 
 	result.text = "touch 事件 " + " 返回值类型：" + Type + " 返回值：" + JSON.stringify(data) + " 错误信息：" + JSON.stringify(e);
 	deviceone.print(" 返回值类型：" + Type + " 返回值：" + JSON.stringify(data) + " 错误信息：" + JSON.stringify(e) , "touch 事件 ");
 
