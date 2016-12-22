@@ -9,6 +9,7 @@
 				"x":"10",
 				"width":"730",
 				"y":"110",
+				"fontSize":"24",
 				"id":"do_Label_1",
 				"text":"do_Algorithm： 常用算法",
 				"type":"do_Label",
@@ -23,7 +24,7 @@
 				"id":"do_Button_1",
 				"text":"base64",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
@@ -34,7 +35,7 @@
 				"id":"do_Button_2",
 				"text":"des3",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
@@ -45,7 +46,7 @@
 				"id":"do_Button_3",
 				"text":"hex2Binary",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
@@ -56,40 +57,40 @@
 				"id":"do_Button_4",
 				"text":"hex2Str",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"358",
+				"x":"360",
 				"width":"200",
 				"y":"353",
 				"fontSize":"24",
 				"id":"do_Button_7",
 				"text":"md5",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"359",
+				"x":"360",
 				"width":"200",
 				"y":"457",
 				"fontSize":"24",
 				"id":"do_Button_8",
 				"text":"sha1",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"351",
+				"x":"360",
 				"width":"200",
 				"y":"571",
 				"fontSize":"24",
 				"id":"do_Button_9",
 				"text":"xml2Json",
 				"type":"do_Button",
-				"height":"60"
+				"height":"50"
 			},
 			{
 				"bgColor":"00000000",

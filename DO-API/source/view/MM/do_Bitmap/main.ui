@@ -7,80 +7,94 @@
 		"isStretch":"false",
 		"views":[
 			{
+				"bgColor":"00000000",
 				"x":"10",
 				"width":"730",
 				"y":"110",
+				"maxLines":"2",
+				"fontSize":"24",
 				"id":"do_Label_1",
 				"text":"位图特殊方法loadFile，save，toFrostedGlass，toGrayScale，toRoundCorner，getExif",
 				"type":"do_Label",
-				"height":"64"
+				"height":"100"
 			},
 			{
 				"x":"10",
 				"width":"730",
 				"y":"933",
+				"fontSize":"24",
 				"id":"do_Label_2",
 				"text":"基类事件示范：dataRefreshed",
 				"type":"do_Label"
 			},
 			{
 				"border":"00000000,0,[30,30,30,30]",
-				"x":"129",
+				"x":"127",
 				"width":"60",
-				"y":"213",
+				"y":"251",
 				"id":"do_ImageView_1",
 				"source":"source://view/MM/do_Bitmap/image/Bitmap1.png",
 				"type":"do_ImageView",
 				"height":"60"
 			},
 			{
-				"x":"68",
-				"width":"208",
-				"y":"345",
+				"bgColor":"9E9E9EFF",
+				"x":"60",
+				"width":"200",
+				"y":"350",
+				"fontSize":"24",
 				"id":"do_Button_1",
 				"text":"加载",
 				"type":"do_Button",
-				"height":"53"
+				"height":"50"
 			},
 			{
-				"x":"69",
-				"width":"209",
-				"y":"453",
+				"bgColor":"9E9E9EFF",
+				"x":"60",
+				"width":"200",
+				"y":"450",
+				"fontSize":"24",
 				"id":"do_Button_2",
 				"text":"保存",
 				"type":"do_Button",
-				"height":"48"
+				"height":"50"
 			},
 			{
-				"x":"72",
+				"bgColor":"9E9E9EFF",
+				"x":"60",
 				"width":"200",
-				"y":"557",
+				"y":"550",
+				"fontSize":"24",
 				"id":"do_Button_3",
 				"text":"转成毛玻璃位图",
 				"type":"do_Button",
-				"height":"49"
+				"height":"50"
 			},
 			{
-				"x":"75",
-				"width":"202",
-				"y":"648",
+				"bgColor":"9E9E9EFF",
+				"x":"60",
+				"width":"200",
+				"y":"650",
+				"fontSize":"24",
 				"id":"do_Button_4",
 				"text":"添加圆角",
 				"type":"do_Button",
-				"height":"57"
+				"height":"50"
 			},
 			{
-				"x":"66",
-				"width":"212",
-				"y":"769",
+				"bgColor":"9E9E9EFF",
+				"x":"60",
+				"width":"200",
+				"y":"750",
+				"fontSize":"24",
 				"id":"do_Button_5",
 				"text":"获取图片拍摄信息",
 				"type":"do_Button",
-				"height":"62"
+				"height":"50"
 			},
 			{
-				"x":"450",
-				"y":"233",
+				"x":"512",
+				"y":"254",
 				"id":"do_ImageView_2",
 				"type":"do_ImageView",
 				"height":"100"

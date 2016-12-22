@@ -9,7 +9,7 @@ var page = sm("do_Page");
 var nf = sm("do_Notification"); 
 
 
-var target1 = mm("do_Bitmap");//实例化一个位图对象
+
 
 /**
  * MM 组件方法
@@ -17,16 +17,17 @@ var target1 = mm("do_Bitmap");//实例化一个位图对象
  *    均为异步方法，有回调函数
  * */
 var btn1=ui("do_Button_1");
-btn1.on("touch",function(){
+btn1.on("touch",function(data){
+	var target1 = mm("do_Bitmap","bt1","page");//实例化一个位图对象
 	//loadFile	加载位图
-	target1.loadFile({source:"source://view/MM/do_Bitmap/image/Bitmap1.png",function(){
+	target1.loadFile({source:"source://view/MM/do_Bitmap/image/Bitmap1.png",function(data){
 		nf.toast("加载成功！");
 		
 	}});	
 });
 var btn2=ui("do_Button_2");
 btn2.on("touch",function(){
-	
+	var target1 = mm("do_Bitmap","bt2","page");//实例化一个位图对象
 	//save	保存位图
 	target1.save({
 		format:"PNG",
@@ -42,7 +43,11 @@ var btn3=ui("do_Button_3");
 btn3.on("touch",function(data){
 	//toFrostedGlass	转成毛玻璃位图
 	target1.toFrostedGlass({
-		
+		"degree":50,//1-100
+		function(data,e){
+			 //返回 bool 型，是否转化成功
+			 deviceone.ptint("返回值类型： "+typeof(data)+" 型，是否转化成功："+data); 
+		}
 		
 	});
 	

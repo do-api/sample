@@ -27,6 +27,10 @@
 	         "MSG":"List分组视图",
 	        "NAME":"do_ExpandableListView",
 	        "TYPE":"UI" 
+	    },{
+	         "MSG":"标签框",
+	        "NAME":"do_Label",
+	        "TYPE":"UI" 
 	    },{ 
 	        "MSG":"手写板",
 	        "NAME":"do_PainterView",
