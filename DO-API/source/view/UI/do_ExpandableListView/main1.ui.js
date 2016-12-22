@@ -1,6 +1,12 @@
 var app=sm("do_App"); 
 var el=ui("do_ExpandableListView_1"); 
 
+var page=sm("do_Page");
+	
+page.on("back",function(data){
+	app.closePage(); 
+});
+
 var ListData1 = mm("do_ListData");
 var ListData2 = mm("do_ListData");
 
