@@ -192,7 +192,7 @@
 			"DefaultValue":"normal",
 			"Group":"",
 			"Type":"String",
-			"EditType":"0",
+			"EditType":"1",
 			"Description":"包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
 			"Type_JavaScript":"String",
 			"ID":"textFlag",

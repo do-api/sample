@@ -1,12 +1,28 @@
 { "SM":[
         {
-            "MSG":"应用类",
+            "MSG":"应用类  ",
             "NAME":"do_App",
             "TYPE":"SM",
             "ISPUBLISH":true
         },{
             "MSG":"常用算法",
             "NAME":"do_Algorithm",
+            "TYPE":"SM" 
+        },{
+            "MSG":"照相机",
+            "NAME":"do_Camera",
+            "TYPE":"SM" 
+        },{
+            "MSG":"通讯录",
+            "NAME":"do_Contact",
+            "TYPE":"SM" 
+        },{
+            "MSG":"设备的信息环境类",
+            "NAME":"do_Device",
+            "TYPE":"SM" 
+        },{
+            "MSG":"启动外部应用",
+            "NAME":"do_External",
             "TYPE":"SM" 
         },{
             "MSG":"应用全局类",
@@ -26,6 +42,10 @@
 	    },{
 	         "MSG":"List分组视图",
 	        "NAME":"do_ExpandableListView",
+	        "TYPE":"UI" 
+	    },{
+	         "MSG":"帧动画视图",
+	        "NAME":"do_FrameAnimationView",
 	        "TYPE":"UI" 
 	    },{
 	         "MSG":"标签框",
@@ -53,6 +73,16 @@
 	    {
 	        "MSG":"位图",
 	        "NAME":"do_Bitmap",
+	        "TYPE":"MM"
+	    },
+	    {
+	        "MSG":"蓝牙",
+	        "NAME":"do_Bluetooth",
+	        "TYPE":"MM"
+	    },
+	    {
+	        "MSG":"hash数据源",
+	        "NAME":"do_HashData",
 	        "TYPE":"MM"
 	    },
 	    {
