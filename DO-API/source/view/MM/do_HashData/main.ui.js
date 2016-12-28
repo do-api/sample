@@ -8,7 +8,10 @@ var global = sm("do_Global");
 var app = sm("do_App");
 var page = sm("do_Page"); 
 var nf = sm("do_Notification");
-
+page.on("back",function(data){
+	
+	
+});
 var  btn1=ui("do_Button_1");
 btn2.on("touch",function (data,e){
 	var target=mm("do_HashData"); 

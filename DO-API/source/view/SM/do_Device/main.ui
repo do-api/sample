@@ -1,1 +1,21 @@
-{"RootView":{"x":"0","width":"750","y":"0","type":"do_ALayout","height":"1334"}}
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"10",
+				"width":"730",
+				"y":"100",
+				"maxLines":"2",
+				"fontSize":"24",
+				"id":"do_Label_1",
+				"text":"do_Device：设备辅助功能，获取设备系统相关信息、提示音、震动、闪光灯、截屏等",
+				"type":"do_Label"
+			}
+		],
+		"height":"1334"
+	}
+}
