@@ -22,7 +22,7 @@
 				"y":"335",
 				"fontSize":"24",
 				"id":"do_Button_1",
-				"text":"打开前置摄像头相机",
+				"text":"打开默认摄像头相机",
 				"type":"do_Button",
 				"height":"60"
 			},
@@ -33,7 +33,7 @@
 				"y":"489",
 				"fontSize":"24",
 				"id":"do_Button_2",
-				"text":"打开后置摄像头相机",
+				"text":"打开前置摄像头相机",
 				"type":"do_Button",
 				"height":"60"
 			}

@@ -17,31 +17,28 @@ var target_2 = ui("do_Button_2");
 
 var camera = sm("do_Camera");
 
-target_1.on("touch",function(data,e){
-	
-	camera.capture({
-		"width":100,
-		"height":100,
-		"quality":100,
-		"iscut":true, 
-		"facingFront":true,
-		function(data,e){ 
-			
-		}
-	}); 
-});
-
-target_2.on("touch",function(data,e){
-	
+target_1.on("touch",function(data){ 
 	camera.capture({
 		"width":100,
 		"height":100,
 		"quality":100,
 		"iscut":false, 
 		"facingFront":false,
-		function(data,e){
-			
-			
-		}
+		"":""
+	},
+	function(data,e){ 
+	}); 
+}); 
+
+
+target_2.on("touch",function(data){ 
+	camera.capture({
+		"width":100,
+		"height":100,
+		"quality":100,
+		"iscut":true, 
+		"facingFront":false
+	},
+	function(data,e){ 
 	}); 
 });
