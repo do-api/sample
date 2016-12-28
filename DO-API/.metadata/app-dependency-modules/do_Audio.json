@@ -180,6 +180,13 @@
 			"ID":"recordProgress",
 			"ReturnType":"String",
 			"ReturnDesc":"返回录音总时间totalTime"
+		},
+		{
+			"ReturnType_JavaScript":"Node",
+			"Description":"录音音量变化事件",
+			"ID":"recordVolume",
+			"ReturnType":"Node",
+			"ReturnDesc":"{“volume”:“实时音量大小”}；Windows平台不支持"
 		}
 	],
 	"UIType":"Layout",

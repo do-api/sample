@@ -9,6 +9,10 @@
             "NAME":"do_Algorithm",
             "TYPE":"SM" 
         },{
+            "MSG":"音频播放与录制",
+            "NAME":"do_Audio",
+            "TYPE":"SM" 
+        },{
             "MSG":"照相机",
             "NAME":"do_Camera",
             "TYPE":"SM" 
@@ -50,6 +54,10 @@
 	    },{
 	         "MSG":"标签框",
 	        "NAME":"do_Label",
+	        "TYPE":"UI" 
+	    },{
+	         "MSG":"List视图",
+	        "NAME":"do_ListView",
 	        "TYPE":"UI" 
 	    },{ 
 	        "MSG":"手写板",

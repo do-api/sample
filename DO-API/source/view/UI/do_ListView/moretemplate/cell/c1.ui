@@ -1,0 +1,18 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"75",
+				"y":"20",
+				"id":"do_Button_1",
+				"type":"do_Button",
+				"height":"60"
+			}
+		],
+		"height":"100"
+	}
+}
