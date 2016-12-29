@@ -2,19 +2,18 @@
  * related to main.ui
  * 
  * @Author : child
- * @Timestamp : 2016-12-19
+ * @Timestamp : 2016-12-28
  */ 
 var nf = sm("do_Notification");
 
-var startBtn = ui("startBtn");
-var stopBtn = ui("stopBtn");
-var isStartBtn = ui("isStartBtn");
+var do_Button_1 = ui("do_Button_1");
+var do_Button_2 = ui("do_Button_2");
+var do_Button_3 = ui("do_Button_3");
 
 var mLabel = ui("mLabel");
 
 // 创建一个定时器组件
 var target_1 = mm("do_Timer");
-//target_1 = mm("do_Timer", "timerId", "app");//创建App级别的计时器 timer;
 
 // 延时启动时间,0表示立即执行
 target_1.delay = 0;
@@ -24,7 +23,7 @@ target_1.interval = 1000;
 
 var maxVal = 59;
 
-startBtn.on("touch", function(data, e) {
+do_Button_1.on("touch", function(data, e) {
 	// 判断当前Timer是否在执行,如果当前没有执行,就开启Timer
 	if (!target_1.isStart()) {
 		target_1.start();
@@ -34,7 +33,7 @@ startBtn.on("touch", function(data, e) {
 	}
 });
 
-stopBtn.on("touch", function(data, e) {
+do_Button_2.on("touch", function(data, e) {
 	// 判断当前Timer是否在执行,如果当前正在执行,就停止Timer
 	if (target_1.isStart()) {
 		target_1.stop();
@@ -42,13 +41,13 @@ stopBtn.on("touch", function(data, e) {
 	}
 });
 
-isStartBtn.on("touch", function(data, e) {
-	// 判断当前Timer是否正在执行
+//判断当前Timer是否正在执行
+do_Button_3.on("touch", function(data, e) {
 	var isStart = target_1.isStart();
 	nf.toast("当前Timer" + (isStart ? "正在运行" : "停止运行"));
 });
 
-// 订阅(注册)tick事件,每隔固定时间(target_1.interval)执行一次
+//订阅tick事件，每隔固定时间(target_1.interval)执行一次
 target_1.on("tick", function(data, e) {
 	mLabel.text = maxVal--;
 	if (maxVal < 0) {

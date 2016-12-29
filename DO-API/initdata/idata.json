@@ -25,6 +25,10 @@
             "NAME":"do_External",
             "TYPE":"SM" 
         },{
+            "MSG":"讯飞语音",
+            "NAME":"do_iFlyVoice",
+            "TYPE":"SM" 
+        },{
             "MSG":"应用全局类",
             "NAME":"do_Global",
             "TYPE":"SM" 

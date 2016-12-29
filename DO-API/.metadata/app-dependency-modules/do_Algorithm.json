@@ -262,7 +262,7 @@
 				{
 					"DefaultValue":"",
 					"Type":"String",
-					"Description":"3DES算法的key值",
+					"Description":"3DES算法的key值，不支持小于24位",
 					"Required":1,
 					"Type_JavaScript":"String",
 					"ID":"key",
