@@ -19,13 +19,12 @@
 				"height":"200"
 			},
 			{
-				"border":"C0C0C0FF,1,1",
 				"bgColor":"C0C0C0FF",
 				"width":"135",
 				"x":"106",
 				"y":"590",
 				"fontSize":"20",
-				"id":"startBtn",
+				"id":"do_Button_1",
 				"text":"Start",
 				"type":"do_Button",
 				"height":"73"
@@ -37,7 +36,7 @@
 				"x":"310",
 				"y":"589",
 				"fontSize":"20",
-				"id":"stopBtn",
+				"id":"do_Button_2",
 				"text":"Stop",
 				"type":"do_Button",
 				"height":"73"
@@ -49,7 +48,7 @@
 				"x":"519",
 				"y":"587",
 				"fontSize":"20",
-				"id":"isStartBtn",
+				"id":"do_Button_3",
 				"text":"IsStart",
 				"type":"do_Button",
 				"height":"73"
