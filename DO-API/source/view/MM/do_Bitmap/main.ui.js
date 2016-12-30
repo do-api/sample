@@ -1,88 +1,61 @@
 /**
  * related to main.ui
  * 
- * @Author : cxxf
- * @Timestamp : 2016-12-14
+ * @Author : child
+ * @Timestamp : 2016-12-29
  */
 var app = sm("do_App");
 var page = sm("do_Page");
-var nf = sm("do_Notification"); 
+var nf = sm("do_Notification");
+var img = ui("do_ImageView_1");
 
+/***************************/
+//实例化一个位图对象
+var target_1 = mm("do_Bitmap");
 
-
-
-/**
- * MM 组件方法
- *    特殊方法示例如下
- *    均为异步方法，有回调函数
- * */
-var btn1=ui("do_Button_1");
-btn1.on("touch",function(data){
-	var target1 = mm("do_Bitmap","bt1","page");//实例化一个位图对象
-	//loadFile	加载位图
-	target1.loadFile({source:"source://view/MM/do_Bitmap/image/Bitmap1.png",function(data){
-		nf.toast("加载成功！");
-		
-	}});	
+ui("do_Button_1").on("touch",function(){
+	//loadFile	加载位图的同时将位图保存到内存中并加载到ImageView中
+	target_1.loadFile({source:"source://view/MM/do_Bitmap/image/img1.jpg"},function(data,e){
+		nf.alert(data,"加载是否成功");
+	});	
+	
 });
-var btn2=ui("do_Button_2");
-btn2.on("touch",function(){
-	var target1 = mm("do_Bitmap","bt2","page");//实例化一个位图对象
+
+ui("do_Button_2").on("touch",function(){
 	//save	保存位图
-	target1.save({
-		format:"PNG",
-		quality:100,
-		outPath:"data://do_Bitmap"
-		
-	},function(data){
-		deviceone.print(data,"返回路径");		
+	target_1.save({format:"PNG",quality:100,outPath:"data://do_Bitmap"},function(data,e){
+		nf.alert(data,"返回路径");	
+		img.source = data;
 	});
-});
-var btn3=ui("do_Button_3");
 
-btn3.on("touch",function(data){
+});
+
+ui("do_Button_3").on("touch",function(){
 	//toFrostedGlass	转成毛玻璃位图
-	target1.toFrostedGlass({
-		"degree":50,//1-100
-		function(data,e){
-			 //返回 bool 型，是否转化成功
-			 deviceone.ptint("返回值类型： "+typeof(data)+" 型，是否转化成功："+data); 
-		}
-		
-	});
-	
+	target_1.toFrostedGlass({degree:10}, function(data, e) {
+		nf.alert(data,"是否转换成功");
+	});	
 });
 
-var btn4=ui("do_Button_4");
-
-btn4.on("touch",function(){
-	
-	//toGrayScale	转成灰色位图
-	target1.toGrayScale({
-		
-		
-	});
-});
-
-var btn5=ui("do_Button_5");
-btn5.on("touch",function(){
-	
+ui("do_Button_4").on("touch",function(){
 	//toRoundCorner	添加圆角
-	target1.toRoundCorner({
-		
-	});
+	target_1.toRoundCorner({radius:20}, function(data, e) {
+		nf.alert(data,"是否转换成功");
+	})
 });
 
 
-var btn6=ui("do_Button_6");
-btn6.on("touch",function(){
+ui("do_Button_5").on("touch",function(){
+	//toGrayScale	转成灰色位图
+	target_1.toGrayScale(function(data, e) {
+		nf.alert(data,"是否转换成功");
+	})
+});
+
+ui("do_Button_6").on("touch",function(){
 	//getExif	获取图片拍摄信息
-	target1.getExif({source:"source://view/MM/do_Bitmap/image/Bitmap1.png",function(data){
-		
-		deviceone.print(JSON.stringify(data),"getExif");
-		
-	}});
-	
+	var data = target_1.getExif({source:"source://view/MM/do_Bitmap/image/123.JPG"});
+	nf.alert(JSON.stringify(data),"getExif");
 });
 
 
