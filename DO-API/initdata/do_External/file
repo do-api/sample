@@ -1,0 +1,13 @@
+方法 (查看基类方法)
+
+bulkSMS	打开发送短信界面，支持群发短信	同步方法
+existApp	应用是否安装	同步方法
+installApp	安装app	同步方法
+openApp	启动第三方应用	同步方法
+openContact	打开系统通讯录界面	同步方法
+openDial	打开拨号界面	同步方法
+openFile	打开外部文档	同步方法
+openMail	打开发送邮件界面	同步方法
+openSMS	打开发送短信界面	同步方法
+openSystemSetting	打开系统设置界面	同步方法
+openURL	调用系统默认浏览器	同步方法 
