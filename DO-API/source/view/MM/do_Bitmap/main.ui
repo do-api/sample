@@ -7,97 +7,85 @@
 		"isStretch":"false",
 		"views":[
 			{
-				"bgColor":"00000000",
-				"x":"10",
-				"width":"730",
-				"y":"110",
-				"maxLines":"2",
-				"fontSize":"24",
-				"id":"do_Label_1",
-				"text":"位图特殊方法loadFile，save，toFrostedGlass，toGrayScale，toRoundCorner，getExif",
-				"type":"do_Label",
-				"height":"100"
-			},
-			{
-				"x":"10",
-				"width":"730",
-				"y":"933",
-				"fontSize":"24",
-				"id":"do_Label_2",
-				"text":"基类事件示范：dataRefreshed",
-				"type":"do_Label"
-			},
-			{
-				"border":"00000000,0,[30,30,30,30]",
-				"x":"127",
-				"width":"60",
-				"y":"251",
+				"x":"100",
+				"width":"550",
+				"y":"170",
 				"id":"do_ImageView_1",
 				"source":"source://view/MM/do_Bitmap/image/Bitmap1.png",
 				"type":"do_ImageView",
-				"height":"60"
+				"height":"550"
 			},
 			{
-				"bgColor":"9E9E9EFF",
-				"x":"60",
+				"bgColor":"84C1FFFF",
+				"x":"272",
 				"width":"200",
-				"y":"350",
+				"y":"752",
 				"fontSize":"24",
 				"id":"do_Button_1",
 				"text":"加载",
-				"type":"do_Button",
-				"height":"50"
+				"type":"do_Button"
 			},
 			{
-				"bgColor":"9E9E9EFF",
-				"x":"60",
+				"bgColor":"84C1FFFF",
+				"x":"273",
 				"width":"200",
-				"y":"450",
+				"y":"1191",
 				"fontSize":"24",
 				"id":"do_Button_2",
-				"text":"保存",
-				"type":"do_Button",
-				"height":"50"
+				"text":"保存 & 显示图片",
+				"type":"do_Button"
 			},
 			{
-				"bgColor":"9E9E9EFF",
-				"x":"60",
+				"bgColor":"84C1FFFF",
+				"x":"32",
 				"width":"200",
-				"y":"550",
+				"y":"890",
 				"fontSize":"24",
 				"id":"do_Button_3",
 				"text":"转成毛玻璃位图",
-				"type":"do_Button",
-				"height":"50"
+				"type":"do_Button"
 			},
 			{
-				"bgColor":"9E9E9EFF",
-				"x":"60",
+				"bgColor":"84C1FFFF",
+				"x":"272",
 				"width":"200",
-				"y":"650",
+				"y":"890",
 				"fontSize":"24",
 				"id":"do_Button_4",
 				"text":"添加圆角",
-				"type":"do_Button",
-				"height":"50"
+				"type":"do_Button"
 			},
 			{
-				"bgColor":"9E9E9EFF",
-				"x":"60",
+				"bgColor":"84C1FFFF",
+				"x":"512",
 				"width":"200",
-				"y":"750",
+				"y":"890",
 				"fontSize":"24",
 				"id":"do_Button_5",
-				"text":"获取图片拍摄信息",
-				"type":"do_Button",
-				"height":"50"
+				"text":"转成灰色位图",
+				"type":"do_Button"
 			},
 			{
-				"x":"512",
-				"y":"254",
-				"id":"do_ImageView_2",
-				"type":"do_ImageView",
-				"height":"100"
+				"bgColor":"84C1FFFF",
+				"x":"272",
+				"width":"200",
+				"y":"1039",
+				"fontSize":"24",
+				"id":"do_Button_6",
+				"text":"获取图片拍摄信息",
+				"type":"do_Button"
+			},
+			{
+				"textAlign":"center",
+				"width":"750",
+				"y":"20",
+				"maxLines":"-1",
+				"fontSize":"24",
+				"id":"do_Label_3",
+				"text":"位图特殊方法loadFile，save，toFrostedGlass，toGrayScale，toRoundCorner，getExif",
+				"type":"do_Label",
+				"fontStyle":"italic",
+				"fontColor":"808080FF"
 			}
 		],
 		"height":"1334"
