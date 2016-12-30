@@ -3,39 +3,125 @@
 		"x":"0",
 		"width":"750",
 		"y":"0",
+		"id":"do_ALayout_1",
 		"type":"do_ALayout",
 		"views":[
 			{
+				"bgColor":"FFFFD2FF",
 				"x":"10",
 				"width":"730",
-				"y":"100",
-				"maxLines":"2",
+				"y":"9",
+				"maxLines":"-1",
 				"fontSize":"24",
 				"id":"do_Label_1",
 				"text":"do_Contact针对通讯录的增删查改：特殊方法包括addData，deleteData，getData，getDataById，updateData",
 				"type":"do_Label",
-				"height":"100"
+				"height":"330"
 			},
 			{
-				"bgColor":"918EB5FF",
-				"x":"60",
-				"width":"150",
-				"y":"260",
+				"bgColor":"84C1FFFF",
+				"x":"276",
+				"width":"200",
+				"y":"392",
 				"fontSize":"24",
 				"id":"do_Button_1",
 				"text":"getData",
-				"type":"do_Button",
-				"height":"60"
+				"type":"do_Button"
 			},
 			{
-				"x":"307",
-				"width":"236",
-				"y":"265",
+				"bgColor":"84C1FFFF",
+				"x":"276",
+				"width":"200",
+				"y":"1113",
 				"fontSize":"24",
 				"id":"do_Button_2",
 				"text":"getDataById",
-				"type":"do_Button",
-				"height":"57"
+				"type":"do_Button"
+			},
+			{
+				"textAlign":"right",
+				"x":"103",
+				"width":"129",
+				"y":"557",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"text":"姓名：",
+				"type":"do_Label"
+			},
+			{
+				"border":"000000FF,1,1",
+				"bgColor":"00000000",
+				"x":"256",
+				"width":"417",
+				"y":"560",
+				"id":"do_TextField_1",
+				"type":"do_TextField"
+			},
+			{
+				"textAlign":"right",
+				"x":"105",
+				"width":"129",
+				"y":"660",
+				"fontSize":"24",
+				"id":"do_Label_3",
+				"text":"电话：",
+				"type":"do_Label"
+			},
+			{
+				"border":"000000FF,1,1",
+				"x":"258",
+				"width":"417",
+				"y":"663",
+				"id":"do_TextField_2",
+				"type":"do_TextField"
+			},
+			{
+				"textAlign":"right",
+				"x":"104",
+				"width":"129",
+				"y":"763",
+				"fontSize":"24",
+				"id":"do_Label_4",
+				"text":"E-mail：",
+				"type":"do_Label"
+			},
+			{
+				"border":"000000FF,1,1",
+				"x":"257",
+				"width":"417",
+				"y":"766",
+				"id":"do_TextField_3",
+				"type":"do_TextField"
+			},
+			{
+				"bgColor":"84C1FFFF",
+				"x":"26",
+				"width":"200",
+				"y":"965",
+				"fontSize":"24",
+				"id":"do_Button_3",
+				"text":"添加联系人",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"84C1FFFF",
+				"x":"276",
+				"width":"200",
+				"y":"967",
+				"fontSize":"24",
+				"id":"do_Button_4",
+				"text":"修改联系人",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"84C1FFFF",
+				"x":"528",
+				"width":"200",
+				"y":"967",
+				"fontSize":"24",
+				"id":"do_Button_5",
+				"text":"删除联系人",
+				"type":"do_Button"
 			}
 		],
 		"height":"1334"
