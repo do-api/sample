@@ -19,23 +19,23 @@
 				"bgColor":"818BD0FF",
 				"x":"76",
 				"width":"169",
-				"y":"232",
+				"y":"230",
 				"fontSize":"24",
 				"id":"do_Button_1",
 				"text":"录音",
 				"type":"do_Button",
-				"height":"56"
+				"height":"60"
 			},
 			{
 				"bgColor":"818BD0FF",
-				"x":"379",
+				"x":"383",
 				"width":"180",
-				"y":"238",
+				"y":"230",
 				"fontSize":"24",
 				"id":"do_Button_2",
 				"text":"播放",
 				"type":"do_Button",
-				"height":"49"
+				"height":"60"
 			}
 		],
 		"height":"1334"

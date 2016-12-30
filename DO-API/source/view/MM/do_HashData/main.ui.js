@@ -35,5 +35,4 @@ btn.on("touch",function (data,e){
 	
 	//addData addOne getAll getCount getData getOne removeAll removeData removeOne
 	//
-	//
 });
