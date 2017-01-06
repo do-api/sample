@@ -15,7 +15,7 @@
 				"type":"do_Label"
 			},
 			{
-				"bgColor":"00000000",
+				"bgColor":"E4E4E4FF",
 				"x":"50",
 				"width":"361",
 				"y":"194",
@@ -56,15 +56,72 @@
 				"height":"60"
 			},
 			{
-				"bgColor":"BCBCBCFF",
+				"bgColor":"A1C751FF",
+				"x":"10",
+				"width":"730",
+				"y":"458",
+				"id":"do_ALayout_3",
+				"type":"do_ALayout",
+				"height":"2"
+			},
+			{
 				"x":"50",
-				"width":"220",
-				"y":"462",
+				"width":"64",
+				"y":"500",
+				"id":"do_ALayout_4",
+				"bgImage":"source://view/UI/do_ALayout/image/wx.png",
+				"type":"do_ALayout",
+				"height":"64"
+			},
+			{
+				"x":"243",
+				"width":"423",
+				"y":"500",
 				"fontSize":"24",
-				"id":"do_Button_3",
-				"text":"背景图片 ",
-				"type":"do_Button",
-				"height":"60"
+				"id":"do_Label_3",
+				"text":"含有背景图片的-固定",
+				"type":"do_Label",
+				"height":"64"
+			},
+			{
+				"bgImageFillType":"repeatxy",
+				"x":"50",
+				"width":"64",
+				"y":"608",
+				"id":"do_ALayout_5",
+				"bgImage":"source://view/UI/do_ALayout/image/wx.png",
+				"type":"do_ALayout",
+				"height":"64"
+			},
+			{
+				"x":"244",
+				"width":"421",
+				"y":"610",
+				"fontSize":"24",
+				"id":"do_Label_4",
+				"text":"含有背景图片的-重复背景",
+				"type":"do_Label",
+				"height":"57"
+			},
+			{
+				"x":"50",
+				"width":"64",
+				"y":"717",
+				"id":"do_ALayout_7",
+				"bgImage":"source://view/UI/do_ALayout/image/wx.png",
+				"type":"do_ALayout",
+				"isStretch":"false",
+				"height":"64"
+			},
+			{
+				"x":"250",
+				"width":"412",
+				"y":"717",
+				"fontSize":"24",
+				"id":"do_Label_5",
+				"text":"含有背景图片的-不拉伸",
+				"type":"do_Label",
+				"height":"56"
 			}
 		],
 		"height":"1334"
