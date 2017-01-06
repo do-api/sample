@@ -48,8 +48,8 @@
     ],
  "UI":[
 	    {
-	        "MSG":"加速传感器",
-	        "NAME":"do_AccelerometerSensor",
+	        "MSG":"绝对布局",
+	        "NAME":"do_ALayout",
 	        "TYPE":"UI" 
 	    },{
 	        "MSG":"按钮",

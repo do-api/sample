@@ -1,1 +1,36 @@
-{"RootView":{"x":"0","width":"750","y":"0","type":"do_ALayout","height":"1334"}}
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"103",
+				"width":"488",
+				"y":"252",
+				"id":"do_FrameAnimationView_1",
+				"type":"do_FrameAnimationView",
+				"height":"172"
+			},
+			{
+				"x":"10",
+				"width":"730",
+				"y":"108",
+				"id":"do_Label_1",
+				"type":"do_Label"
+			},
+			{
+				"bgColor":"BEBEBEFF",
+				"x":"120",
+				"width":"164",
+				"y":"470",
+				"id":"do_Button_1",
+				"text":"启动图片动画",
+				"type":"do_Button",
+				"height":"68"
+			}
+		],
+		"height":"1334"
+	}
+}
