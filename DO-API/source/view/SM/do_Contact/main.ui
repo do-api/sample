@@ -54,6 +54,7 @@
 				"x":"256",
 				"width":"417",
 				"y":"560",
+				"fontSize":"24",
 				"id":"do_TextField_1",
 				"type":"do_TextField"
 			},
@@ -72,6 +73,7 @@
 				"x":"258",
 				"width":"417",
 				"y":"663",
+				"fontSize":"24",
 				"id":"do_TextField_2",
 				"type":"do_TextField"
 			},
@@ -90,6 +92,7 @@
 				"x":"257",
 				"width":"417",
 				"y":"766",
+				"fontSize":"24",
 				"id":"do_TextField_3",
 				"type":"do_TextField"
 			},
@@ -121,6 +124,16 @@
 				"fontSize":"24",
 				"id":"do_Button_5",
 				"text":"删除联系人",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"84C1FFFF",
+				"x":"276",
+				"width":"200",
+				"y":"1245",
+				"fontSize":"24",
+				"id":"do_Button_6",
+				"text":"添加联系人",
 				"type":"do_Button"
 			}
 		],

@@ -1,0 +1,37 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"width":"750",
+		"id":"do_alayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"750",
+				"id":"do_ALayout_3",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"width":"750",
+						"y":"10",
+						"maxLines":"-1",
+						"fontSize":"24",
+						"id":"do_Label_4",
+						"text":"富文本签框",
+						"type":"do_Label",
+						"fontStyle":"italic",
+						"fontColor":"808080FF"
+					},
+					{
+						"width":"750",
+						"y":"106",
+						"id":"do_RichLabel_1",
+						"type":"do_RichLabel",
+						"height":"1208"
+					}
+				],
+				"height":"1334"
+			}
+		],
+		"height":"1334"
+	}
+}
