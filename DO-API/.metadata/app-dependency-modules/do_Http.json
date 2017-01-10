@@ -127,6 +127,43 @@
 		},
 		{
 			"ReturnType_JavaScript":"",
+			"Description":"下载文件，支持断点续传，当下载中断，对相同url重新调用download1方法即可实现续传",
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"下载到本地的文件的全路径，只支持data://",
+					"Required":1,
+					"Type_JavaScript":"String",
+					"ID":"path",
+					"Name":"保存地址"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"下载的任务ID",
+					"Required":1,
+					"Type_JavaScript":"String",
+					"ID":"taskId",
+					"Name":"下载任务ID"
+				},
+				{
+					"DefaultValue":"true",
+					"Type":"Bool",
+					"Description":"支持断点下载，下次下载相同Url文件会从上次停止的位置继续下载",
+					"Required":0,
+					"Type_JavaScript":"Bool",
+					"ID":"isBreakpoint",
+					"Name":"是否支持断点下载"
+				}
+			],
+			"ID":"download1",
+			"ReturnType":"",
+			"Name":"下载",
+			"ReturnDesc":""
+		},
+		{
+			"ReturnType_JavaScript":"",
 			"Description":"支持同时上传多个文件和字符串，contentType固定为multipart/form-data，无需再设置",
 			"Paras":[
 				{
@@ -217,6 +254,25 @@
 			"ID":"setRequestHeader",
 			"ReturnType":"",
 			"Name":"设置请求头",
+			"ReturnDesc":""
+		},
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"停止下载",
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"下载的任务ID",
+					"Required":1,
+					"Type_JavaScript":"String",
+					"ID":"taskId",
+					"Name":"下载任务ID"
+				}
+			],
+			"ID":"stopDownload",
+			"ReturnType":"",
+			"Name":"停止下载",
 			"ReturnDesc":""
 		},
 		{

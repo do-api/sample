@@ -6,13 +6,15 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"x":"498",
-				"width":"177",
-				"y":"193",
+				"bgColor":"D2D2D2FF",
+				"x":"50",
+				"width":"250",
+				"y":"199",
+				"fontSize":"24",
 				"id":"do_Button_1",
-				"text":"hashdata",
+				"text":"增加数据",
 				"type":"do_Button",
-				"height":"56"
+				"height":"60"
 			},
 			{
 				"x":"10",
@@ -26,14 +28,100 @@
 				"height":"100"
 			},
 			{
-				"x":"74",
-				"width":"200",
+				"bgColor":"D2D2D2FF",
+				"x":"370",
+				"width":"340",
 				"y":"198",
 				"fontSize":"24",
 				"id":"do_Button_2",
-				"text":"添加数据",
+				"text":"增加一条",
 				"type":"do_Button",
-				"height":"50"
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"50",
+				"width":"250",
+				"y":"342",
+				"fontSize":"24",
+				"id":"do_Button_3",
+				"text":"获取全部数据",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"370",
+				"width":"340",
+				"y":"344",
+				"fontSize":"24",
+				"id":"do_Button_4",
+				"text":"获取元素个数",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"50",
+				"width":"250",
+				"y":"470",
+				"fontSize":"24",
+				"id":"do_Button_5",
+				"text":"获取数据",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"370",
+				"width":"336",
+				"y":"472",
+				"fontSize":"24",
+				"id":"do_Button_6",
+				"text":"获取某一行",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"50",
+				"width":"250",
+				"y":"624",
+				"fontSize":"24",
+				"id":"do_Button_7",
+				"text":"清空数据",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"370",
+				"width":"340",
+				"y":"626",
+				"fontSize":"24",
+				"id":"do_Button_8",
+				"text":"根据keys删除多条数据",
+				"type":"do_Button",
+				"height":"60"
+			},
+			{
+				"bgColor":"D2D2D2FF",
+				"x":"50",
+				"width":"250",
+				"y":"764",
+				"fontSize":"24",
+				"id":"do_Button_9",
+				"text":"删除某一行数据",
+				"type":"do_Button"
+			},
+			{
+				"x":"42",
+				"width":"674",
+				"y":"962",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"type":"do_Label",
+				"height":"-1"
 			}
 		],
 		"height":"1334"

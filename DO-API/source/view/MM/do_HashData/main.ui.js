@@ -8,10 +8,60 @@ var global = sm("do_Global");
 var app = sm("do_App");
 var page = sm("do_Page"); 
 var nf = sm("do_Notification");
-page.on("back",function(data){
-	
-	
+page.on("back",function(data){ 
+	app.closePage();
 });
+
+
+
+
+
+
+
+
+
+
+/**********************************************************/
+
+var target=mm("do_HashData");
+//addData	增加数据	同步方法
+ui("do_Button_1").on("touch",function(body){
+	
+})
+//addOne	增加一条数据	同步方法
+ui("do_Button_2").on("touch",function(body){
+	
+})
+//getAll	获取全部数据	同步方法
+ui("do_Button_3").on("touch",function(body){
+	
+})
+//getCount	获取元素个数	同步方法
+ui("do_Button_4").on("touch",function(body){
+	
+})
+//getData	获取数据	同步方法
+ui("do_Button_5").on("touch",function(body){
+	
+})
+//getOne	获取某一行数据	同步方法
+ui("do_Button_6").on("touch",function(body){
+	
+})
+//removeAll	清空数据	同步方法
+ui("do_Button_7").on("touch",function(body){
+	
+})
+//removeData	根据keys删除多条数据	同步方法
+ui("do_Button_8").on("touch",function(body){
+	
+})
+//removeOne	删除某一行数据	同步方法
+ui("do_Button_9").on("touch",function(body){
+	
+})
+
+
 var  btn1=ui("do_Button_1");
 btn2.on("touch",function (data,e){
 	var target=mm("do_HashData"); 
