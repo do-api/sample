@@ -1,5 +1,6 @@
 {
 	"Description":"针对通讯录的增删查改",
+	"Keyword":"设备功能",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -10,6 +11,7 @@
 	},
 	"asyncMethodes":[
 		{
+			"ReturnType_JavaScript":"Node",
 			"Description":"",
 			"Paras":[
 				{
@@ -17,6 +19,7 @@
 					"Type":"Node",
 					"Description":"如：[{'name':'张三','phone':'13922864549','email':'xxx@deviceone.com'}]，目前支持的字段名称有：name(姓名)，phone(电话)，email(邮箱)",
 					"Required":1,
+					"Type_JavaScript":"Node",
 					"ID":"paras",
 					"Name":"参数值"
 				}
@@ -27,6 +30,7 @@
 			"ReturnDesc":"返回添加一组联系人的唯一标识"
 		},
 		{
+			"ReturnType_JavaScript":"Bool",
 			"Description":"由于权限问题，windows平台不支持该方法",
 			"Paras":[
 				{
@@ -34,6 +38,7 @@
 					"Type":"Node",
 					"Description":"如果值为空(不是空数组)，就删除所有，否则就按照数组中的唯一标识依次删除",
 					"Required":0,
+					"Type_JavaScript":"Node",
 					"ID":"ids",
 					"Name":"联系人的唯一标识数组"
 				}
@@ -44,6 +49,7 @@
 			"ReturnDesc":"true：成功，false：失败"
 		},
 		{
+			"ReturnType_JavaScript":"Node",
 			"Description":"根据name，phone，email的值来查询通讯录联系人信息，如果参数value为空，就获取所有联系人信息，支持模糊查询",
 			"Paras":[
 				{
@@ -51,6 +57,7 @@
 					"Type":"String",
 					"Description":"根据条件来模糊查询，目前支持的字段名称有：name(姓名)，phone(电话)，email(电子邮件)",
 					"Required":0,
+					"Type_JavaScript":"String",
 					"ID":"value",
 					"Name":"参数值"
 				},
@@ -59,6 +66,7 @@
 					"Type":"Node",
 					"Description":"支持['name','phone','email']，如果参数为空则按全条件查询",
 					"Required":0,
+					"Type_JavaScript":"Node",
 					"ID":"types",
 					"Name":"参数类型值"
 				}
@@ -69,6 +77,7 @@
 			"ReturnDesc":"根据参数值，返回查询的联系人信息列表，[{'id':'1001','name':'','phone':['phone1','phone2'...],'email':['email1','email2'...]},{'id':'1002','name':'','phone':['phone1','phone2'...],'email':['email1','email2'...]}...]"
 		},
 		{
+			"ReturnType_JavaScript":"Node",
 			"Description":"根据id获取通讯录联系人信息",
 			"Paras":[
 				{
@@ -76,6 +85,7 @@
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Type_JavaScript":"String",
 					"ID":"id",
 					"Name":"参数值"
 				}
@@ -86,6 +96,7 @@
 			"ReturnDesc":"根据联系人id查询的联系人信息，{'id':'1001','name':'','phone':['phone1','phone2'...],'email':['email1','email2'...]}"
 		},
 		{
+			"ReturnType_JavaScript":"Bool",
 			"Description":"由于权限问题，windows平台不支持该方法",
 			"Paras":[
 				{
@@ -93,6 +104,7 @@
 					"Type":"String",
 					"Description":"要修改联系人的唯一标识",
 					"Required":1,
+					"Type_JavaScript":"String",
 					"ID":"id",
 					"Name":"唯一标识"
 				},
@@ -101,6 +113,7 @@
 					"Type":"Node",
 					"Description":"如：{'name':'张三','phone':'13922864549','email':'xxx@deviceone.com'}，目前支持的字段名称有：name(姓名)，phone(电话)，email(邮箱)",
 					"Required":1,
+					"Type_JavaScript":"Node",
 					"ID":"paras",
 					"Name":"参数值"
 				}
@@ -123,8 +136,10 @@
 	},
 	"syncMethodes":[],
 	"Type":"SM",
+	"BBS":"",
 	"Version":"Internal",
 	"Events":[],
+	"UIType":"Layout",
 	"ID":"do_Contact",
 	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Contact/通讯录.jpg",
 	"IsContainer":"0",

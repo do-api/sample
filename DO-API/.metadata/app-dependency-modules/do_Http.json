@@ -150,7 +150,7 @@
 				{
 					"DefaultValue":"true",
 					"Type":"Bool",
-					"Description":"支持断点下载，下次下载相同Url文件会从上次停止的位置继续下载",
+					"Description":"支持断点下载，下次下载相同Url文件会从上次停止的位置继续下载；iOS平台不支持设置为false",
 					"Required":0,
 					"Type_JavaScript":"Bool",
 					"ID":"isBreakpoint",
@@ -320,14 +320,14 @@
 			"Description":"响应请求事件",
 			"ID":"progress",
 			"ReturnType":"Node",
-			"ReturnDesc":"返回值包含两个节点{currentSize:'1221',totalSize:'23234245',currentFileSize:'',index:''}单位为kB，其中currentFileSize和index只有调用form方法时返回，分别为当前正在上传文件大小和所在files数据数组中索引"
+			"ReturnDesc":"返回值包含五个节点{currentSize:'1221',totalSize:'23234245',currentFileSize:'',index:'',taskId:''}单位为kB，其中currentFileSize和index只有调用form方法时返回，分别为当前正在上传文件大小和所在files数据数组中索引，除断点下载其他请求不会返回tastID，断点下载不返回index"
 		},
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"请求结束事件",
 			"ID":"result",
 			"ReturnType":"Node",
-			"ReturnDesc":"返回值包含两个节点{status:'http状态码' ,data:'服务端返回信息'}"
+			"ReturnDesc":"返回值包含两个节点{status:'http状态码' ,data:'服务端返回信息',taskId:''}，除断点下载其他请求不会返回tastID"
 		},
 		{
 			"ReturnType_JavaScript":"String",
@@ -339,7 +339,7 @@
 	],
 	"UIType":"Layout",
 	"ID":"do_Http",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Http/http.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Http/http.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

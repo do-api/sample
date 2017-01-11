@@ -22,6 +22,8 @@
 				"fontSize":"24",
 				"id":"do_TextField_1",
 				"type":"do_TextField",
+				"clearImg":"source://view/UI/do_TextField/image/clear.png",
+				"clearAll":"true",
 				"height":"56"
 			},
 			{
