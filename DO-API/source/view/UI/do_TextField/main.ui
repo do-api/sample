@@ -27,7 +27,7 @@
 				"height":"56"
 			},
 			{
-				"hint":"包含事件，包含删除图标",
+				"hint":"包含删除图标",
 				"x":"88",
 				"width":"584",
 				"y":"374",
@@ -153,6 +153,34 @@
 				"id":"do_TextField_12",
 				"type":"do_TextField",
 				"height":"56"
+			},
+			{
+				"bgColor":"C2C2C2FF",
+				"x":"61",
+				"width":"361",
+				"y":"1111",
+				"id":"do_TextField_13",
+				"type":"do_TextField",
+				"height":"64"
+			},
+			{
+				"x":"456",
+				"width":"172",
+				"y":"1123",
+				"fontSize":"24",
+				"id":"do_Label_3",
+				"text":"包含事件",
+				"type":"do_Label",
+				"height":"48"
+			},
+			{
+				"x":"10",
+				"width":"730",
+				"y":"1204",
+				"fontSize":"24",
+				"id":"do_Label_4",
+				"type":"do_Label",
+				"height":"-1"
 			}
 		],
 		"height":"1334"

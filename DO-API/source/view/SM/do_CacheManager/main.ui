@@ -37,13 +37,23 @@
 				"height":"60"
 			},
 			{
-				"bgColor":"CACACAFF",
-				"x":"87",
-				"width":"152",
-				"y":"422",
-				"id":"do_Button_3",
-				"type":"do_Button",
-				"height":"60"
+				"x":"10",
+				"width":"730",
+				"y":"700",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"type":"do_Label",
+				"height":"-1"
+			},
+			{
+				"x":"78",
+				"width":"45",
+				"y":"426",
+				"id":"do_ImageView_1",
+				"source":"source://view/SM/do_CacheManager/image/clear.png",
+				"type":"do_ImageView",
+				"cacheType":"always",
+				"height":"45"
 			}
 		],
 		"height":"1334"
