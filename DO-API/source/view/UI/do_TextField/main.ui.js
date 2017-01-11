@@ -35,25 +35,33 @@ page.on("back", function() {
 
  
 /** ******************************************************************************************************* */
- 
-var do_TextField_1 = ui("do_TextField_1");
-var do_TextField_2 = ui("do_TextField_2");
-var label = ui("do_Label_2");
+  
+var label = ui("do_Label_4");
 /**
  * @Event:focusIn 监听获得焦点
  */
-do_TextField_1.on("focusIn", function(data, e) {
-    label.text="focusIn";
+ui("do_TextField_13").on("focusIn", function(data, e) {
+    label.text="监听获得焦点,返回值为："+JSON.stringify(data);
 });
 /**
  * @Event:focusOut 监听失去焦点
  */
-do_TextField_1.on("focusOut", function(data, e) {
-         label.text="focusOut";
+ui("do_TextField_13").on("focusOut", function(data, e) {
+         label.text="监听失去焦点";
+});
+
+/**
+ * @Event:enter 监听键盘右下角按钮时触发
+ */
+ui("do_TextField_13").on("enter", function(data, e) {
+         label.text="监听键盘右下角按钮时触发";
 });
 /**
  * @Event:textChanged 监听text文本改变
  */
-do_TextField_1.on("textChanged", function(data, e) {
-    do_TextField_2.text = this.text;// 将do_TextField_1文本赋值给do_TextField_2
+ui("do_TextField_13").on("textChanged", function(data, e) {
+	ui("do_TextField_13").text = this.text;// 将do_TextField_1文本赋值给do_TextField_2
+    
+    label.text="监听text文本改变，返回值为："+JSON.stringify(data);
+    
 });
