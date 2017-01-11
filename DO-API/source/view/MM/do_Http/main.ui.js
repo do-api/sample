@@ -13,10 +13,18 @@ var nf = sm("do_Notification");
 /**
  * http  用户遇到的问题比较多
  * 
- * */
+ * 可以用http组件，也可以用封装的dojs
+ * 组件：每个参赛都要自己配置，写法比较比较接近类的定义
+ * dojs：与js语言比较接近，格式跟ajax类似，比较常规
+ * 
+ * */ 
 
-var http;
-http = mm("do_Http");
+/**
+ * 请求中
+ * 
+ * @data => { currentSize : Number , totalSize : Number}
+ */
+var http = mm("do_Http");
 http.method = "GET";// GET | POST
 http.timeout = 30000; // 超时时间 : 单位 毫秒
 http.contentType = "application/json"; // Content-Type
@@ -25,21 +33,16 @@ http.url = "http://developer.deviceone.cn/test/index"; // 请求的 URL
  * 请求成功
  */
 http.on("success", function(data) {
-    label_info.text ="GET success:"+ data;
+	resultshow("GET success:"+ data); 
 });
  
 /**
  * 请求失败
  */
 http.on("fail", function(data) {
-    label_info.text = data
+	resultshow("GET fail返回值类型为："+typeof(data)+"返回值为:"+ JSON.stringify(data)); 
+   
 });
- 
-/**
- * 请求中
- * 
- * @data => { currentSize : Number , totalSize : Number}
- */
 http.on("progress", function(data) {
     label_info.text = data
 });
@@ -64,7 +67,7 @@ http2.on("progress", function(data) {
  
 /** ************************************* */
  
-var do_ProgressBar_1 = ui("do_ProgressBar_1");
+var do_ProgressBar_1 = ui("do_ProgressBar1_1");
  
 /** ******************************************************************************************************* */
  
@@ -142,3 +145,12 @@ e_download.on("touch", function() {
      */
     http4.download("data://xiazai.png");
 });
+
+
+
+/*********************************************/
+function  resultshow(data){
+	ui("do_Label_2").set("text",data);
+}
+
+
