@@ -11,8 +11,70 @@
 				"y":"82",
 				"fontSize":"24",
 				"id":"do_Label_1",
-				"text":"http",
+				"text":"支持http/https请求服务",
 				"type":"do_Label"
+			},
+			{
+				"bgColor":"B5C1B7FF",
+				"x":"73",
+				"width":"236",
+				"y":"214",
+				"fontSize":"24",
+				"id":"e_get",
+				"text":"Get请求",
+				"type":"do_Button",
+				"height":"56"
+			},
+			{
+				"bgColor":"B5C1B7FF",
+				"x":"404",
+				"width":"228",
+				"y":"211",
+				"fontSize":"24",
+				"id":"e_post",
+				"text":"Post请求",
+				"type":"do_Button",
+				"height":"53"
+			},
+			{
+				"bgColor":"B5C1B7FF",
+				"x":"78",
+				"width":"224",
+				"y":"365",
+				"fontSize":"24",
+				"id":"e_upload",
+				"text":"上传",
+				"type":"do_Button",
+				"height":"45"
+			},
+			{
+				"bgColor":"B5C1B7FF",
+				"x":"407",
+				"width":"232",
+				"y":"369",
+				"fontSize":"24",
+				"id":"e_download",
+				"text":"下载",
+				"type":"do_Button",
+				"height":"44"
+			},
+			{
+				"x":"10",
+				"width":"730",
+				"y":"580",
+				"maxLines":"20",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"type":"do_Label",
+				"height":"-1"
+			},
+			{
+				"changeImage":"source://view/MM/do_Http/image/img1.png",
+				"x":"306",
+				"y":"458",
+				"id":"do_ProgressBar1_1",
+				"type":"do_ProgressBar1",
+				"defaultImage":"source://view/MM/do_Http/image/clear.png"
 			}
 		],
 		"height":"1334"
