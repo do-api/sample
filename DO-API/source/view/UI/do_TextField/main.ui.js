@@ -12,10 +12,7 @@ nf = sm("do_Notification");
 
 page.on("back", function() {
     app.closePage()
-});
-ui("action_back").on("touch", function() {
-    app.closePage()
-});
+}); 
 
 //clearAll	输入框中显示叉号
 //clearImg	删除标记图片
