@@ -61,7 +61,7 @@
 			{
 				"x":"10",
 				"width":"730",
-				"y":"580",
+				"y":"700",
 				"maxLines":"20",
 				"fontSize":"24",
 				"id":"do_Label_2",
@@ -70,11 +70,28 @@
 			},
 			{
 				"changeImage":"source://view/MM/do_Http/image/img1.png",
-				"x":"306",
-				"y":"458",
+				"x":"122",
+				"y":"592",
 				"id":"do_ProgressBar1_1",
 				"type":"do_ProgressBar1",
 				"defaultImage":"source://view/MM/do_Http/image/clear.png"
+			},
+			{
+				"x":"503",
+				"y":"591",
+				"id":"do_ImageView_1",
+				"type":"do_ImageView"
+			},
+			{
+				"bgColor":"B5C1B7FF",
+				"x":"78",
+				"width":"225",
+				"y":"474",
+				"fontSize":"24",
+				"id":"e_delete",
+				"text":"删除",
+				"type":"do_Button",
+				"height":"45"
 			}
 		],
 		"height":"1334"

@@ -28,12 +28,12 @@ var http = mm("do_Http");
 http.method = "GET";// GET | POST
 http.timeout = 30000; // 超时时间 : 单位 毫秒
 http.contentType = "application/json"; // Content-Type
-http.url = "http://developer.deviceone.cn/test/index"; // 请求的 URL
+http.url = "http://182.92.198.3/webencode/test/GetHeader"; // 请求的 URL
 /**
  * 请求成功
  */
 http.on("success", function(data) {
-	resultshow("GET success:"+ data); 
+	resultshow("GET success:返回值类型为"+typeof(data)+"返回值为:"+ JSON.stringify(data)); 
 });
  
 /**
@@ -44,7 +44,7 @@ http.on("fail", function(data) {
    
 });
 http.on("progress", function(data) {
-    label_info.text = data
+	resultshow("GET fail返回值类型为："+typeof(data)+"返回值为:"+ JSON.stringify(data));  
 });
  
 /** ******************************************************************************************************* */
@@ -54,15 +54,15 @@ http2 = mm("do_Http");
 http2.method = "POST";
 http2.timeout = 30000;
 http2.contentType = "application/json";
-http2.url = "http://developer.deviceone.cn/test/TestPost";
+http2.url = "http://182.92.198.3/webencode/test/GetHeader";
 http2.on("success", function(data) {
-    label_info.text = "POST success:"+data;
+	resultshow("POST success:"+typeof(data)+"返回值为:"+ JSON.stringify(data));   
 });
 http2.on("fail", function(data) {
-    label_info.text = data
+	resultshow("POST fail:"+typeof(data)+"返回值为:"+ JSON.stringify(data));    
 });
 http2.on("progress", function(data) {
-    label_info.text = data
+	resultshow("POST progress:"+typeof(data)+"返回值为:"+ JSON.stringify(data));    
 });
  
 /** ************************************* */
@@ -79,14 +79,15 @@ http4.contentType = "application/json";
 http4.url = "http://g.hiphotos.baidu.com/zhidao/pic/item/b17eca8065380cd79f8ccc3fa144ad3458828155.jpg";
  
 http4.on("success", function(data) {
-    label_info.text = "download:success";
-    ui("do_ImageView_5").source="data://xiazai.png";
+	resultshow("download:success");  
+    ui("do_ImageView_1").source="data://xiazai.png";
 });
 http4.on("fail", function(data) {
-    label_info.text = data;
+	resultshow("download fail:"+typeof(data)+"返回值为:"+ JSON.stringify(data));    
+   
 });
 http4.on("progress", function(data) {
-    label_info.text = data;
+	resultshow("download progress:"+typeof(data)+"返回值为:"+ JSON.stringify(data));  
     do_ProgressBar_1.progress = data.currentSize * 100 / data.totalSize;
 });
  
@@ -95,29 +96,46 @@ http4.on("progress", function(data) {
 var http3;
 http3 = mm("do_Http");
 http3.timeout = 30000;
-http3.contentType = "audio/wav";
-http3.url = "http://developer.deviceone.cn/test/Upload";
+http3.contentType = "multipart/form-data";
+http3.url = "http://182.92.198.3/webencode/test/Upload"; 
+http3.method = "POST"; 
+
  
-http3.on("success", function(data) {
-    label_info.text = data;
+http3.on("success", function(data) { 
+	resultshow("Upload success:"+typeof(data)+"返回值为:"+ JSON.stringify(data));   
 });
 http3.on("fail", function(data) {
-    label_info.text = data;
+	resultshow("Upload fail:"+typeof(data)+"返回值为:"+ JSON.stringify(data));   
 });
 http3.on("progress", function(data) {
-    label_info.text = data;
+	resultshow("Upload progress:"+typeof(data)+"返回值为:"+ JSON.stringify(data));  
+    do_ProgressBar_1.progress = data.currentSize * 100 / data.totalSize;
+});
+
+var http5  = mm("do_Http");
+http5.timeout = 30000;
+http5.method = "DELETE";
+http5.url = "http://182.92.198.3/webencode/test/TestHttpDelete";  
+http5.on("success", function(data) { 
+	resultshow("delete success:"+typeof(data)+"返回值为:"+ JSON.stringify(data));   
+});
+http5.on("fail", function(data) {
+	resultshow("delete fail:"+typeof(data)+"返回值为:"+ JSON.stringify(data));   
+});
+http5.on("progress", function(data) {
+	resultshow("delete progress:"+typeof(data)+"返回值为:"+ JSON.stringify(data));  
     do_ProgressBar_1.progress = data.currentSize * 100 / data.totalSize;
 });
  
 /** ******************************************************************************************************* */
  
-var e_get, e_post, e_upload, e_download;
+var e_get, e_post, e_upload, e_download,e_delete;
  
 e_get = ui("e_get");
 e_post = ui("e_post");
 e_upload = ui("e_upload");
 e_download = ui("e_download");
- 
+e_delete=ui("e_delete");
 e_get.on("touch", function() {
     /**
      * @http.request() ; 发出请求.
@@ -135,7 +153,9 @@ e_upload.on("touch", function() {
      * @path : 上传的文件路径;
      * @name : 上传的文件名称;//网页表单风格上传;
      */
-    http3.upload("data://a.zip", "file");
+	sm("do_InitData").copyFile({source:"initdata://do_Http/a.txt", target:"data://http/a.txt"}, function(data, e) {
+		http3.upload({path:"data://http/a.txt", name:"file"});
+	});
 });
  
 e_download.on("touch", function() {
@@ -146,7 +166,11 @@ e_download.on("touch", function() {
     http4.download("data://xiazai.png");
 });
 
-
+e_delete.on("touch",function(){ 
+ 
+	target_0.request();
+	
+});
 
 /*********************************************/
 function  resultshow(data){
