@@ -1,0 +1,1 @@
+initiate组件控制了当前当前文件在手机上的目录为包名下/data/do_Http/a.txt

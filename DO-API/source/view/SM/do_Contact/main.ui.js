@@ -50,14 +50,18 @@ ui("do_Button_4").on("touch",function(data,e){
 	deviceone.print(NAME+" ;"+PHONE+";"+EMAIL,"ddd");
 	deviceone.print(ID,"ID");
 	//修改刚添加的联系人
-	target_1.updateData({id:ID, paras:[{'name':NAME,'phone':PHONE,'email':EMAIL}]}, function(data, e) {
+	target_1.updateData({id:ID[0], paras:[{'name':NAME,'phone':PHONE,'email':EMAIL}]}, function(data, e) {
 		nf.alert(data,"修改是否成功");
 	});
 });
 
 ui("do_Button_5").on("touch",function(data,e){ 
 	//删除刚添加的联系人
-	target_1.deleteData({ids:ID[0]}, function(data, e) {
+	deviceone.print(JSON.stringify(ID));
+	//{ids:[ID[0]]}，可以
+	//{ids:ID} 可以
+	//ids:ID[0]} 这个是错误的写法，不要这么写，容易把整个通讯录删掉
+	target_1.deleteData({ids:[ID[0]]}, function(data, e) {
 		nf.alert(data,"删除是否成功");
 	});
 });

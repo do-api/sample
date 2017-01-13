@@ -191,7 +191,7 @@
 	],
 	"UIType":"Layout",
 	"ID":"do_Audio",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Audio/audio.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Audio/audio.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",
