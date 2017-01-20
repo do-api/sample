@@ -11,7 +11,7 @@
 	},
 	"asyncMethodes":[],
 	"IOS":{
-		"MinVersion":"7.0",
+		"MinVersion":"7",
 		"Support":1
 	},
 	"Properties":[

@@ -2,6 +2,12 @@
  * related to main.ui
  * 
  * @Author : cxxf
+ * @Timestamp : 2017-01-19
+ */
+/**
+ * related to main.ui
+ * 
+ * @Author : cxxf
  * @Timestamp : 2016-12-21
  */
 var nf = sm("do_Notification");
@@ -17,11 +23,11 @@ initdata.readFile("initdata://do_gridview/gridview.json", function(data, e){
 });
 //订阅GridView的touch点击事件
 target_1.on("touch", function(data) {
-	  nf.alert("第" + (data + 1) + "条数据被长按");
+	  nf.alert("第" + (data + 1) + "条数据被点击");
         target_1.selectedColor="FF0080FF";
 })
 // 订阅GridView的longTouch长按事件;
-target_1.on("longTouch", function(data) {
+target_1.on("longTouch", function(data) { 
      nf.alert("第" + (data + 1) + "条数据被长按");
 	
 });
@@ -35,6 +41,10 @@ target_1.on("pull", function(data) {
 		});
 	   target_1.rebound(); //调用此方法 让hearder复位
    }
+});
+
+ui("root").on("touch",function(data){
+	 nf.alert("root");
 });
 
 

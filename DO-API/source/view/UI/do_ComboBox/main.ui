@@ -126,6 +126,15 @@
 				"id":"do_Label_7",
 				"type":"do_Label",
 				"height":"-1"
+			},
+			{
+				"bgColor":"FF0000FF",
+				"x":"132",
+				"width":"192",
+				"y":"1125",
+				"id":"do_CheckBox_1",
+				"type":"do_CheckBox",
+				"fontColor":"FFFFFFFF"
 			}
 		],
 		"height":"1334"

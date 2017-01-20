@@ -125,7 +125,7 @@
 		}
 	],
 	"IOS":{
-		"MinVersion":"7.0",
+		"MinVersion":"7",
 		"Support":1
 	},
 	"Properties":[],
@@ -141,7 +141,7 @@
 	"Events":[],
 	"UIType":"Layout",
 	"ID":"do_Contact",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Contact/通讯录.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Contact/通讯录.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

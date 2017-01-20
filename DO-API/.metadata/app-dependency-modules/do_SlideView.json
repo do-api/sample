@@ -189,7 +189,7 @@
 	],
 	"UIType":"Container",
 	"ID":"do_SlideView",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_SlideView/滑动视图.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_SlideView/滑动视图.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

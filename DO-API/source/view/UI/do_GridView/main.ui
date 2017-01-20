@@ -1,13 +1,24 @@
 {
 	"RootView":{
-		"isHeaderVisible":"true",
-		"bgColor":"FFFFFFFF",
-		"templates":"source://view/cell/do_gridview/gridview0.ui",
+		"x":"-11",
 		"width":"750",
-		"id":"do_GridView_1",
-		"type":"do_GridView",
-		"selectedColor":"FF0080FF",
-		"numColumns":"4",
-		"height":"1224"
+		"y":"-3",
+		"id":"root",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"isHeaderVisible":"true",
+				"bgColor":"FEFFFEFF",
+				"templates":"source://view/UI/do_GridView/cell/gridview0.ui",
+				"width":"750",
+				"y":"35",
+				"id":"do_GridView_1",
+				"type":"do_GridView",
+				"selectedColor":"FF76F9FF",
+				"numColumns":"4",
+				"height":"1012"
+			}
+		],
+		"height":"1334"
 	}
 }

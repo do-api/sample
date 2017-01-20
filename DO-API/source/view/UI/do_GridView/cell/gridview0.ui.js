@@ -9,3 +9,7 @@ root.setMapping({
 	"do_ImageView_1.source" : "imgSource",
 	"do_Label_1.text" : "labelSource",
 });
+
+//ui("celllayout").on("touch",function(data){
+//	deviceone.print("celllayout---------")
+//});
