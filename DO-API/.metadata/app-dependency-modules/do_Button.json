@@ -1,5 +1,6 @@
 {
-	"Description":"按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。",
+	"Description":"按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。abc",
+	"Keyword":"",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -164,6 +165,7 @@
 	},
 	"syncMethodes":[],
 	"Type":"UI",
+	"BBS":"",
 	"Version":"Internal",
 	"Events":[
 		{
@@ -188,8 +190,9 @@
 			"ReturnDesc":""
 		}
 	],
+	"UIType":"Layout",
 	"ID":"do_Button",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Button/按钮.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Button/按钮.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

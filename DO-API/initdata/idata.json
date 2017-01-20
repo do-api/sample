@@ -261,6 +261,10 @@
             "NAME":"do_GridView",
             "TYPE":"UI"
         },{
+            "MSG":"字（图）库",
+            "NAME":"do_IconFont",
+            "TYPE":"UI"
+        },{
             "MSG":"图片裁剪视图",
             "NAME":"do_ImageCropView",
             "TYPE":"UI"
