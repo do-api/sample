@@ -39,6 +39,14 @@
             "NAME":"do_AccelerometerSensor",
             "TYPE":"SM" 
         },{
+            "MSG":"系统相册",
+            "NAME":"do_Album",
+            "TYPE":"SM" 
+        },{
+            "MSG":"应用类",
+            "NAME":"do_App",
+            "TYPE":"SM" 
+        },{
             "MSG":"辅助按钮",
             "NAME":"do_AssistiveTouch",
             "TYPE":"SM" 
@@ -263,6 +271,10 @@
         },{
             "MSG":"字（图）库",
             "NAME":"do_IconFont",
+            "TYPE":"UI"
+        },{
+            "MSG":"图片轮播图",
+            "NAME":"do_ImageBrowserView",
             "TYPE":"UI"
         },{
             "MSG":"图片裁剪视图",

@@ -211,7 +211,7 @@
 	"Events":[],
 	"UIType":"View",
 	"ID":"do_Label",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Label/label.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Label/label.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

@@ -28,7 +28,10 @@ var http = mm("do_Http");
 http.method = "GET";// GET | POST
 http.timeout = 30000; // 超时时间 : 单位 毫秒
 http.contentType = "application/json"; // Content-Type
-http.url = "http://182.92.198.3/webencode/test/GetHeader"; // 请求的 URL
+//http.url = "http://182.92.198.3/webencode/test/GetHeader"; // 请求的 URL
+
+http.url =encodeURI("http://dbinterface.softmarket.cn/DBHandler.ashx?db=广告联盟&sql=select* from 分类管理");
+http.responseEncoding = "GBK";
 /**
  * 请求成功
  */

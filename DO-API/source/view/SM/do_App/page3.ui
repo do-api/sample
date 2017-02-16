@@ -1,0 +1,31 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"bgColor":"C1C1C1FF",
+				"x":"186",
+				"width":"349",
+				"y":"178",
+				"fontSize":"24",
+				"id":"do_Button_1",
+				"text":"返回上一层",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"C1C1C1FF",
+				"x":"185",
+				"width":"357",
+				"y":"329",
+				"fontSize":"24",
+				"id":"do_Button_2",
+				"text":"返回到main",
+				"type":"do_Button"
+			}
+		],
+		"height":"1334"
+	}
+}

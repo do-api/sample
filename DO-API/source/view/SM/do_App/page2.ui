@@ -1,0 +1,20 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"bgColor":"C1C1C1FF",
+				"x":"205",
+				"width":"281",
+				"y":"182",
+				"id":"do_Button_1",
+				"text":"打开page3",
+				"type":"do_Button"
+			}
+		],
+		"height":"1334"
+	}
+}
