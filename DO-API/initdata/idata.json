@@ -1,37 +1,5 @@
 { "CORE":[
-        {
-            "MSG":"绝对布局",
-            "NAME":"do_ALayout",
-            "TYPE":"CORE"
-        },{
-            "MSG":"动画组合",
-            "NAME":"do_Animation",
-            "TYPE":"CORE"
-        },{
-            "MSG":"应用类",
-            "NAME":"do_App",
-            "TYPE":"CORE"
-        },{
-            "MSG":"应用全局类",
-            "NAME":"do_Global",
-            "TYPE":"CORE" 
-        },{
-            "MSG":"线性布局",
-            "NAME":"do_LinearLayout",
-            "TYPE":"CORE" 
-        },{
-            "MSG":"页面",
-            "NAME":"do_Page",
-            "TYPE":"CORE"
-        },{
-            "MSG":"文件管理类",
-            "NAME":"do_Storage",
-            "TYPE":"CORE"
-        },{
-            "MSG":"网页",
-            "NAME":"do_WebView",
-            "TYPE":"CORE"
-        }
+       
     ],
     "SM":[
         {
@@ -215,8 +183,11 @@
             "TYPE":"MM"
         }
     ],
-    "UI":[
-    	{
+    "UI":[{
+            "MSG":"绝地定位",
+            "NAME":"do_ALayout",
+            "TYPE":"UI"
+        },{
             "MSG":"百度地图",
             "NAME":"do_BaiduMapView",
             "TYPE":"UI"
