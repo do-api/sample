@@ -18,7 +18,13 @@ ui("do_Button_1").on("touch",function(data){
 		
 });  
 ui("do_Button_2").on("touch",function(data){ 
-	app.closePageToID("app_main");//关闭到指定ID，app_main
+	
+	deviceone.print("11");
+	app.closePageToID({
+		id:"app_page2"
+	},function(){
+		deviceone.print("12");
+	});//关闭到指定ID，app_main
 	
 	
 	

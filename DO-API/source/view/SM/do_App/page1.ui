@@ -35,6 +35,16 @@
 				"id":"do_Label_2",
 				"text":"我是更新后的页面",
 				"type":"do_Label"
+			},
+			{
+				"bgColor":"B9B9B9FF",
+				"x":"198",
+				"width":"292",
+				"y":"384",
+				"fontSize":"24",
+				"id":"do_Button_2",
+				"text":"关闭当前",
+				"type":"do_Button"
 			}
 		],
 		"height":"1334"

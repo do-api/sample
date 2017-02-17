@@ -138,6 +138,10 @@
     ],
     "MM":[
         {
+            "MSG":"动画组合",
+            "NAME":"do_Animation",
+            "TYPE":"MM"
+        },{
             "MSG":"属性动画组合",
             "NAME":"do_Animator",
             "TYPE":"MM"

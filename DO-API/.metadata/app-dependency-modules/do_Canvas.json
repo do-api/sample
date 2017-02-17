@@ -25,6 +25,7 @@
 			"Type":"Bool",
 			"EditType":"1",
 			"Description":"闭合图形是否填充内容，true：填充,false：不填充",
+			"Deprecated":false,
 			"Type_JavaScript":"Bool",
 			"ID":"isFull",
 			"Name":"是否填充"
@@ -48,6 +49,7 @@
 			"Type":"Number",
 			"EditType":"1",
 			"Description":"支持0：正方形,1：圆，默认值为0",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"strokeCap",
 			"Name":"笔触样式"
@@ -62,6 +64,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"设置当前的画笔颜色，颜色值为8位16进制",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"strokeColor",
 			"Name":"画笔颜色"
@@ -76,6 +79,7 @@
 			"Type":"Number",
 			"EditType":"1",
 			"Description":"设置画笔的宽度",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"strokeWidth",
 			"Name":"画笔宽度"
@@ -90,12 +94,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"左上坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"start",
 					"Name":"左上坐标"
@@ -105,6 +111,7 @@
 					"Type":"Node",
 					"Description":"右下坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"end",
 					"Name":"右下坐标"
@@ -114,6 +121,7 @@
 					"Type":"Number",
 					"Description":"如果为0默认与x轴重合",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"startAngle",
 					"Name":"起始角度"
@@ -123,6 +131,7 @@
 					"Type":"Number",
 					"Description":"默认为90，以起始角度开始，顺时针扫描90度",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"sweepAngle",
 					"Name":"扫描角度"
@@ -132,6 +141,7 @@
 					"Type":"Bool",
 					"Description":"如果为true，这个弧的区域就会包含中心点",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"useCenter",
 					"Name":"是否包含中心点"
@@ -145,12 +155,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"圆心坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"point",
 					"Name":"圆心坐标"
@@ -160,6 +172,7 @@
 					"Type":"Number",
 					"Description":"圆角半径",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"radius",
 					"Name":"半径"
@@ -173,12 +186,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"支持do_Bitmap对象或data://开头的路径的图片地址",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"source",
 					"Name":"图片路径"
@@ -188,6 +203,7 @@
 					"Type":"Node",
 					"Description":"从此坐标开始画，如：{x:x坐标,x:y坐标}",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"coord",
 					"Name":"坐标"
@@ -201,12 +217,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"传入两点坐标，画一条直线",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"起始点坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"start",
 					"Name":"起始点坐标"
@@ -216,6 +234,7 @@
 					"Type":"Node",
 					"Description":"终点坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"end",
 					"Name":"终点坐标"
@@ -229,12 +248,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"左上坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"start",
 					"Name":"左上坐标"
@@ -244,6 +265,7 @@
 					"Type":"Node",
 					"Description":"右下坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"end",
 					"Name":"右下坐标"
@@ -257,12 +279,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"支持画多点",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"支持点的集合，如：[{x:x坐标,y:y坐标},{x:x1坐标,y:y1坐标}...]",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"points",
 					"Name":"点的坐标集合"
@@ -276,12 +300,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"左上坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"start",
 					"Name":"左上坐标"
@@ -291,6 +317,7 @@
 					"Type":"Node",
 					"Description":"右下坐标，如：{x:x坐标,x:y坐标}",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"end",
 					"Name":"右下坐标"
@@ -304,12 +331,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"text",
 					"Name":"文本内容"
@@ -319,6 +348,7 @@
 					"Type":"Node",
 					"Description":"从此坐标开始画，如：{x:x坐标,x:y坐标}",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"coord",
 					"Name":"坐标"
@@ -328,6 +358,7 @@
 					"Type":"String",
 					"Description":"包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"fontStyle",
 					"Name":"字体风格"
@@ -337,6 +368,7 @@
 					"Type":"String",
 					"Description":"包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"textFlag",
 					"Name":"字体标示"
@@ -346,6 +378,7 @@
 					"Type":"Number",
 					"Description":"",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"fontSize",
 					"Name":"字体大小"
@@ -355,6 +388,7 @@
 					"Type":"String",
 					"Description":"对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"textAlign",
 					"Name":"文本对齐方式"
@@ -364,6 +398,7 @@
 					"Type":"Number",
 					"Description":"如果为0默认与x轴重合",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"angle",
 					"Name":"旋转角度"
@@ -377,6 +412,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"在Canvas上画出来",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"paint",
 			"ReturnType":"",

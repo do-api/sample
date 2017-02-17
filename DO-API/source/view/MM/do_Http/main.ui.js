@@ -15,7 +15,7 @@ var nf = sm("do_Notification");
  * 
  * 可以用http组件，也可以用封装的dojs
  * 组件：每个参赛都要自己配置，写法比较比较接近类的定义
- * dojs：与js语言比较接近，格式跟ajax类似，比较常规
+ * dojs：与js语言比较接近，格式跟ajax类似，比较常规 
  * 
  * */ 
 
@@ -28,9 +28,7 @@ var http = mm("do_Http");
 http.method = "GET";// GET | POST
 http.timeout = 30000; // 超时时间 : 单位 毫秒
 http.contentType = "application/json"; // Content-Type
-//http.url = "http://182.92.198.3/webencode/test/GetHeader"; // 请求的 URL
-
-http.url =encodeURI("http://dbinterface.softmarket.cn/DBHandler.ashx?db=广告联盟&sql=select* from 分类管理");
+http.url = "http://182.92.198.3/webencode/test/GetHeader"; // 请求的 URL 
 http.responseEncoding = "GBK";
 /**
  * 请求成功

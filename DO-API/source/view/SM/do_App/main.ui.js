@@ -58,7 +58,7 @@ ui("do_Button_1").on("touch",function(data){
 		statusBarState:"transparent", 
 		statusBarFgColor:"", 
 		statusBarBgColor:"99961CFF", 
-		id:"app_main"}, 
+		id:"app_page1"}, 
 		function(data, e) {
 		deviceone.print("打开文件1");
 	}); 

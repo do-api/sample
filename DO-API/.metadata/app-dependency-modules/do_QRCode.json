@@ -1,5 +1,6 @@
 {
 	"Description":"二维码的生成和识别；其中iOS平台的二维码识别功能系统需要iOS8级以上的系统，设备需要5S及以上产品",
+	"Keyword":"信息识别",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -58,7 +59,7 @@
 		}
 	],
 	"IOS":{
-		"MinVersion":"8",
+		"MinVersion":"8.0",
 		"Support":1
 	},
 	"Properties":[],
@@ -69,10 +70,12 @@
 	},
 	"syncMethodes":[],
 	"Type":"SM",
+	"BBS":"",
 	"Version":"Internal",
 	"Events":[],
+	"UIType":"Layout",
 	"ID":"do_QRCode",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_QRCode/QR二维码.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_QRCode/QR二维码.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",
