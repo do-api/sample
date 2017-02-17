@@ -15,7 +15,11 @@ page.on("back",function(){
 
 ui("do_Button_1").on("touch",function(data){
 	 
-		app.openPage("source://view/SM/do_App/page2.ui");//普通的打开
+		app.openPage(
+				{
+					source: "source://view/SM/do_App/page2.ui",
+					id:"app_page2"
+				});
 		
 }); 
 
