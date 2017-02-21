@@ -44,7 +44,7 @@ target1.fillAfter=0;//属性名称 :	是否保持动画的最后一帧在View上
  * id	String		否	每次调用这个函数都会创建一个新的动画属性集合，如果动画id一样，则会覆盖旧的动画属性值
  * */
 target1.alpha({
-	delay:1000,
+	delay:300,
 	duration:2000,
 	curve:4,
 	repeatCount:2,
@@ -80,15 +80,15 @@ target2.fillAfter=0;//属性名称 :	是否保持动画的最后一帧在View上
 	id	String		否	每次调用这个函数都会创建一个新的动画属性集合，如果动画id一样，则会覆盖旧的动画属性值
  * **/
 target2.rotate({ 
-	delay:1000,
+	delay:300,
 	duration:2000,
 	curve:4,
 	repeatCount:2,
 	autoReverse:true,
 	fromDegree:0,
 	fromDegree:60,
-	pivotX:50,
-	pivotY:50 
+	pivotX:0.5,
+	pivotY:1 
 	
 }, "_r1");
 
@@ -126,7 +126,7 @@ target3.fillAfter=0;//属性名称 :	是否保持动画的最后一帧在View上
  * 
  * **/
 target3.scale({
-	delay:1000,
+	delay:300,
 	duration:2000,
 	curve:4,
 	repeatCount:2,
@@ -135,8 +135,8 @@ target3.scale({
 	scaleFromY:60,
 	scaleToX:60,
 	scaleToY:120,
-	pivotX:50,
-	pivotY:50 
+	pivotX:0.2,
+	pivotY:0.5 
 }, "_s1");
 
 ui("do_Button_3").on("touch",function(body){

@@ -28,7 +28,7 @@ var str="deviceone";//被加密的字符串
 var btn1=ui("do_Button_1");
 btn1.on("touch",function(){
  
-	 
+	target1.base64("");
 });
 var btn2=ui("do_Button_2");
 btn2.on("touch",function(){
