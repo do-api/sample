@@ -63,6 +63,10 @@
             "NAME":"do_Camera",
             "TYPE":"SM"
         },{
+            "MSG":"文件缓存",
+            "NAME":"do_DataCache",
+            "TYPE":"SM"
+        },{
             "MSG":"设备",
             "NAME":"do_Device",
             "TYPE":"SM"
