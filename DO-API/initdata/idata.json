@@ -3,6 +3,10 @@
     ],
     "SM":[
         {
+            "MSG":"3DTouch",
+            "NAME":"do_3DTouch",
+            "TYPE":"SM" 
+        },{
             "MSG":"加速传感器",
             "NAME":"do_AccelerometerSensor",
             "TYPE":"SM" 
