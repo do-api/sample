@@ -1,0 +1,13 @@
+{
+	"RootView":{
+		"bgColor":"FF0000FF",
+		"id":"do_Label_1",
+		"fontColor":"FFFFFFFF",
+		"text":"聊天界面",
+		"height":"120",
+		"width":"750",
+		"textAlign":"center",
+		"fontSize":"35",
+		"type":"do_Label"
+	}
+}

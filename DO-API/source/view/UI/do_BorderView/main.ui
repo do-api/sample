@@ -1,0 +1,30 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"10",
+				"width":"730",
+				"y":"116",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"type":"do_Label",
+				"height":"116"
+			},
+			{
+				"bgColor":"BDBDBDFF",
+				"x":"204",
+				"width":"328",
+				"y":"339",
+				"fontSize":"24",
+				"id":"do_Button_1",
+				"text":"普通效果",
+				"type":"do_Button"
+			}
+		],
+		"height":"1334"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"RootView":{
+		"bgColor":"C0C0C0FF",
+		"templates":"source://view/UI/do_BorderView/one/templates/chat_cell_left.ui,source://view/UI/do_BorderView/one/templates/chat_cell_right.ui",
+		"width":"750",
+		"id":"chatList",
+		"type":"do_ListView",
+		"height":"-1"
+	}
+}

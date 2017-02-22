@@ -1,0 +1,32 @@
+{
+	"RootView":{
+		"bgColor":"00000000",
+		"width":"750",
+		"id":"root",
+		"type":"do_LinearLayout",
+		"views":[
+			{
+				"margin":"50,10,50,150",
+				"bgColor":"00000000",
+				"width":"460",
+				"x":"150",
+				"y":"50",
+				"id":"do_BorderView_1",
+				"rightView":"source://view/UI/do_BorderView/one/templates/right_cell.ui",
+				"type":"do_BorderView",
+				"height":"-1"
+			},
+			{
+				"margin":"50,10,50,10",
+				"x":"630",
+				"y":"50",
+				"id":"do_ImageView_1",
+				"source":"source://view/UI/do_BorderView/one/image/bbb.jpg",
+				"type":"do_ImageView",
+				"height":"100"
+			}
+		],
+		"height":"-1",
+		"direction":"horizontal"
+	}
+}
