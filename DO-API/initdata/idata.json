@@ -204,6 +204,10 @@
             "NAME":"do_BarcodeView",
             "TYPE":"UI"
         },{
+            "MSG":"边界视图",
+            "NAME":"do_BorderView",
+            "TYPE":"UI"
+        },{
             "MSG":"按钮控件",
             "NAME":"do_Button",
             "TYPE":"UI"

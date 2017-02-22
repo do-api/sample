@@ -1,0 +1,14 @@
+{
+	"RootView":{
+		"bgColor":"80FF00FF",
+		"id":"chatText",
+		"text":"hello!天安门，我是右边",
+		"height":"-1",
+		"width":"-1",
+		"maxLines":"-1",
+		"margin":"50,0,50,10",
+		"border":"DCFECDFF,0,[20,20,20,20]",
+		"fontSize":"35",
+		"type":"do_Label"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"RootView":{
+		"bgColor":"C0C0C0FF",
+		"id":"faceView",
+		"height":"300",
+		"views":[],
+		"width":"750",
+		"type":"do_ALayout",
+		"y":"0",
+		"x":"0"
+	}
+}

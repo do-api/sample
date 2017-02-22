@@ -1,0 +1,14 @@
+{
+	"RootView":{
+		"bgColor":"FF0080FF",
+		"topView":"source://view/UI/do_BorderView/one/topView.ui",
+		"bottomView":"source://view/UI/do_BorderView/one/bottomView_l.ui",
+		"width":"750",
+		"fillParent":"top",
+		"centerView":"source://view/UI/do_BorderView/one/center.ui",
+		"id":"do_BorderView_1",
+		"centerFillParent":"true",
+		"type":"do_BorderView",
+		"height":"1334"
+	}
+}
