@@ -1,0 +1,29 @@
+{
+	"RootView":{
+		"bgColor":"74BEACFF",
+		"x":"0",
+		"width":"650",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"56",
+				"width":"546",
+				"y":"150",
+				"id":"do_WebView_1",
+				"type":"do_WebView",
+				"url":"http://www.deviceone.net/",
+				"height":"516"
+			},
+			{
+				"x":"133",
+				"width":"365",
+				"y":"34",
+				"id":"do_Label_1",
+				"type":"do_Label",
+				"height":"68"
+			}
+		],
+		"height":"700"
+	}
+}

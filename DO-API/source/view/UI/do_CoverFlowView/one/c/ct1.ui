@@ -1,0 +1,30 @@
+{
+	"RootView":{
+		"bgColor":"866089FF",
+		"x":"0",
+		"width":"650",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"bgColor":"949494FF",
+				"x":"193",
+				"width":"264",
+				"y":"181",
+				"fontSize":"30",
+				"id":"do_Button_1",
+				"text":"第一个界面",
+				"type":"do_Button",
+				"height":"312"
+			},
+			{
+				"x":"165",
+				"width":"325",
+				"y":"41",
+				"id":"do_Label_1",
+				"type":"do_Label"
+			}
+		],
+		"height":"700"
+	}
+}
