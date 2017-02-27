@@ -66,51 +66,50 @@
 				"y":"353",
 				"fontSize":"24",
 				"id":"do_Button_7",
-				"text":"md5",
-				"type":"do_Button",
-				"height":"50"
-			},
-			{
-				"bgColor":"C0C0C0FF",
-				"x":"360",
-				"width":"200",
-				"y":"457",
-				"fontSize":"24",
-				"id":"do_Button_8",
-				"text":"sha1",
-				"type":"do_Button",
-				"height":"50"
-			},
-			{
-				"bgColor":"C0C0C0FF",
-				"x":"360",
-				"width":"200",
-				"y":"571",
-				"fontSize":"24",
-				"id":"do_Button_9",
 				"text":"xml2Json",
 				"type":"do_Button",
 				"height":"50"
 			},
 			{
-				"bgColor":"00000000",
-				"x":"44",
-				"width":"584",
-				"y":"258",
-				"id":"do_Label_2",
-				"type":"do_Label",
-				"height":"68"
-			},
-			{
-				"x":"47",
-				"width":"577",
-				"y":"853",
+				"x":"10",
+				"width":"730",
+				"y":"950",
+				"maxLines":"15",
 				"fontSize":"24",
-				"id":"do_Label_3",
+				"id":"do_Label_2",
 				"text":"加密前：deviceone",
 				"type":"do_Label",
 				"fontStyle":"italic",
-				"height":"216"
+				"height":"-1"
+			},
+			{
+				"x":"557",
+				"y":"225",
+				"id":"do_ImageView_1",
+				"source":"source://view/SM/do_Algorithm/images/wx.png",
+				"type":"do_ImageView"
+			},
+			{
+				"bgColor":"C0C0C0FF",
+				"x":"39",
+				"width":"200",
+				"y":"771",
+				"fontSize":"24",
+				"id":"do_Button_5",
+				"text":"md5",
+				"type":"do_Button",
+				"height":"61"
+			},
+			{
+				"bgColor":"C0C0C0FF",
+				"x":"40",
+				"width":"200",
+				"y":"867",
+				"fontSize":"24",
+				"id":"do_Button_6",
+				"text":"sha1",
+				"type":"do_Button",
+				"height":"56"
 			}
 		],
 		"height":"1334"
