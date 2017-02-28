@@ -9,8 +9,7 @@ var page = sm("do_Page");
 var nf = sm("do_Notification"); 
 
 
-var target1 = sm("do_Algorithm");//实例化一个位图对象
-var str="deviceone";//被加密的字符串
+var target1 = sm("do_Algorithm");//实例化一个位图对象 
 
 /**
  * SM 组件方法

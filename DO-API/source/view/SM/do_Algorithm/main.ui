@@ -1,8 +1,6 @@
 {
 	"RootView":{
-		"x":"0",
 		"width":"750",
-		"y":"0",
 		"type":"do_ALayout",
 		"views":[
 			{
@@ -19,7 +17,7 @@
 				"bgColor":"C0C0C0FF",
 				"x":"40",
 				"width":"200",
-				"y":"353",
+				"y":"350",
 				"fontSize":"24",
 				"id":"do_Button_1",
 				"text":"base64",
@@ -30,7 +28,7 @@
 				"bgColor":"C0C0C0FF",
 				"x":"40",
 				"width":"200",
-				"y":"459",
+				"y":"450",
 				"fontSize":"24",
 				"id":"do_Button_2",
 				"text":"des3",
@@ -41,7 +39,7 @@
 				"bgColor":"C0C0C0FF",
 				"x":"40",
 				"width":"200",
-				"y":"572",
+				"y":"560",
 				"fontSize":"24",
 				"id":"do_Button_3",
 				"text":"hex2Binary",
@@ -50,9 +48,9 @@
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"42",
+				"x":"360",
 				"width":"200",
-				"y":"681",
+				"y":"350",
 				"fontSize":"24",
 				"id":"do_Button_4",
 				"text":"hex2Str",
@@ -61,9 +59,9 @@
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"360",
-				"width":"200",
-				"y":"353",
+				"x":"40",
+				"width":"520",
+				"y":"734",
 				"fontSize":"24",
 				"id":"do_Button_7",
 				"text":"xml2Json",
@@ -83,33 +81,26 @@
 				"height":"-1"
 			},
 			{
-				"x":"557",
-				"y":"225",
-				"id":"do_ImageView_1",
-				"source":"source://view/SM/do_Algorithm/images/wx.png",
-				"type":"do_ImageView"
-			},
-			{
 				"bgColor":"C0C0C0FF",
-				"x":"39",
+				"x":"360",
 				"width":"200",
-				"y":"771",
+				"y":"450",
 				"fontSize":"24",
 				"id":"do_Button_5",
 				"text":"md5",
 				"type":"do_Button",
-				"height":"61"
+				"height":"50"
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"x":"40",
+				"x":"360",
 				"width":"200",
-				"y":"867",
+				"y":"560",
 				"fontSize":"24",
 				"id":"do_Button_6",
 				"text":"sha1",
 				"type":"do_Button",
-				"height":"56"
+				"height":"50"
 			}
 		],
 		"height":"1334"
