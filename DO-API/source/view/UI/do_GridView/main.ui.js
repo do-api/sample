@@ -2,12 +2,6 @@
  * related to main.ui
  * 
  * @Author : cxxf
- * @Timestamp : 2017-01-19
- */
-/**
- * related to main.ui
- * 
- * @Author : cxxf
  * @Timestamp : 2016-12-21
  */
 var nf = sm("do_Notification");
