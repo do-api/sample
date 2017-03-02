@@ -1,0 +1,30 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"10",
+				"width":"730",
+				"y":"60",
+				"maxLines":"3",
+				"fontSize":"24",
+				"id":"do_Label_1",
+				"text":"ndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面",
+				"type":"do_Label",
+				"height":"120"
+			},
+			{
+				"templates":"source://view/UI/do_IndexListView/cell/temp.ui,source://view/UI/do_IndexListView/cell/temp1.ui",
+				"width":"750",
+				"y":"213",
+				"id":"do_IndexListView_1",
+				"type":"do_IndexListView",
+				"height":"655"
+			}
+		],
+		"height":"1334"
+	}
+}
