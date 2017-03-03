@@ -7,8 +7,7 @@
 		"views":[
 			{
 				"templates":"source://view/UI/do_ListView/moretemplate/cell/c1.ui,source://view/UI/do_ListView/moretemplate/cell/c2.ui",
-				"x":"25",
-				"width":"700",
+				"width":"750",
 				"y":"100",
 				"id":"do_ListView_1",
 				"type":"do_ListView",

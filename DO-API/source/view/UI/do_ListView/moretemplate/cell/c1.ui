@@ -1,5 +1,6 @@
 {
 	"RootView":{
+		"bgColor":"BBBBBBFF",
 		"x":"0",
 		"width":"750",
 		"y":"0",
@@ -8,6 +9,7 @@
 			{
 				"x":"75",
 				"y":"20",
+				"fontSize":"24",
 				"id":"do_Button_1",
 				"type":"do_Button",
 				"height":"60"
