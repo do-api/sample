@@ -1,28 +1,28 @@
 {
 	"RootView":{
-		"bgColor":"A1D017FF",
+		"bgColor":"F8FFF6FF",
 		"x":"0",
 		"width":"750",
 		"y":"0",
 		"type":"do_ALayout",
 		"views":[
 			{
-				"x":"42",
-				"width":"150",
-				"y":"30",
-				"fontSize":"30",
+				"x":"43",
+				"width":"249",
+				"y":"14",
+				"fontSize":"24",
 				"id":"do_Label_1",
 				"type":"do_Label"
 			},
 			{
-				"x":"260",
-				"width":"448",
-				"y":"30",
-				"fontSize":"30",
+				"x":"454",
+				"width":"248",
+				"y":"12",
+				"fontSize":"24",
 				"id":"do_Label_2",
 				"type":"do_Label"
 			}
 		],
-		"height":"168"
+		"height":"100"
 	}
 }
