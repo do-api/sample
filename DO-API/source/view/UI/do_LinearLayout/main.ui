@@ -8,10 +8,42 @@
 			{
 				"x":"10",
 				"width":"730",
-				"y":"107",
+				"y":"68",
+				"maxLines":"3",
+				"fontSize":"24",
 				"id":"do_Label_1",
+				"text":"横、纵向布局。如果是纵向布局的话，所有内部子控件都从上向下排列，不会有重合，当height=-1时，表示自动高度，整个layout的高度是所有内部子控件的高之和。\n如果是横向布局的话，当width=-1时，所有内部组件横向方向顺序排列，宽度是所有子控件宽度之和",
 				"type":"do_Label",
-				"height":"100"
+				"height":"137"
+			},
+			{
+				"bgColor":"C6C6C6FF",
+				"x":"243",
+				"width":"469",
+				"y":"260",
+				"id":"do_LinearLayout_1",
+				"type":"do_LinearLayout",
+				"height":"125"
+			},
+			{
+				"x":"34",
+				"width":"188",
+				"y":"259",
+				"maxLines":"5",
+				"fontSize":"24",
+				"id":"do_Label_2",
+				"text":"默认可点击",
+				"type":"do_Label",
+				"height":"128"
+			},
+			{
+				"x":"10",
+				"width":"730",
+				"y":"1000",
+				"fontSize":"24",
+				"id":"do_Label_3",
+				"type":"do_Label",
+				"height":"-1"
 			}
 		],
 		"height":"1334"
