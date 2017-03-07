@@ -7,6 +7,6 @@
 var root=ui("$");
 
 root.setMapping({
-	"do_Label_1.Text":"name",
-	"do_Label_2.Text":"author"
+	"do_Label_1.text":"name",
+	"do_Label_2.text":"author"
 });

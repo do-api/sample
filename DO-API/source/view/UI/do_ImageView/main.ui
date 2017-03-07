@@ -60,12 +60,14 @@
 				"height":"100"
 			},
 			{
+				"border":"00000000,50,[50,50,50,50]",
 				"x":"457",
 				"y":"491",
 				"id":"do_ImageView_4",
 				"source":"source://view/UI/do_ImageView/image/126192DC-096C-46E3-9E23-1E643E46DBEB.png",
 				"type":"do_ImageView",
 				"radius":"49",
+				"enabled":"true",
 				"height":"100"
 			},
 			{

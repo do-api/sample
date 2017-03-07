@@ -7,13 +7,17 @@
 var app=sm("do_App");
 var page=sm("do_Page"); 
 
-var target=ui("do_ListView_1");
-var ld=mm("do_ListData");
 
 //关闭当前页
 page.on("back",function(data){
 	app.closePage();
 });
+
+
+var target=ui("do_ListView_1");
+var ld=mm("do_ListData");
+
+
 /**
  * 属性：
  * */
@@ -32,7 +36,7 @@ page.on("back",function(data){
  */
 
 //bindItems	绑定item的数据	同步方法
-target.bindItems(ld);//必填
+
 var _d=[
     	{"name":"爸爸妈妈","author":"林俊杰"},
     	{"name":"和你一样","author":"李宇春"},
@@ -47,6 +51,7 @@ var _d=[
     	{"name":"凉凉","author":"三生三世主题曲"}
     ]
 ld.addData(_d);
+target.bindItems(ld);//必填
 //refreshItems	刷新item数据	同步方法
 target.refreshItems();//必填
 //rebound	复位	同步方法

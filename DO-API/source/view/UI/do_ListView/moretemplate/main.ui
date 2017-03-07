@@ -8,10 +8,21 @@
 			{
 				"templates":"source://view/UI/do_ListView/moretemplate/cell/c1.ui,source://view/UI/do_ListView/moretemplate/cell/c2.ui",
 				"width":"750",
-				"y":"100",
+				"y":"200",
 				"id":"do_ListView_1",
 				"type":"do_ListView",
 				"height":"709"
+			},
+			{
+				"x":"10",
+				"width":"730",
+				"y":"50",
+				"maxLines":"3",
+				"fontSize":"24",
+				"id":"do_Label_1",
+				"text":"listview的多模版",
+				"type":"do_Label",
+				"height":"120"
 			}
 		],
 		"height":"1334"

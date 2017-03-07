@@ -8,6 +8,10 @@
  var app = sm("do_App");
  var page = sm("do_Page");
  
+//关闭当前页
+ page.on("back",function(data){
+ 	app.closePage();
+ });
  
  var listview = ui("do_ListView_1");
  

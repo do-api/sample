@@ -58,6 +58,11 @@ ui("do_Button_1").on("touch",function(){
    * 
    */
 
+
+ui("do_Button_3").on("touch", function(data) {
+	deviceone.print("111");
+	ui("do_ALayout_7").show("slide_l2r");
+})
 /********************************************/
 //重置
 ui("do_Button_2").on("touch",function(){

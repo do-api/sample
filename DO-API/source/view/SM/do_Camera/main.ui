@@ -36,6 +36,14 @@
 				"text":"打开前置摄像头相机",
 				"type":"do_Button",
 				"height":"60"
+			},
+			{
+				"width":"750",
+				"scale":"fillxory",
+				"y":"600",
+				"id":"iv",
+				"type":"do_ImageView",
+				"height":"700"
 			}
 		],
 		"height":"1334"
