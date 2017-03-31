@@ -8,6 +8,8 @@ var app = sm("do_App");
 var page = sm("do_Page");
 var nf = sm("do_Notification"); 
 
+
+//
 var target1 = sm("do_Dialog");//实例化一个位图对象 
 var pata=target1.getData();//获取信息
 

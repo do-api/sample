@@ -25,6 +25,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"支持data://与source://目录",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"url",
 			"Name":"打开的pdf文件路径"
@@ -39,6 +40,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"返回总共页数以及当前页数",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getPageCount",
 			"ReturnType":"Node",
@@ -48,12 +50,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Number",
 					"Description":"",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"page",
 					"Name":"页数"
@@ -67,6 +71,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"next",
 			"ReturnType":"",
@@ -76,6 +81,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"prev",
 			"ReturnType":"",
@@ -90,6 +96,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"页面切换时触发",
+			"Deprecated":false,
 			"ID":"pageChanged",
 			"ReturnType":"Node",
 			"ReturnDesc":"{'total':100,'current':2}"

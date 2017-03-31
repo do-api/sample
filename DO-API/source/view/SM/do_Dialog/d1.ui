@@ -1,9 +1,8 @@
 {
 	"RootView":{
 		"bgColor":"F3F3F3FF",
-		"x":"0",
-		"width":"750",
-		"y":"0",
+		"x":"25",
+		"width":"700",
 		"id":"back",
 		"type":"do_ALayout",
 		"views":[

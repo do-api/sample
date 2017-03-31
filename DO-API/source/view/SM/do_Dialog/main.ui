@@ -31,7 +31,6 @@
 				"maxLines":"15",
 				"fontSize":"24",
 				"id":"do_Label_2",
-				"text":"加密前：deviceone",
 				"type":"do_Label",
 				"fontStyle":"italic",
 				"height":"-1"

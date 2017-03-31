@@ -1,5 +1,6 @@
 {
 	"Description":"使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上",
+	"Keyword":"网络通信",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -10,13 +11,17 @@
 	},
 	"asyncMethodes":[
 		{
+			"ReturnType_JavaScript":"Bool",
 			"Description":"根据指定唯一标识（MAC/UUID）连接BLE终端蓝牙设备，并通过设置UUIDs监听已发现服务的所有特征",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"BLE终端设备mac地址/IOS对应设备UUID",
 					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
 					"ID":"address",
 					"Name":"mac地址/UUID"
 				},
@@ -25,6 +30,8 @@
 					"Type":"Node",
 					"Description":"监听发现服务UUIDs，参数格式:{[服务UUID1,服务UUID2,...]}",
 					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"Node",
 					"ID":"serviceUUIDs",
 					"Name":"服务UUIDs"
 				}
@@ -47,7 +54,9 @@
 	},
 	"syncMethodes":[
 		{
+			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"close",
 			"ReturnType":"",
@@ -55,7 +64,9 @@
 			"ReturnDesc":"关闭后需要重新打开蓝牙"
 		},
 		{
+			"ReturnType_JavaScript":"Bool",
 			"Description":"蓝牙打开后会搜索周围所有BLE终端外围设备（设备需要先打开蓝牙），搜索到后会触发scan事件",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"open",
 			"ReturnType":"Bool",
@@ -63,13 +74,17 @@
 			"ReturnDesc":"true成功，false失败"
 		},
 		{
+			"ReturnType_JavaScript":"",
 			"Description":"往BLE终端蓝牙模块服务特征写入数据，该特征需具备WRITE权限",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"写入数据，内容转成16进制值输出",
 					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
 					"ID":"data",
 					"Name":"数据"
 				},
@@ -78,6 +93,8 @@
 					"Type":"String",
 					"Description":"写入特征UUID",
 					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
 					"ID":"charUUID",
 					"Name":"特征UUID"
 				}
@@ -89,29 +106,37 @@
 		}
 	],
 	"Type":"MM",
+	"BBS":"",
 	"Version":"Internal",
 	"Events":[
 		{
+			"ReturnType_JavaScript":"Node",
 			"Description":"特征改变",
+			"Deprecated":false,
 			"ID":"characteristicChanged",
 			"ReturnType":"Node",
 			"ReturnDesc":"收到BLE终端服务特征写入数据时触发该事件，android平台一个特征最大接受20byte，iOS平台一个特征最大接受155byte，value输出为16进制值，{特征uuid:'28923DE7-2E5D-4E81-8264-86BE1B9C4B51',value:'1234567890abcdef'}"
 		},
 		{
+			"ReturnType_JavaScript":"String",
 			"Description":"连接状态改变",
+			"Deprecated":false,
 			"ID":"connectionStateChange",
 			"ReturnType":"String",
 			"ReturnDesc":"监听连接状态，当连接状态发生变化触发该事件，0：断开、1：连接"
 		},
 		{
+			"ReturnType_JavaScript":"Node",
 			"Description":"搜索外围设备",
+			"Deprecated":false,
 			"ID":"scan",
 			"ReturnType":"Node",
-			"ReturnDesc":"搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1'}"
+			"ReturnDesc":"搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1',RSSI:'接收的信号强度指示,单位dBm,127是保留值，标示无效'}"
 		}
 	],
+	"UIType":"Layout",
 	"ID":"do_Bluetooth",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Bluetooth/蓝牙视图.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Bluetooth/蓝牙视图.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"",

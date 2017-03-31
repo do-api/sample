@@ -13,12 +13,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Number",
 					"Description":"不设置表示原始大小",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"width",
 					"Name":"裁剪后的图片的宽度"
@@ -28,6 +30,7 @@
 					"Type":"Number",
 					"Description":"不设置表示原始大小",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"height",
 					"Name":"裁剪后的图片的高度 "
@@ -37,6 +40,7 @@
 					"Type":"Number",
 					"Description":"100表示原始的图片质量，清晰度越低，图片文件大小越小。windows平台不支持",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"quality",
 					"Name":"清晰度1-100"
@@ -46,6 +50,7 @@
 					"Type":"Bool",
 					"Description":"如果这个值为true的话，拍照结束后会出现一个中间的取景界面，有一个矩形框让用户选择局部区域；windowsPhone不支持",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"iscut",
 					"Name":"是否启动中间取景界面"
@@ -55,6 +60,7 @@
 					"Type":"Bool",
 					"Description":"如果这个值为true的话，一启动拍照会打开前置摄像头",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"facingFront",
 					"Name":"启动前置摄像头"
@@ -64,6 +70,7 @@
 					"Type":"String",
 					"Description":"要保存的图片文件路径，支持数据区data://，指定到文件名，若不填写则默认保存到data://temp/do_Camera/目录下",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"outPath",
 					"Name":"保存路径"
@@ -92,7 +99,7 @@
 	"Events":[],
 	"UIType":"Layout",
 	"ID":"do_Camera",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Camera/照相.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Camera/照相.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

@@ -80,6 +80,11 @@ target.on("longTouch1", function(data, e) {
 });
 //pull	下拉headerview事件
 target.on("pull", function(data, e) {
+	
+	deviceone.print(data.offset,data.state);
+	if(data.state==2){
+		target.rebound();
+	}
 	var res="pull事件拉headerview触发，返回值类型为："+typeof(data)+"返回值为："+JSON.stringify(data);
 	resultshow(res);
 });

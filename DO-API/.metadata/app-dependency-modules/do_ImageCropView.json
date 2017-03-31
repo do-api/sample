@@ -13,6 +13,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"根据裁剪区域，裁剪图片",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"crop",
 			"ReturnType":"String",
@@ -35,6 +36,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"设置裁剪区域的宽高，width,height，中间用逗号隔开；裁剪区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示，Windows平台不支持",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"cropArea",
 			"Name":"裁剪的区域"
@@ -49,6 +51,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"可设置本地文件，支持 data:// source:// 打头",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"source",
 			"Name":"图片路径"
@@ -66,7 +69,7 @@
 	"Events":[],
 	"UIType":"View",
 	"ID":"do_ImageCropView",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_ImageCropView/裁剪图片视图.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_ImageCropView/裁剪图片视图.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

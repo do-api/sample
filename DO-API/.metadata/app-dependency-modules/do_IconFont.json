@@ -20,11 +20,27 @@
 				"Type":"Text",
 				"Data":[]
 			},
+			"DefaultValue":"Text",
+			"Group":"",
+			"Type":"String",
+			"EditType":"1",
+			"Description":"aaa",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
+			"ID":"enabled",
+			"Name":"的呃呃"
+		},
+		{
+			"Design":{
+				"Type":"Text",
+				"Data":[]
+			},
 			"DefaultValue":"",
 			"Group":"",
 			"Type":"String",
 			"EditType":"1",
 			"Description":"解压缩下载的字库包，打开“demo_unicode.html”查找该字体名称下每个图标所对应的HTML实体Unicode码，一般为8位的Unicode字符，比如：“关闭”对应的HTML实体Unicode码为：&#xe640，只需传递后四位字符即可",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"iconCode",
 			"Name":"字库对应图标代码"
@@ -39,6 +55,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"获取或设置控件前景色，为8位16进制整数，前6位为rgb颜色值，后两位为透明度",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"iconColor",
 			"Name":"字体颜色"
@@ -53,6 +70,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"创建UIFont使用的是字体名，解压缩下载的字库包，双击打开“iconfont.ttf”，取字体名称项即可（Android平台取得是.ttf文件名，所以在DO平台上传的.ttf文件需要保持跟iconfont.ttf文件中字体名称同名）",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"iconName",
 			"Name":"字体名称"
@@ -67,6 +85,7 @@
 			"Type":"Number",
 			"EditType":"1",
 			"Description":"",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"iconSize",
 			"Name":"字体大小"
@@ -77,7 +96,18 @@
 		"MinVersion":"4.0",
 		"Support":1
 	},
-	"syncMethodes":[],
+	"syncMethodes":[
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"ss",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"ss",
+			"ReturnType":"",
+			"Name":"sq",
+			"ReturnDesc":""
+		}
+	],
 	"Type":"UI",
 	"BBS":"",
 	"Version":"Internal",
@@ -85,6 +115,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"点击触发",
+			"Deprecated":false,
 			"ID":"touch",
 			"ReturnType":"String",
 			"ReturnDesc":""

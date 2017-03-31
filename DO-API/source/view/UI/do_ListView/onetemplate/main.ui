@@ -26,7 +26,9 @@
 				"type":"do_Button"
 			},
 			{
+				"isHeaderVisible":"true",
 				"bgColor":"00000000",
+				"isFooterVisible":"true",
 				"templates":"source://view/UI/do_ListView/onetemplate/c/c.ui",
 				"width":"750",
 				"y":"200",

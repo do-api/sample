@@ -89,7 +89,7 @@ ui("do_Button_8").on("Touch",function(data){
 /********************************************/
 function resultshow(res){
 	var data="当前状态："+ res;
-	ui("do_Label_3").set("Text",data);
+	ui("do_Label_3").set("text",data);
 	
 }
 

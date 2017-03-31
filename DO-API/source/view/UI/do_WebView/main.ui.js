@@ -4,8 +4,13 @@
  * @Author : cxxf
  * @Timestamp : 2017-03-03
  */
-var  app=ui("do_App");
-var  page=ui("do_Page");
+var app=sm("do_App");
+var page=sm("do_Page");
+//关闭页面
+page.on("touch",function(data){
+	app.closePage();
+	
+});
 
 var target=ui("do_WebView_1");
  
@@ -21,7 +26,6 @@ var target=ui("do_WebView_1");
  
 
 /**
- * hello
  * 事件
  **/
 

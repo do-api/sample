@@ -65,7 +65,7 @@ ui("do_Button_3").on("touch", function(data) {
 })
 /********************************************/
 //重置
-ui("do_Button_2").on("touch",function(){
+ui("do_Button_2").on("touch",function(){ 
 	target.set("enabled",true);
 	resultlbldata("重置为可点击"); 
 });

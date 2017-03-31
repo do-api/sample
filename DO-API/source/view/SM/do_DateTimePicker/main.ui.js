@@ -24,7 +24,7 @@ var target_1 = sm("do_DateTimePicker");
 
 ui("do_Button_1").on("touch",function(data){ 
 	//type 必填
-	target_1.show({
+	sm("do_DateTimePicker").show({
 		type:0, 
 		data:"", 
 		maxDate:"", 
@@ -33,6 +33,36 @@ ui("do_Button_1").on("touch",function(data){
 		buttons:["取消","确定"]
 	}, function(data, e) {
 		deviceone.print(JSON.stringify(data),typeof(data));
+		var timeFormat=new Date();
+		var year = timeFormat.getFullYear();//获取完整的年份(4位,1970-????)
+		var month = timeFormat.getMonth()+1; //获取当前月份(0-11,0代表1月)
+		var date = timeFormat.getDate(); //获取当前日(1-31)
+		var hour=timeFormat.getHours();
+		var Minutes=timeFormat.getMinutes();
+		var Seconds=timeFormat.getSeconds();
+		
+		deviceone.print("年是=="+year);
+		deviceone.print("月是=="+month);
+		deviceone.print("日是=="+date);
+		deviceone.print("时是=="+hour);
+		deviceone.print("分是=="+Minutes); 
+		deviceone.print("秒是=="+Seconds); 
+		
+		var user=new Date(year,month,date,hour,Minutes,Seconds);
+		var useryear = user.getFullYear();//获取完整的年份(4位,1970-????)
+		var usermonth = user.getMonth()+1; //获取当前月份(0-11,0代表1月)
+		var userdate = user.getDate(); //获取当前日(1-31)
+		deviceone.print("年是-----"+useryear);
+		deviceone.print("月是-----"+usermonth);
+		deviceone.print("日是-----"+userdate);
+		deviceone.print("时是=="+user.getHours());
+		deviceone.print("分是=="+user.getMinutes()); 
+		deviceone.print("秒是=="+user.getSeconds()); 
+	    var _n=	Number.parseInt(data.time); 
+		var uu=new Date(_n);
+		deviceone.print("年是-----"+uu.getFullYear()+"月是-----"+ uu.getMonth()+1+"日是------"+uu.getDate()+"时是------"+uu.getHours()+"分是------"+uu.getMinutes()+"秒是------"+uu.getSeconds());
+		
+		
 	})
 	
 })  

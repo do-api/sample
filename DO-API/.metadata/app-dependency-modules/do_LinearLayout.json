@@ -25,6 +25,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"可设置本地文件：支持data://和source://两种方式。文件格式说明参考Storage类",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"bgImage",
 			"Name":"背景图片"
@@ -48,6 +49,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"背景图片填充方式，缺省为fillxy，win8不支持repeatxy方式：\r\nfillxy：拉伸图片（不按比例）以填充layout的宽高\r\nrepeatxy：按原图大小重复填充",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"bgImageFillType",
 			"Name":"背景图片填充方式"
@@ -71,6 +73,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"支持2种方向布局，只允许设计器修改：\r\nhorizontal：横向布局\r\nvertical：纵向布局",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"direction",
 			"Name":"布局方向"
@@ -85,6 +88,7 @@
 			"Type":"Bool",
 			"EditType":"1",
 			"Description":"缺省为'true'，如果enable为true，则Layout是可以点击的，touch事件才有意义，否则不可点击",
+			"Deprecated":false,
 			"Type_JavaScript":"Bool",
 			"ID":"enabled",
 			"Name":"是否可点击"
@@ -99,6 +103,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"0,0,0,0 分别表示上，右，下，左的内边距，通常只用于height和width为-1的情况",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"padding",
 			"Name":"内边距"
@@ -113,12 +118,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"可以在LinearLayout控件内动态插入新的ui组件，新的ui组件的脚本环境和LinearLayout所在的环境是一致的",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"为了确保ui自身的id属性和父容器里其他子ui的id重复。这个id作为一个在父容器的唯一标识",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"id",
 					"Name":"唯一标识"
@@ -128,6 +135,7 @@
 					"Type":"String",
 					"Description":"插入的ui对应的文件路径，支持data://和source://目录。文件格式说明请参考Storage类。",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"插入目标组件的ui文件路径"
@@ -137,6 +145,7 @@
 					"Type":"String",
 					"Description":"要插入目标组件模块的id或者地址，插入的ui加在该组件的右面或者下面，为空时表示加在LinearLayout最上面或左边。",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"插入目标组件的id或者地址"
@@ -150,6 +159,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"获取当前组件内所有第一层子view的id",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getChildren",
 			"ReturnType":"Node",
@@ -164,6 +174,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"点击触发",
+			"Deprecated":false,
 			"ID":"touch",
 			"ReturnType":"String",
 			"ReturnDesc":""

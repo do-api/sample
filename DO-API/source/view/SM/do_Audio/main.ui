@@ -103,13 +103,13 @@
 				"height":"60"
 			},
 			{
-				"x":"86",
-				"width":"589",
+				"x":"10",
+				"width":"730",
 				"y":"830",
 				"fontSize":"34",
 				"id":"do_Label_3",
-				"text":"当前状态：没有操作",
-				"type":"do_Label"
+				"type":"do_Label",
+				"height":"-1"
 			}
 		],
 		"height":"1334"

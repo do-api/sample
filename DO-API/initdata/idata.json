@@ -348,6 +348,10 @@
             "NAME":"do_SwitchView",
             "TYPE":"UI" 
         },{
+            "MSG":"集成腾讯x5内核的网页视图控件",
+            "NAME":"do_TencentWebView",
+            "TYPE":"UI"
+        },{
             "MSG":"多行文本编辑框",
             "NAME":"do_TextBox",
             "TYPE":"UI"
@@ -370,6 +374,10 @@
         },{
             "MSG":"视频录制",
             "NAME":"do_VideoRecord",
+            "TYPE":"UI"
+        },{
+            "MSG":"网页视图控件",
+            "NAME":"do_WebView",
             "TYPE":"UI"
         },{
             "MSG":"UI基类",

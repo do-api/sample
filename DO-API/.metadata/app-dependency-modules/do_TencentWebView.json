@@ -1,18 +1,18 @@
 {
-	"Description":"可以加载html网页，同时在网页中可以使用DeviceOne提供的js SDK实现跨webview的交互",
+	"Description":"集成了腾讯x5内核,可以加载html网页，拥有强大的视频播放功能",
 	"Keyword":"设备功能",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
 	},
 	"Windows":{
-		"MinVersion":"10",
-		"Support":1
+		"MinVersion":"",
+		"Support":0
 	},
 	"asyncMethodes":[
 		{
 			"ReturnType_JavaScript":"String",
-			"Description":"在WebView页面执行一段Javascript代码，并返回值；Android平台仅支持单语句执行",
+			"Description":"在页面执行一段Javascript代码，并返回值",
 			"Deprecated":false,
 			"Paras":[
 				{
@@ -54,40 +54,10 @@
 		}
 	],
 	"IOS":{
-		"MinVersion":"7.0",
+		"MinVersion":"8.0",
 		"Support":1
 	},
 	"Properties":[
-		{
-			"Design":{
-				"Type":"Boolean",
-				"Data":[]
-			},
-			"DefaultValue":"true",
-			"Group":"",
-			"Type":"Bool",
-			"EditType":"1",
-			"Description":"若想要WebView可以调用DeviceOne的函数，必须将该属性值设置为true，且在该页面的中将代码加到一个特定的函数window.onDeviceOneLoaded = function(){ //do something }方可",
-			"Deprecated":false,
-			"Type_JavaScript":"Bool",
-			"ID":"allowDeviceOne",
-			"Name":"是否加载DeviceOne函数"
-		},
-		{
-			"Design":{
-				"Type":"Boolean",
-				"Data":[]
-			},
-			"DefaultValue":"false",
-			"Group":"",
-			"Type":"Bool",
-			"EditType":"1",
-			"Description":"为true时则播放HTML页面中视频时自动全屏，为false时则在播放的时候不改变原有视频窗口大小",
-			"Deprecated":false,
-			"Type_JavaScript":"Bool",
-			"ID":"allowVideoFullScreenPlayback",
-			"Name":"HTML中的视频是否自动全屏播放"
-		},
 		{
 			"Design":{
 				"Type":"Boolean",
@@ -136,26 +106,11 @@
 			"Group":"",
 			"Type":"Bool",
 			"EditType":"1",
-			"Description":"为true时可以获取焦点，false的时候无法获取焦点",
+			"Description":"为true时可以获取焦点,false的时候无法获取焦点",
 			"Deprecated":false,
 			"Type_JavaScript":"Bool",
 			"ID":"enabled",
-			"Name":"控制WebView是否可以获取输入框焦点"
-		},
-		{
-			"Design":{
-				"Type":"FileSource",
-				"Data":[]
-			},
-			"DefaultValue":"",
-			"Group":"",
-			"Type":"String",
-			"EditType":"0",
-			"Description":"设置要显示的表头视图地址，不填但isHeaderVisible为true时有缺省样式",
-			"Deprecated":false,
-			"Type_JavaScript":"String",
-			"ID":"headerView",
-			"Name":"表头视图"
+			"Name":"控制WebView是否可以获取焦点"
 		},
 		{
 			"Design":{
@@ -166,22 +121,7 @@
 			"Group":"",
 			"Type":"Bool",
 			"EditType":"0",
-			"Description":"缺省false不显示",
-			"Deprecated":false,
-			"Type_JavaScript":"Bool",
-			"ID":"isHeaderVisible",
-			"Name":"是否显示headerview"
-		},
-		{
-			"Design":{
-				"Type":"Boolean",
-				"Data":[]
-			},
-			"DefaultValue":"false",
-			"Group":"",
-			"Type":"Bool",
-			"EditType":"0",
-			"Description":"webview的顶部有一个绿色进度条，显示加载网页的进度，缺省false不显示",
+			"Description":"组件的顶部有一个绿色进度条，显示加载网页的进度，缺省false不显示",
 			"Deprecated":false,
 			"Type_JavaScript":"Bool",
 			"ID":"isShowLoadingProgress",
@@ -226,14 +166,14 @@
 			"Group":"",
 			"Type":"Bool",
 			"EditType":"0",
-			"Description":"设置webview是否支持手势缩小放大，设置为true时支持",
+			"Description":"设置组件是否支持手势缩小放大，设置为true时支持",
 			"Deprecated":false,
 			"Type_JavaScript":"Bool",
 			"ID":"zoom",
 			"Name":"手势缩放"
 		}
 	],
-	"Name":"网页视图控件",
+	"Name":"集成腾讯x5内核的网页视图控件",
 	"Android":{
 		"MinVersion":"4.0",
 		"Support":1
@@ -291,16 +231,6 @@
 		},
 		{
 			"ReturnType_JavaScript":"",
-			"Description":"headerview复位",
-			"Deprecated":false,
-			"Paras":[],
-			"ID":"rebound",
-			"ReturnType":"",
-			"Name":"headerview复位",
-			"ReturnDesc":""
-		},
-		{
-			"ReturnType_JavaScript":"",
 			"Description":"",
 			"Deprecated":false,
 			"Paras":[],
@@ -317,7 +247,7 @@
 				{
 					"DefaultValue":"",
 					"Type":"String",
-					"Description":"如果webview加载该域名地址，会自动把cookie传给服务器",
+					"Description":"如果加载该域名地址，会自动把cookie传给服务器",
 					"Required":1,
 					"Deprecated":false,
 					"Type_JavaScript":"String",
@@ -415,14 +345,6 @@
 		},
 		{
 			"ReturnType_JavaScript":"node",
-			"Description":"下拉headerview事件",
-			"Deprecated":false,
-			"ID":"pull",
-			"ReturnType":"String",
-			"ReturnDesc":"返回{state,offset}，其中state表示headerview的状态，offset为headerview下拉的位移量；其中state=0：表示开始下拉headerview，在headerview下拉到headerview复位整个过程中，pull事件会触发很多次；state=1：表示下拉headerview超过headerview的高度，触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui；state=2：下拉超过一定值，触发state=1事件后，松手会触发一次这个事件，前端开发者接受到这个事件会更新headerview的ui，然后开始加载数据，数据加载完后需要调用rebound方法让header复位"
-		},
-		{
-			"ReturnType_JavaScript":"node",
 			"Description":"开始加载",
 			"Deprecated":false,
 			"ID":"start",
@@ -431,11 +353,11 @@
 		}
 	],
 	"UIType":"View",
-	"ID":"do_WebView",
+	"ID":"do_TencentWebView",
 	"Icon":"",
 	"IsContainer":"0",
 	"WindowsPhone":{
-		"MinVersion":"10",
-		"Support":1
+		"MinVersion":"",
+		"Support":0
 	}
 }

@@ -7,7 +7,13 @@
 var app = sm("do_App");
 var page = sm("do_Page");
 var nf = sm("do_Notification"); 
- 
+
+//关闭页面
+page.on("touch",function(data){
+	app.closePage();
+	
+});
+
 //bindItems	绑定item的数据	同步方法
 //refreshItems	刷新item数据	同步方法
 var target=ui("do_ComboBox_6");

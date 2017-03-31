@@ -22,9 +22,7 @@ ui("do_Button_1").on("touch",function(data){
 	
 	target.clearImageCache(function(data, e) {
 		var  res="清除图片返回值类型为："+typeof(data)+"返回值为："+JSON.stringify(data)
-		resultshow(res);
-		 
-		
+		resultshow(res); 
 	})
 });
 //getImageCacheSize	获取图片缓存	异步方法
@@ -32,7 +30,7 @@ ui("do_Button_1").on("touch",function(data){
 ui("do_Button_2").on("touch",function(data){
 	
 	target.getImageCacheSize(function(data, e) {
-		var  res="获取图片缓存返回值类型为："+typeof(data)+"返回值为："+JSON.stringify(data)
+		var  res="获取图片缓存返回值类型为："+typeof(data)+"返回值为："+JSON.stringify(data);
 		resultshow(res); 
 	})
 });
