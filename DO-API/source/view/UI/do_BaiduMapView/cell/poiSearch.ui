@@ -1,0 +1,30 @@
+{
+	"RootView":{
+		"bgColor":"FFFFCCFF",
+		"x":"25",
+		"width":"700",
+		"y":"25",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"640",
+				"width":"49",
+				"y":"12",
+				"id":"do_ImageView_1",
+				"source":"source://view/UI/do_BaiduMapView/image/cancel.png",
+				"type":"do_ImageView",
+				"enabled":"true",
+				"height":"48"
+			},
+			{
+				"x":"46",
+				"width":"112",
+				"y":"65",
+				"id":"do_Label_1",
+				"type":"do_Label",
+				"height":"53"
+			}
+		],
+		"height":"1284"
+	}
+}
