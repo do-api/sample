@@ -1,6 +1,6 @@
 {
 	"Description":"二维码的生成和识别；其中iOS平台的二维码识别功能系统需要iOS8级以上的系统，设备需要5S及以上产品",
-	"Keyword":"信息识别",
+	"Keyword":"",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -13,12 +13,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"text",
 					"Name":"内容文本"
@@ -28,9 +30,30 @@
 					"Type":"Number",
 					"Description":"生成的二维码图片边长",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"length",
 					"Name":"图片边长"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"只支持本地文件data:// source:// 打头的URI格式，不能包含@符号",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"logoPath",
+					"Name":"logo图片路径"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"Number",
+					"Description":"默认值为length值的1/5",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"Number",
+					"ID":"logoLength",
+					"Name":"logo图片边长"
 				}
 			],
 			"ID":"create",
@@ -41,12 +64,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"可设置html链接或本地文件，支持：http:// https:// data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"二维码图片路径"

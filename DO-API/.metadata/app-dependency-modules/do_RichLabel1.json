@@ -25,6 +25,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"fontColor",
 			"Name":"字体颜色"
@@ -39,6 +40,7 @@
 			"Type":"Number",
 			"EditType":"1",
 			"Description":"",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"fontSize",
 			"Name":"字体大小"
@@ -70,6 +72,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"fontStyle",
 			"Name":"字体风格"
@@ -84,6 +87,7 @@
 			"Type":"Number",
 			"EditType":"0",
 			"Description":"label的height为\"－1\"的时候，label会根据text内容自动适配变高，但是不会高于maxHeight",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"maxHeight",
 			"Name":"最大高度"
@@ -98,6 +102,7 @@
 			"Type":"Number",
 			"EditType":"0",
 			"Description":"最大行数，缺省是1，如果为小于或等于0表示不限行数，说明：设置文本内容显示最大行数，如显示内容超过了最大行值则结尾用省略号\"...\"表示；iOS平台不支持",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"maxLines",
 			"Name":"最多行数"
@@ -112,6 +117,7 @@
 			"Type":"Number",
 			"EditType":"0",
 			"Description":"设置文本框显示最大宽度值，只有在设置\"Width\"属性值为\"-1\"时有效，否则不起作用;",
+			"Deprecated":false,
 			"Type_JavaScript":"Number",
 			"ID":"maxWidth",
 			"Name":"最大宽度"
@@ -126,6 +132,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"值格式为：\n\t\t[\n\t\t\t{\n\t\t\t\t\"strMatch\": \"a\",//匹配字符串\n\t\t\t\t\"substring\": \"0,10（开始字符位置，结束字符位置）\",//截取字符串，前一位为起点，后一位为终点\n\t\t\t\t\"spanStyle\": \"{fontColor:'FF3030FF',fontStyle:'bold'}\",//区域内字体显示样式\n\t\t\t\t\"allowTouch\": false,//是否允许点击事件\n\t\t\t\t\"tag\": \"自定义数据\"\n\t\t\t},\n\t\t\t{},\n\t\t\t...\n\t\t]",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"span",
 			"Name":"设置区域内显示富文本字体样式"
@@ -140,6 +147,7 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"文本显示内容",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"text",
 			"Name":"文本"
@@ -167,6 +175,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"textAlign",
 			"Name":"文本对齐方式"
@@ -194,6 +203,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"textFlag",
 			"Name":"字体标示"
@@ -212,6 +222,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"匹配内容点击事件",
+			"Deprecated":false,
 			"ID":"touch",
 			"ReturnType":"Node",
 			"ReturnDesc":"返回匹配到的内容content和tag数据"
@@ -219,7 +230,7 @@
 	],
 	"UIType":"View",
 	"ID":"do_RichLabel1",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_RichLabel1/富文本.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_RichLabel1/富文本.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"",

@@ -1,20 +1,20 @@
 {
 	"RootView":{
-		"bgColor":"F7F7F722",
+		"bgColor":"00000000",
 		"x":"0",
 		"width":"750",
 		"y":"0",
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"FFFFFF20",
-				"x":"92",
-				"width":"540",
-				"y":"132",
+				"bgColor":"00000000",
+				"x":"17",
+				"width":"723",
+				"y":"70",
 				"scanArea":"10,10,540,340",
 				"id":"do_BarcodeView_1",
 				"type":"do_BarcodeView",
-				"height":"340"
+				"height":"400"
 			},
 			{
 				"bgColor":"C6C6C6FF",

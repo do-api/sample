@@ -24,6 +24,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"弹出新的page，通过data来传递数据。",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getData",
 			"ReturnType":"String",
@@ -33,6 +34,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"找到当前page是否有键盘弹出，然后把焦点释放，键盘隐藏",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"hideKeyboard",
 			"ReturnType":"",
@@ -42,12 +44,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"删除Page里一个子UI",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"通过子ui的id和地址获取到子ui，然后删除",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"id",
 					"Name":"子ui的id或者地址"
@@ -61,12 +65,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"可通过与openPage动画相反手势关闭页面，并从当前页面传递data给下层页面，仅支持iOS平台",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"data",
 					"Name":"关闭当前的Page传递给下层的Page的值"
@@ -76,6 +82,7 @@
 					"Type":"Bool",
 					"Description":"单独设置某页支持手势关闭",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"support",
 					"Name":"是否支持手势滑动关闭"
@@ -94,13 +101,23 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）",
+			"Deprecated":false,
 			"ID":"back",
 			"ReturnType":"String",
 			"ReturnDesc":""
 		},
 		{
+			"ReturnType_JavaScript":"Node",
+			"Description":"点击设备物理或虚拟返回按键触发事件（Android、WindowsPhone有效）",
+			"Deprecated":false,
+			"ID":"keyDown",
+			"ReturnType":"Node",
+			"ReturnDesc":"{keyCode:对应按键的值}"
+		},
+		{
 			"ReturnType_JavaScript":"String",
 			"Description":"页面加载完触发事件",
+			"Deprecated":false,
 			"ID":"loaded",
 			"ReturnType":"String",
 			"ReturnDesc":""
@@ -108,6 +125,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"点击设备物理或虚拟菜单按键触发事件（Android、WindowsPhone有效）",
+			"Deprecated":false,
 			"ID":"menu",
 			"ReturnType":"String",
 			"ReturnDesc":""
@@ -115,6 +133,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"进入后台、被其他Page盖住或关闭当前页面时触发",
+			"Deprecated":false,
 			"ID":"pause",
 			"ReturnType":"String",
 			"ReturnDesc":""
@@ -122,6 +141,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"上层Page关闭时触发",
+			"Deprecated":false,
 			"ID":"result",
 			"ReturnType":"String",
 			"ReturnDesc":"上层Page关闭的时候会触发下层Page一个result事件。并返回上层页面关闭时传递过来的数据"
@@ -129,6 +149,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"回到前台、Page回到顶端时触发或打开当前页面",
+			"Deprecated":false,
 			"ID":"resume",
 			"ReturnType":"String",
 			"ReturnDesc":""

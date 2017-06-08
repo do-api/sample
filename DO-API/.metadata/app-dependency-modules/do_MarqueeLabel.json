@@ -1,11 +1,12 @@
 {
 	"Description":"文字能滚动播出的文本标签框",
+	"Keyword":"其它类型",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
 	},
 	"Windows":{
-		"MinVersion":"8.1",
+		"MinVersion":"10",
 		"Support":1
 	},
 	"asyncMethodes":[],
@@ -20,11 +21,11 @@
 				"Data":[
 					{
 						"id":"left",
-						"value":"向左"
+						"value":"向左滚动"
 					},
 					{
 						"id":"right",
-						"value":"向右"
+						"value":"向右滚动"
 					}
 				]
 			},
@@ -33,6 +34,8 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"修改文字滚动方向，支持向左与向右",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
 			"ID":"direction",
 			"Name":"文字滚动方向"
 		},
@@ -46,6 +49,8 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
 			"ID":"fontColor",
 			"Name":"字体颜色"
 		},
@@ -59,6 +64,8 @@
 			"Type":"Number",
 			"EditType":"1",
 			"Description":"",
+			"Deprecated":false,
+			"Type_JavaScript":"Number",
 			"ID":"fontSize",
 			"Name":"字体大小"
 		},
@@ -89,6 +96,8 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
 			"ID":"fontStyle",
 			"Name":"字体风格"
 		},
@@ -102,6 +111,8 @@
 			"Type":"String",
 			"EditType":"1",
 			"Description":"获取或设置与此控件关联的文本。",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
 			"ID":"text",
 			"Name":"文本显示内容"
 		},
@@ -128,6 +139,8 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
+			"Deprecated":false,
+			"Type_JavaScript":"String",
 			"ID":"textFlag",
 			"Name":"字体标示"
 		}
@@ -139,13 +152,15 @@
 	},
 	"syncMethodes":[],
 	"Type":"UI",
+	"BBS":"",
 	"Version":"Internal",
 	"Events":[],
+	"UIType":"View",
 	"ID":"do_MarqueeLabel",
-	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/store/D/20151223/do_MarqueeLabel/iconfont-paomadeng.png",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_MarqueeLabel/跑马灯.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
-		"MinVersion":"8.1",
+		"MinVersion":"10",
 		"Support":1
 	}
 }

@@ -22,7 +22,7 @@
 		}
 	],
 	"IOS":{
-		"MinVersion":"7",
+		"MinVersion":"7.0",
 		"Support":1
 	},
 	"Properties":[
@@ -35,7 +35,7 @@
 			"Group":"",
 			"Type":"String",
 			"EditType":"1",
-			"Description":"设置裁剪区域的宽高，width,height，中间用逗号隔开；裁剪区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示，Windows平台不支持",
+			"Description":"设置裁剪区域的宽高，width,height，中间用逗号隔开；裁剪区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示",
 			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"cropArea",
@@ -43,7 +43,7 @@
 		},
 		{
 			"Design":{
-				"Type":"Richtext",
+				"Type":"ImageSource",
 				"Data":[]
 			},
 			"DefaultValue":"",

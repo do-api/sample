@@ -52,7 +52,7 @@ ui("do_Button_2").on("touch",function(data){
 	 * */
 	target.save({
 		path:"source://view/SM/do_Album/image/xiaoren.png", 
-		name:"", 
+		name:"data://txt/a.png", 
 		width:"", 
 		height:"", 
 		quality:""

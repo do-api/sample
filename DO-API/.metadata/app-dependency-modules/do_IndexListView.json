@@ -25,6 +25,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"包含四个颜色，分别是索引列表背景色、按下索引背景色、索引文本颜色、滑块颜色，中间用逗号隔开，仅android平台支持",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"indexBarColors",
 			"Name":"索引颜色"
@@ -39,6 +40,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"设置IndexListView 的按下选择颜色，如果在模板中设置rootLayout背景颜色，将不起作用",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"selectedColor",
 			"Name":"Cell选中的背景颜色"
@@ -53,6 +55,7 @@
 			"Type":"String",
 			"EditType":"0",
 			"Description":"一个IndexListView可以有多个cell模板，这个属性包含多个source://开头的ui文件，中间用逗号隔开，格式类似如下：“source://view/cell1.ui,source://view/cell2.ui,source://view/cell3.ui”",
+			"Deprecated":false,
 			"Type_JavaScript":"String",
 			"ID":"templates",
 			"Name":"Cell对应的模板UI文件组"
@@ -67,12 +70,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"为IndeListView绑定数据源，只支持HashData实例，其中每组第一条数据表示分组信息，不可点击",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"比如{'A':[{'template':0,'text':'a1'},{'template':1,'text':'a2'}],'B':[{'template':0,'text':'b1'},{'template':1,'text':'b2'}]}，其中每个group下第一条数据表示分组信息，不可点击",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"data",
 					"Name":"数据"
@@ -82,6 +87,7 @@
 					"Type":"Node",
 					"Description":"一个数组列表，按照此列表显示列表数据，可以为空，为空就按照HashData‘随机’显示列表数据",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"indexs",
 					"Name":"索引的数组"
@@ -95,6 +101,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"动态修改HashData数据源后，需要调用此方法才能正确显示数据",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"refreshItems",
 			"ReturnType":"",
@@ -109,6 +116,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"长按cell触发",
+			"Deprecated":false,
 			"ID":"longTouch",
 			"ReturnType":"Node",
 			"ReturnDesc":"返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']"
@@ -116,6 +124,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"点击cell触发",
+			"Deprecated":false,
 			"ID":"touch",
 			"ReturnType":"Node",
 			"ReturnDesc":"返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']"
@@ -123,7 +132,7 @@
 	],
 	"UIType":"Container",
 	"ID":"do_IndexListView",
-	"Icon":"https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_IndexListView/索引列表indexlist.jpg",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_IndexListView/索引列表indexlist.jpg",
 	"IsContainer":"0",
 	"WindowsPhone":{
 		"MinVersion":"10",

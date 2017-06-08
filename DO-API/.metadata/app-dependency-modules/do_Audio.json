@@ -12,7 +12,39 @@
 	"asyncMethodes":[
 		{
 			"ReturnType_JavaScript":"",
+			"Description":"不可与play方法同时使用，播放网络音频时建议使用该方法，避免卡顿",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"支持data://、source://和网络链接",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"path",
+					"Name":"播放文件源路径"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"Number",
+					"Description":"从最开始的第几毫秒",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"Number",
+					"ID":"point",
+					"Name":"播放起点"
+				}
+			],
+			"ID":"playAsync",
+			"ReturnType":"",
+			"Name":"开始播放",
+			"ReturnDesc":""
+		},
+		{
+			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"stopRecordAsync",
 			"ReturnType":"",
@@ -34,6 +66,7 @@
 		{
 			"ReturnType_JavaScript":"Number",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"pause",
 			"ReturnType":"Number",
@@ -43,12 +76,14 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"支持data://、source://和网络链接",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"播放文件源路径"
@@ -58,6 +93,7 @@
 					"Type":"Number",
 					"Description":"从最开始的第几毫秒",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"point",
 					"Name":"播放起点"
@@ -71,6 +107,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"resume",
 			"ReturnType":"",
@@ -80,12 +117,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"要保存的录音文件路径，支持数据区data://，指定到目录",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"保存路径"
@@ -95,6 +134,7 @@
 					"Type":"String",
 					"Description":"选择录音输出的格式，支持mp3、amr、aac格式",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"type",
 					"Name":"录音输出格式"
@@ -104,6 +144,7 @@
 					"Type":"String",
 					"Description":"选择录音输出的质量，支持high、normal、low",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"quality",
 					"Name":"录音输出质量"
@@ -113,6 +154,7 @@
 					"Type":"Number",
 					"Description":"录音的时长限制，以毫秒为单位，-1时表示不限制录音时长",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Number",
 					"ID":"limit",
 					"Name":"录音时长限制"
@@ -126,6 +168,7 @@
 		{
 			"ReturnType_JavaScript":"",
 			"Description":"",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"stop",
 			"ReturnType":"",
@@ -135,6 +178,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"",
+			"Deprecated":true,
 			"Paras":[],
 			"ID":"stopRecord",
 			"ReturnType":"String",
@@ -149,6 +193,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"音频播放、录音错误时触发",
+			"Deprecated":false,
 			"ID":"error",
 			"ReturnType":"String",
 			"ReturnDesc":""
@@ -156,6 +201,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"音频播放结束后触发",
+			"Deprecated":false,
 			"ID":"playFinished",
 			"ReturnType":"String",
 			"ReturnDesc":""
@@ -163,6 +209,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"",
+			"Deprecated":false,
 			"ID":"playProgress",
 			"ReturnType":"Node",
 			"ReturnDesc":"返回音频总时间和当前播放时间{currentTime,totalTime}"
@@ -170,6 +217,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"录音结束后触发",
+			"Deprecated":false,
 			"ID":"recordFinished",
 			"ReturnType":"Node",
 			"ReturnDesc":"{“path”:“返回录音文件保存的路径”,“time”:“本次录音时长，单位为毫秒”,“size”:“返回的录音文件大小，单位为字节”}"
@@ -177,6 +225,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"",
+			"Deprecated":false,
 			"ID":"recordProgress",
 			"ReturnType":"String",
 			"ReturnDesc":"返回录音总时间totalTime"
@@ -184,6 +233,7 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"录音音量变化事件",
+			"Deprecated":false,
 			"ID":"recordVolume",
 			"ReturnType":"Node",
 			"ReturnDesc":"{“volume”:“实时音量大小”}；Windows平台不支持"

@@ -13,12 +13,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"将指定的一个或多个文件拷贝到一个目录下",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"可支持单独拷贝一个文件，或好几个文件同时拷贝",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"source",
 					"Name":"拷贝文件名"
@@ -28,6 +30,7 @@
 					"Type":"String",
 					"Description":"拷贝的路径",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"目标路径"
@@ -41,12 +44,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"拷贝指定文件",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"只支持单独拷贝一个文件，需要为全路径",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"source",
 					"Name":"拷贝源文件"
@@ -56,6 +61,7 @@
 					"Type":"String",
 					"Description":"拷贝后的目标文件，需要为全路径，不支持data://security目录",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"目标文件"
@@ -69,12 +75,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"删除指定目录以及这个目录下所有目录和文件，",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"目录路径"
@@ -88,12 +96,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"删除指定文件",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件路径"
@@ -107,12 +117,14 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"获取指定目录下所有目录列表",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"目录路径"
@@ -126,12 +138,14 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"获取指定目录下所有文件列表",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"目录路径"
@@ -145,12 +159,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"获取指定文件的内容",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件路径"
@@ -160,6 +176,7 @@
 					"Type":"Bool",
 					"Description":"是否以加密方式读取文件，如果操作的是data://security目录，则该属性无效，默认解密",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"isSecurity",
 					"Name":"是否加密读"
@@ -169,6 +186,7 @@
 					"Type":"String",
 					"Description":"读文件的编码格式，暂只支持utf-8和gbk两种",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"encoding",
 					"Name":"编码格式"
@@ -182,12 +200,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"将指定的zip文件解压到指定的路径",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"解压压缩文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"source",
 					"Name":"解压缩文件名"
@@ -197,6 +217,7 @@
 					"Type":"String",
 					"Description":"不支持data://security目录",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"解压后目录路径"
@@ -210,12 +231,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"把指定字符串写入指定文件，完全覆盖",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件名"
@@ -225,6 +248,7 @@
 					"Type":"String",
 					"Description":"要写入的文件内容字符串",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"data",
 					"Name":"要写入的文件内容字符串"
@@ -234,6 +258,7 @@
 					"Type":"Bool",
 					"Description":"是否以加密方式写文件，如果操作的是data://security目录，则该属性无效，默认加密",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"isSecurity",
 					"Name":"是否加密写"
@@ -243,9 +268,20 @@
 					"Type":"String",
 					"Description":"写文件的编码格式，暂只支持utf-8和gbk两种",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"encoding",
 					"Name":"编码格式"
+				},
+				{
+					"DefaultValue":"false",
+					"Type":"Bool",
+					"Description":"是否以追加方式写文件，如果操作的是data://security目录或isSecurity=true，则该属性无效，默认不追加",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"Bool",
+					"ID":"isAppend",
+					"Name":"是否追加写"
 				}
 			],
 			"ID":"writeFile",
@@ -256,12 +292,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"将指定的路径或文件压缩成zip文件",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"source",
 					"Name":"目录路径或文件名"
@@ -271,6 +309,7 @@
 					"Type":"String",
 					"Description":"压缩后文件名，需要具体指定到文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"压缩后文件名"
@@ -284,12 +323,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"将指定的一个或多个文件压缩成zip文件",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"Node",
 					"Description":"可支持压缩不在同一目录下的文件，只需指定文件路径",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"Node",
 					"ID":"source",
 					"Name":"文件名"
@@ -299,6 +340,7 @@
 					"Type":"String",
 					"Description":"压缩后文件名，需要具体指定到文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"target",
 					"Name":"压缩后文件名"
@@ -324,12 +366,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"判断指定目录是否存在",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"目录路径"
@@ -343,12 +387,14 @@
 		{
 			"ReturnType_JavaScript":"Bool",
 			"Description":"判断指定文件是否存在",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件路径"
@@ -362,12 +408,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"获取指定文件的大小",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件路径"
@@ -381,12 +429,14 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"获取指定文件的内容的同步方法；使用需谨慎，若读取的数据较多会导致UI卡顿",
+			"Deprecated":false,
 			"Paras":[
 				{
 					"DefaultValue":"",
 					"Type":"String",
 					"Description":"文件名",
 					"Required":1,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"path",
 					"Name":"文件路径"
@@ -396,6 +446,7 @@
 					"Type":"Bool",
 					"Description":"是否以加密方式读取文件，若文件是以加密方式写的，该参数不设置为true则无法读取；如果操作的是data://security目录，则该属性无效，默认解密",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"Bool",
 					"ID":"isSecurity",
 					"Name":"是否加密读"
@@ -405,6 +456,7 @@
 					"Type":"String",
 					"Description":"读文件的编码格式，暂只支持utf-8和gbk两种",
 					"Required":0,
+					"Deprecated":false,
 					"Type_JavaScript":"String",
 					"ID":"encoding",
 					"Name":"编码格式"

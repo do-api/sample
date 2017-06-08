@@ -13,11 +13,12 @@
 		{
 			"ReturnType_JavaScript":"Node",
 			"Description":"获取wifi相关信息，可连wifi列表（iOS平台不支持）以及当前连接的wifi",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getWifiInfo",
 			"ReturnType":"Node",
 			"Name":"获取wifi相关信息",
-			"ReturnDesc":"返回可连wifi列表及当前已连接wifi名称{'wifiNameList': [{'wifiName': '列表中的wifiName'}],'currentWifiName': '当前连接的wifi名称'}"
+			"ReturnDesc":"返回可连wifi列表及当前已连接wifi名称{'wifiNameList': [{'wifiName': '列表中的wifiName'}],'currentWifiName': '当前连接的wifi名称','routerMacAddress': '当前连接WiFi的路由器地址'}"
 		}
 	],
 	"IOS":{
@@ -34,6 +35,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"获取当前的ip地址",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getIP",
 			"ReturnType":"String",
@@ -43,6 +45,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"当前设备的物理地址",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getMACAddress",
 			"ReturnType":"String",
@@ -52,6 +55,7 @@
 		{
 			"ReturnType_JavaScript":"String",
 			"Description":"获取手机端当前处于的网络环境",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"getStatus",
 			"ReturnType":"String",
@@ -59,8 +63,19 @@
 			"ReturnDesc":"以下枚举类型的一种：'wifi'-wifi网络，'2G/3G/4G'-2G、3G或者4G，'none'-没有网络连接，'unknown'-未知网络连接"
 		},
 		{
+			"ReturnType_JavaScript":"Bool",
+			"Description":"",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"isProxyUsed",
+			"ReturnType":"Bool",
+			"Name":"是否使用代理",
+			"ReturnDesc":"使用代理返回true，没有使用返回false"
+		},
+		{
 			"ReturnType_JavaScript":"",
-			"Description":"打开无线网络连接界面，选择网络连接",
+			"Description":"打开无线网络连接界面，选择网络连接，iOS平台10及以上系统无法使用该功能",
+			"Deprecated":false,
 			"Paras":[],
 			"ID":"openWifiSetting",
 			"ReturnType":"",
@@ -73,8 +88,9 @@
 	"Version":"Internal",
 	"Events":[
 		{
-			"ReturnType_JavaScript":"String",
+			"ReturnType_JavaScript":"sting",
 			"Description":"网络状态发生变化的回调方法",
+			"Deprecated":false,
 			"ID":"changed",
 			"ReturnType":"String",
 			"ReturnDesc":"返回以下枚举类型的一种：'wifi'-wifi网络，'2G/3G/4G'-2G、3G或者4G，'none'-没有网络连接，'unknown'-未知网络连接"

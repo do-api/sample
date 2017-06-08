@@ -1,6 +1,6 @@
 {
 	"Description":"支持从http://www.iconfont.cn/plus网站下载的ttf格式图标",
-	"Keyword":"",
+	"Keyword":"其它类型",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -15,21 +15,6 @@
 		"Support":1
 	},
 	"Properties":[
-		{
-			"Design":{
-				"Type":"Text",
-				"Data":[]
-			},
-			"DefaultValue":"Text",
-			"Group":"",
-			"Type":"String",
-			"EditType":"1",
-			"Description":"aaa",
-			"Deprecated":false,
-			"Type_JavaScript":"String",
-			"ID":"enabled",
-			"Name":"的呃呃"
-		},
 		{
 			"Design":{
 				"Type":"Text",
@@ -96,18 +81,7 @@
 		"MinVersion":"4.0",
 		"Support":1
 	},
-	"syncMethodes":[
-		{
-			"ReturnType_JavaScript":"",
-			"Description":"ss",
-			"Deprecated":false,
-			"Paras":[],
-			"ID":"ss",
-			"ReturnType":"",
-			"Name":"sq",
-			"ReturnDesc":""
-		}
-	],
+	"syncMethodes":[],
 	"Type":"UI",
 	"BBS":"",
 	"Version":"Internal",

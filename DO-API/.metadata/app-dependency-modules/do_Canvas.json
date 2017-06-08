@@ -93,6 +93,16 @@
 	"syncMethodes":[
 		{
 			"ReturnType_JavaScript":"",
+			"Description":"清空整个画布内容",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"clear",
+			"ReturnType":"",
+			"Name":"清空画布",
+			"ReturnDesc":""
+		},
+		{
+			"ReturnType_JavaScript":"",
 			"Description":"",
 			"Deprecated":false,
 			"Paras":[

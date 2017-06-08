@@ -1,6 +1,6 @@
 {
 	"Description":"各种方式提醒和通知用户",
-	"Keyword":"其它类型",
+	"Keyword":"其他类型",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
@@ -34,6 +34,16 @@
 					"Type_JavaScript":"String",
 					"ID":"title",
 					"Name":"alert窗口的标题"
+				},
+				{
+					"DefaultValue":"确定",
+					"Type":"String",
+					"Description":"按钮的正文",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"buttontext",
+					"Name":"按钮的文本"
 				}
 			],
 			"ID":"alert",

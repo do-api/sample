@@ -53,7 +53,7 @@
 			"ReturnDesc":""
 		},
 		{
-			"ReturnType_JavaScript":"",
+			"ReturnType_JavaScript":"bool",
 			"Description":"判断当前设备上是否安装了某一应用，windows平台不支持",
 			"Deprecated":false,
 			"Paras":[
@@ -157,7 +157,7 @@
 			"ReturnDesc":""
 		},
 		{
-			"ReturnType_JavaScript":"",
+			"ReturnType_JavaScript":"bool",
 			"Description":"android需要先在手机上安装打开相应文件的第三方软件",
 			"Deprecated":false,
 			"Paras":[
@@ -257,7 +257,7 @@
 				{
 					"DefaultValue":"",
 					"Type":"String",
-					"Description":"目前仅支持“GPS”，表示打开GPS设置界面",
+					"Description":"目前仅支持“GPS”，表示打开GPS设置界面；iOS仅支持10以下系统",
 					"Required":1,
 					"Deprecated":false,
 					"Type_JavaScript":"String",

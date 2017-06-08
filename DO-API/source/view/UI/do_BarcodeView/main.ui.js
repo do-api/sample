@@ -12,10 +12,12 @@ var target=ui("do_BarcodeView_1");
 
 
 //scanArea	扫描的区域 在设计器设置
-ui("do_Button_1").on("touch",function(data){
-	var txt= target.start();
-	var reslut="返回值为："+JSON.stringify(txt)+",返回值类型为："+ typeof(txt);
-	resultshow(reslut);
+ui("do_Button_1").on("touch",function(data){ 
+	target.start(function(d, e) {
+		var Type = typeof(d);
+ 		var result  = index + " 返回值类型：" + Type + " 返回值：" + JSON.stringify(data); 
+		resultshow(reslut); 
+	})
 	
 });
 

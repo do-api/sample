@@ -1,42 +1,104 @@
 {
 	"RootView":{
-		"x":"0",
 		"width":"750",
-		"y":"0",
 		"type":"do_ALayout",
 		"views":[
 			{
-				"x":"10",
-				"width":"730",
-				"y":"50",
-				"maxLines":"2",
-				"fontSize":"24",
-				"id":"do_Label_1",
-				"text":"蓝牙do_Bluetooth：特殊方法：connnect,open,close,write",
-				"type":"do_Label",
-				"height":"100"
-			},
-			{
-				"bgColor":"8C8C8CFF",
-				"x":"83",
-				"width":"200",
-				"y":"250",
-				"fontSize":"24",
+				"bgColor":"CCCCCCFF",
+				"x":"60",
+				"width":"284",
+				"y":"123",
+				"fontSize":"35",
 				"id":"do_Button_1",
-				"text":"打开蓝牙",
+				"text":"openbutton",
 				"type":"do_Button",
-				"height":"50"
+				"fontColor":"000000FF",
+				"height":"76"
 			},
 			{
-				"bgColor":"8C8C8CFF",
-				"x":"422",
-				"width":"200",
-				"y":"250",
-				"fontSize":"24",
+				"bgColor":"CCCCCCFF",
+				"x":"60",
+				"width":"288",
+				"y":"283",
+				"fontSize":"35",
 				"id":"do_Button_2",
-				"text":"关闭蓝牙",
+				"text":"startScanButton",
 				"type":"do_Button",
-				"height":"50"
+				"height":"85"
+			},
+			{
+				"bgColor":"CCCCCCFF",
+				"x":"60",
+				"width":"282",
+				"y":"470",
+				"fontSize":"35",
+				"id":"do_Button_3",
+				"text":"connectButton",
+				"type":"do_Button",
+				"height":"72"
+			},
+			{
+				"bgColor":"CCCCCCFF",
+				"x":"371",
+				"width":"291",
+				"y":"125",
+				"fontSize":"35",
+				"id":"do_Button_4",
+				"text":"writeButton",
+				"type":"do_Button",
+				"height":"81"
+			},
+			{
+				"bgColor":"CCCCCCFF",
+				"x":"371",
+				"width":"293",
+				"y":"296",
+				"fontSize":"35",
+				"id":"do_Button_5",
+				"text":"readButton",
+				"type":"do_Button",
+				"height":"73"
+			},
+			{
+				"bgColor":"A3CCB9FF",
+				"x":"60",
+				"width":"349",
+				"y":"643",
+				"fontSize":"45",
+				"id":"do_Button_6",
+				"text":"close",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"94AC7FFF",
+				"x":"370",
+				"width":"324",
+				"y":"417",
+				"fontSize":"35",
+				"id":"do_Button_7",
+				"text":"安卓打开手机蓝牙",
+				"type":"do_Button"
+			},
+			{
+				"bgColor":"91B579FF",
+				"x":"369",
+				"width":"329",
+				"y":"526",
+				"fontSize":"35",
+				"id":"do_Button_8",
+				"text":"安卓关闭手机蓝牙",
+				"type":"do_Button"
+			},
+			{
+				"x":"63",
+				"width":"616",
+				"y":"880",
+				"maxLines":"5",
+				"fontSize":"35",
+				"id":"do_Label_1",
+				"text":"更多说明参考论坛说明：蓝牙组件使用测试分享",
+				"type":"do_Label",
+				"height":"276"
 			}
 		],
 		"height":"1334"
