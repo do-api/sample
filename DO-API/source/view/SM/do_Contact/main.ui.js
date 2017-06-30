@@ -22,7 +22,7 @@ var target_1 = sm("do_Contact");
 
 ui("do_Button_1").on("touch",function(data,e){ 
 	//模糊查询姓名中含“李”字的联系人
-	target_1.getData({value:"李", types:"name"}, function(data, e) {
+	target_1.getData({value:"李", types:["name"]}, function(data, e) {
 		label.text = JSON.stringify(data);
 		deviceone.print(JSON.stringify(data),"getData");
 	});
