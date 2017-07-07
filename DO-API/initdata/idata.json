@@ -142,6 +142,10 @@
             "MSG":"微信",
             "NAME":"do_TencentWX",
             "TYPE":"SM"
+        },{
+            "MSG":"视频播放",
+            "NAME":"do_VideoPlayer",
+            "TYPE":"SM"
         }
     ],
     "MM":[
