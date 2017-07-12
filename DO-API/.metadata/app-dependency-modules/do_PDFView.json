@@ -1,113 +1,106 @@
-{
-	"Description":"PDF阅读器，不支持windows平台",
-	"Keyword":"",
-	"Html":{
-		"MinVersion":"5.0",
-		"Support":1
-	},
-	"Windows":{
-		"MinVersion":"10",
-		"Support":1
-	},
-	"asyncMethodes":[],
-	"IOS":{
-		"MinVersion":"7",
-		"Support":1
-	},
-	"Properties":[
-		{
-			"Design":{
-				"Type":"Richtext",
-				"Data":[]
-			},
-			"DefaultValue":"",
-			"Group":"",
-			"Type":"String",
-			"EditType":"1",
-			"Description":"支持data://与source://目录",
-			"Deprecated":false,
-			"Type_JavaScript":"String",
-			"ID":"url",
-			"Name":"打开的pdf文件路径"
-		}
-	],
-	"Name":"PDF阅读器",
-	"Android":{
-		"MinVersion":"4.0",
-		"Support":1
-	},
-	"syncMethodes":[
-		{
-			"ReturnType_JavaScript":"Node",
-			"Description":"返回总共页数以及当前页数",
-			"Deprecated":false,
-			"Paras":[],
-			"ID":"getPageCount",
-			"ReturnType":"Node",
-			"Name":"总共页数以及当前页数",
-			"ReturnDesc":"{'total':100,'current':2}"
-		},
-		{
-			"ReturnType_JavaScript":"",
-			"Description":"",
-			"Deprecated":false,
-			"Paras":[
-				{
-					"DefaultValue":"",
-					"Type":"Number",
-					"Description":"",
-					"Required":0,
-					"Deprecated":false,
-					"Type_JavaScript":"Number",
-					"ID":"page",
-					"Name":"页数"
-				}
-			],
-			"ID":"jump",
-			"ReturnType":"",
-			"Name":"跳转到指定页",
-			"ReturnDesc":""
-		},
-		{
-			"ReturnType_JavaScript":"",
-			"Description":"",
-			"Deprecated":false,
-			"Paras":[],
-			"ID":"next",
-			"ReturnType":"",
-			"Name":"下一页",
-			"ReturnDesc":""
-		},
-		{
-			"ReturnType_JavaScript":"",
-			"Description":"",
-			"Deprecated":false,
-			"Paras":[],
-			"ID":"prev",
-			"ReturnType":"",
-			"Name":"上一页",
-			"ReturnDesc":""
-		}
-	],
-	"Type":"UI",
-	"BBS":"",
-	"Version":"Internal",
-	"Events":[
-		{
-			"ReturnType_JavaScript":"Node",
-			"Description":"页面切换时触发",
-			"Deprecated":false,
-			"ID":"pageChanged",
-			"ReturnType":"Node",
-			"ReturnDesc":"{'total':100,'current':2}"
-		}
-	],
-	"UIType":"Layout",
-	"ID":"do_PDFView",
-	"Icon":"",
-	"IsContainer":"0",
-	"WindowsPhone":{
-		"MinVersion":"10",
-		"Support":1
-	}
+﻿{
+  "ID": "do_PDFView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "UIType": "Layout",
+  "Name": "PDF阅读器",
+  "Version": "Internal",
+  "Description": "PDF阅读器，不支持windows平台",
+  "Icon": "",
+  "BBS": "",
+  "Keyword": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "url",
+      "Name": "打开的pdf文件路径",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "支持data://与source://目录",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "pageChanged",
+      "Description": "页面切换时触发",
+      "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
+      "ReturnDesc": "{'total':100,'current':2}"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "getPageCount",
+      "Name": "总共页数以及当前页数",
+      "Description": "返回总共页数以及当前页数",
+      "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
+      "ReturnDesc": "{'total':100,'current':2}",
+      "Paras": []
+    },
+    {
+      "ID": "jump",
+      "Name": "跳转到指定页",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnType_JavaScript": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "page",
+          "Name": "页数",
+          "Type": "Number",
+          "Type_JavaScript": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "next",
+      "Name": "下一页",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnType_JavaScript": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "prev",
+      "Name": "上一页",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnType_JavaScript": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
 }

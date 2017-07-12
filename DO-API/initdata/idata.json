@@ -236,6 +236,10 @@
             "NAME":"do_ComboBox",
             "TYPE":"UI"
         },{
+            "MSG":"表格视图",
+            "NAME":"do_DataTable",
+            "TYPE":"UI"
+        },{
             "MSG":"可拖拽的网格视图",
             "NAME":"do_DraggableGridView",
             "TYPE":"UI"

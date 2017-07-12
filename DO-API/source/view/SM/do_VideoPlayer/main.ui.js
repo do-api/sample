@@ -6,6 +6,7 @@
  */
 var device = sm("do_Device")
 var nf = sm("do_Notification");
+//定义VideoPlayer实例
 var do_VideoPlayer = sm("do_VideoPlayer")
 
 var text = ui("do_TextField_1")
@@ -18,9 +19,11 @@ deviceone.print(JSON.stringify(info),"信息")
 
 
 playlocal.on("touch",function(){
+	//此控件只有Android可用
 	if(info.OS=="android")
 		{
 		if(time!=null){
+			//point定义视频开始播放时间点,单位是毫秒
 			do_VideoPlayer.play({path:"initdata://do_VideoPlayer/2.mp4",point:time})
 		}
 		else{
@@ -33,11 +36,12 @@ playlocal.on("touch",function(){
 	
 })
 
+//.play方法,path支持http地址
 playol.on("touch",function(){
 	if(info.OS=="android")
 	{
 	if(time!=null){
-		do_VideoPlayer.play({path:"https://deviceone.blob.core.chinacloudapi.cn/developer/a/20160629/video/39d8acd5f39273b9bc44e8718f130cae/39d8acecbebb9d992730334ba78bb12e.mp4",point:time})
+		do_VideoPlayer.play({path:"https://deviceone.blob.core.chinacloudapi.cn/developer/a/20160629/video/39d8acd5f39273b9bc44e8718f130cae/39d8acecbebb9d992730334ba78bb12e.mp4",point:50000})
 	}
 	else{
 		do_VideoPlayer.play({path:"https://deviceone.blob.core.chinacloudapi.cn/developer/a/20160629/video/39d8acd5f39273b9bc44e8718f130cae/39d8acecbebb9d992730334ba78bb12e.mp4"})
