@@ -135,6 +135,10 @@
             "NAME":"do_QQ",
             "TYPE":"SM"
         },{
+            "MSG":"Socket服务端",
+            "NAME":"do_SocketServer",
+            "TYPE":"SM" 
+        },{
             "MSG":"友盟分析统计",
             "NAME":"do_UMengAnalytics",
             "TYPE":"SM"
