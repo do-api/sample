@@ -19,9 +19,7 @@ deviceone.print(JSON.stringify(info),"信息")
 
 
 playlocal.on("touch",function(){
-	//此控件只有Android可用
-	if(info.OS=="android")
-		{
+	
 		if(time!=null){
 			//point定义视频开始播放时间点,单位是毫秒
 			do_VideoPlayer.play({path:"initdata://do_VideoPlayer/2.mp4",point:time})
@@ -29,10 +27,6 @@ playlocal.on("touch",function(){
 		else{
 			do_VideoPlayer.play({path:"initdata://do_VideoPlayer/2.mp4"})
 		}
-		}
-	else{
-		nf.alert("只有android支持本组件")
-	}
 	
 })
 

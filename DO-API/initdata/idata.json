@@ -150,6 +150,11 @@
             "MSG":"视频播放",
             "NAME":"do_VideoPlayer",
             "TYPE":"SM"
+        },
+        {
+            "MSG":"系统日程",
+            "NAME":"do_SysCalendar",
+            "TYPE":"SM"
         }
     ],
     "MM":[
