@@ -238,7 +238,7 @@
 				{
 					"DefaultValue":"",
 					"Type":"Node",
-					"Description":"[{\"id\":\"标记ID，用户自定义标记唯一ID，是字符串类型\",\"latitude\":\"纬度\",\"longitude\":\"经度\",\"url\":\"缩略图地址\",\"info\":\"描述信息\",\"popup\":\"是否可点击，是否支持点击弹出信息，为true时支持，为false时点击marks不弹出信息，仅触发touchMarker事件，默认为true\",\"textMarker\":\"文字Mark\"}]，其中id必须唯一，textMarker为一个JSON对象，包含文字Mark的一些属性，如{ \"text\": \"文本\", \"fontColor\": \"设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），默认值为：000000FF\", \"fontStyle\": \"设置字体风格包含normal：常规bold：粗体两种风格，默认值为：normal\", \"fontSize\": \"字体大小，默认值为：17\", \"alignX\": \"支持left(左对齐)，right(右对齐)，center(水平居中对齐)，默认值为：center\", \"alignY\": \"支持top(上对齐)，bottom(下对齐)，center(垂直居中对齐)，默认值为：center\" }",
+					"Description":"[{id:标记ID，用户自定义标记唯一ID，是字符串类型,latitude:纬度,longitude:经度,url:缩略图地址,info:描述信息,popup:是否可点击，是否支持点击弹出信息，为true时支持，为false时点击marks不弹出信息，仅触发touchMarker事件，默认为true,textMarker:文字Mark}]，其中id必须唯一，textMarker为一个JSON对象，包含文字Mark的一些属性，如{ text: 文本, fontColor: 设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），默认值为：000000FF, fontStyle: 设置字体风格包含normal：常规bold：粗体两种风格，默认值为：normal, fontSize: 字体大小，默认值为：17, alignX: 支持left(左对齐)，right(右对齐)，center(水平居中对齐)，默认值为：center, alignY: 支持top(上对齐)，bottom(下对齐)，center(垂直居中对齐)，默认值为：center , bgColor: 文字背景色，默认值为：FFFFFF00, radius: 文字背景圆角，默认值为：0 }",
 					"Required":1,
 					"Deprecated":false,
 					"Type_JavaScript":"Node",

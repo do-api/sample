@@ -1,120 +1,267 @@
-﻿{
-  "ID": "do_Bluetooth",
-  "IsContainer": "0",
-  "Type": "MM",
-  "Name": "蓝牙",
-  "Version": "Internal",
-  "Description": "使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上",
-  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Bluetooth/蓝牙视图.jpg",
-  "IOS": {
-    "Support": 1,
-    "MinVersion": "7"
-  },
-  "Android": {
-    "Support": 1,
-    "MinVersion": "4.3"
-  },
-  "Windows": {
-    "Support": 0,
-    "MinVersion": ""
-  },
-  "WindowsPhone": {
-    "Support": 0,
-    "MinVersion": ""
-  },
-  "Html": {
-    "Support": 1,
-    "MinVersion": "5.0"
-  },
-  "Properties": [],
-  "Events": [
-    {
-      "ID": "characteristicChanged",
-      "Description": "特征改变",
-      "ReturnType": "Node",
-      "ReturnDesc": "收到BLE终端服务特征写入数据时触发该事件，android平台一个特征最大接受20byte，iOS平台一个特征最大接受155byte，value输出为16进制值，{特征uuid:'28923DE7-2E5D-4E81-8264-86BE1B9C4B51',value:'1234567890abcdef'}"
-    },
-    {
-      "ID": "connectionStateChange",
-      "Description": "连接状态改变",
-      "ReturnType": "String",
-      "ReturnDesc": "监听连接状态，当连接状态发生变化触发该事件，0：断开、1：连接"
-    },
-    {
-      "ID": "scan",
-      "Description": "搜索外围设备",
-      "ReturnType": "Node",
-      "ReturnDesc": "搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1'}"
-    }
-  ],
-  "syncMethodes": [
-    {
-      "ID": "close",
-      "Name": "关闭蓝牙连接",
-      "Description": "",
-      "ReturnType": "",
-      "ReturnDesc": "关闭后需要重新打开蓝牙",
-      "Paras": []
-    },
-    {
-      "ID": "open",
-      "Name": "打开蓝牙链接",
-      "Description": "蓝牙打开后会搜索周围所有BLE终端外围设备（设备需要先打开蓝牙），搜索到后会触发scan事件",
-      "ReturnType": "Bool",
-      "ReturnDesc": "true成功，false失败",
-      "Paras": []
-    },
-    {
-      "ID": "write",
-      "Name": "写入数据",
-      "Description": "往BLE终端蓝牙模块服务特征写入数据，该特征需具备WRITE权限",
-      "ReturnType": "",
-      "ReturnDesc": "",
-      "Paras": [
-        {
-          "ID": "data",
-          "Name": "数据",
-          "Type": "String",
-          "Required": 1,
-          "DefaultValue": "",
-          "Description": "写入数据，内容转成16进制值输出"
-        },
-        {
-          "ID": "charUUID",
-          "Name": "特征UUID",
-          "Type": "String",
-          "Required": 1,
-          "DefaultValue": "",
-          "Description": "写入特征UUID"
-        }
-      ]
-    }
-  ],
-  "asyncMethodes": [
-    {
-      "ID": "connect",
-      "Name": "连接外围设备",
-      "Description": "根据指定唯一标识（MAC/UUID）连接BLE终端蓝牙设备，并通过设置UUIDs监听已发现服务的所有特征",
-      "ReturnType": "Bool",
-      "ReturnDesc": "true成功false失败",
-      "Paras": [
-        {
-          "ID": "address",
-          "Name": "mac地址/UUID",
-          "Type": "String",
-          "Required": 1,
-          "DefaultValue": "",
-          "Description": "BLE终端设备mac地址/IOS对应设备UUID"
-        },
-        {
-          "ID": "serviceUUIDs",
-          "Name": "服务UUIDs",
-          "Type": "Node",
-          "Required": 1,
-          "DefaultValue": "",
-          "Description": "监听发现服务UUIDs，参数格式:{[服务UUID1,服务UUID2,...]}"
-        }
-      ]
-    }
-  ]
+{
+	"Description":"使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；不支持windows平台，iOS系统必须8.0以上",
+	"Keyword":"网络通信",
+	"Html":{
+		"MinVersion":"5.0",
+		"Support":1
+	},
+	"Windows":{
+		"MinVersion":"",
+		"Support":0
+	},
+	"asyncMethodes":[
+		{
+			"ReturnType_JavaScript":"Bool",
+			"Description":"根据指定唯一标识（MAC/UUID）连接BLE终端蓝牙设备，连接成功，发现该设备支持的服务",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"BLE终端设备mac地址/IOS对应设备UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"address",
+					"Name":"mac地址/UUID"
+				}
+			],
+			"ID":"connect",
+			"ReturnType":"Bool",
+			"Name":"连接外围设备",
+			"ReturnDesc":"true成功false失败"
+		},
+		{
+			"ReturnType_JavaScript":"Number",
+			"Description":"打开设备蓝牙连接",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"open",
+			"ReturnType":"Number",
+			"Name":"打开蓝牙连接",
+			"ReturnDesc":"0表示成功，1表示设备不支持BLE功能，2表示设备不支持蓝牙，3表示蓝牙没打开"
+		},
+		{
+			"ReturnType_JavaScript":"Number",
+			"Description":"读取BLE终端蓝牙模块服务特征数据，该特征需具备READ权限，调用这个方法会触发characteristicChanged事件，在事件中通过uuid区别是特征通知或者主动read触发",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"服务UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"sUUID",
+					"Name":"服务UUID"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"特征UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"cUUID",
+					"Name":"特征UUID"
+				}
+			],
+			"ID":"read",
+			"ReturnType":"Number",
+			"Name":"读取数据",
+			"ReturnDesc":"0:成功;-1:失败;1:设备不支持;2:服务没找到;3:特征没有找到"
+		},
+		{
+			"ReturnType_JavaScript":"Number",
+			"Description":"注册可以监听的特征,当特征改变的时候,会触发characteristicChanged事件",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"服务UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"sUUID",
+					"Name":"服务UUID"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"特征UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"cUUID",
+					"Name":"特征UUID"
+				}
+			],
+			"ID":"registerListener",
+			"ReturnType":"Number",
+			"Name":"注册监听",
+			"ReturnDesc":"0:成功;-1:失败;1:设备不支持;2:服务没找到;3:特征没有找到"
+		},
+		{
+			"ReturnType_JavaScript":"Bool",
+			"Description":"扫描BLE外围设备，扫描到设备会触发scan事件",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"startScan",
+			"ReturnType":"Bool",
+			"Name":"开始扫描",
+			"ReturnDesc":"true成功，false失败"
+		},
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"往BLE终端蓝牙模块服务特征写入数据，该特征需具备WRITE权限",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"写入数据（不进行任何处理）",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"data",
+					"Name":"数据"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"写入服务UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"sUUID",
+					"Name":"服务UUID"
+				},
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"写入特征UUID",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"cUUID",
+					"Name":"特征UUID"
+				},
+				{
+					"DefaultValue":"20",
+					"Type":"String",
+					"Description":"设备一次性写入多少个字节，Android平台最大字节数为20",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"length",
+					"Name":"设备缓冲区大小"
+				},
+				{
+					"DefaultValue":"string",
+					"Type":"String",
+					"Description":"支持：binary 二进制数据(用十六进制字符串表示)，string 字符串。默认支持UTF-8编码",
+					"Required":0,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"type",
+					"Name":"数据类型"
+				}
+			],
+			"ID":"write",
+			"ReturnType":"",
+			"Name":"写入数据",
+			"ReturnDesc":""
+		}
+	],
+	"IOS":{
+		"MinVersion":"8",
+		"Support":1
+	},
+	"Properties":[],
+	"Name":"蓝牙",
+	"Android":{
+		"MinVersion":"4.3",
+		"Support":1
+	},
+	"syncMethodes":[
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"close",
+			"ReturnType":"",
+			"Name":"关闭蓝牙连接",
+			"ReturnDesc":"关闭后需要重新打开蓝牙"
+		},
+		{
+			"ReturnType_JavaScript":"Bool",
+			"Description":"iOS平台不支持",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"disable",
+			"ReturnType":"Bool",
+			"Name":"关闭手机蓝牙",
+			"ReturnDesc":"true成功，false失败"
+		},
+		{
+			"ReturnType_JavaScript":"Bool",
+			"Description":"iOS平台不支持",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"enable",
+			"ReturnType":"Bool",
+			"Name":"打开手机蓝牙",
+			"ReturnDesc":"true成功，false失败"
+		},
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"停止扫描设备",
+			"Deprecated":false,
+			"Paras":[],
+			"ID":"stopScan",
+			"ReturnType":"",
+			"Name":"停止扫描",
+			"ReturnDesc":""
+		}
+	],
+	"Type":"MM",
+	"BBS":"",
+	"Version":"Internal",
+	"Events":[
+		{
+			"ReturnType_JavaScript":"Node",
+			"Description":"特征改变",
+			"Deprecated":false,
+			"ID":"characteristicChanged",
+			"ReturnType":"Node",
+			"ReturnDesc":"收到BLE终端服务特征写入数据时触发该事件{特征uuid:'28923DE7-2E5D-4E81-8264-86BE1B9C4B51',value:'hello'}"
+		},
+		{
+			"ReturnType_JavaScript":"String",
+			"Description":"连接状态改变",
+			"Deprecated":false,
+			"ID":"connectionStateChange",
+			"ReturnType":"String",
+			"ReturnDesc":"监听连接状态，当连接状态发生变化触发该事件，0：断开、1：连接"
+		},
+		{
+			"ReturnType_JavaScript":"Node",
+			"Description":"搜索外围设备",
+			"Deprecated":false,
+			"ID":"scan",
+			"ReturnType":"Node",
+			"ReturnDesc":"搜索到外围设备触发该事件，{address:'Android(设备MAC B4:99:4C:25:29:51)'/'IOS(设备UUID)',name:'device1',RSSI:'接收的信号强度指示,单位dBm,127是保留值，标示无效'}"
+		}
+	],
+	"UIType":"Layout",
+	"ID":"do_Bluetooth",
+	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_Bluetooth/蓝牙视图.jpg",
+	"IsContainer":"0",
+	"WindowsPhone":{
+		"MinVersion":"",
+		"Support":0
+	}
 }

@@ -237,6 +237,10 @@
             "NAME":"do_CheckBox",
             "TYPE":"UI"
         },{
+            "MSG":"倒计时标签框",
+            "NAME":"do_CountDownLabel",
+            "TYPE":"UI"
+        },{
             "MSG":"画廊视图",
             "NAME":"do_CoverFlowView",
             "TYPE":"UI"

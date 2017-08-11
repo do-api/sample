@@ -9,7 +9,29 @@
 		"MinVersion":"10",
 		"Support":1
 	},
-	"asyncMethodes":[],
+	"asyncMethodes":[
+		{
+			"ReturnType_JavaScript":"",
+			"Description":"将整个view保存为一个Btimap",
+			"Deprecated":false,
+			"Paras":[
+				{
+					"DefaultValue":"",
+					"Type":"String",
+					"Description":"",
+					"Required":1,
+					"Deprecated":false,
+					"Type_JavaScript":"String",
+					"ID":"bitmap",
+					"Name":"bitmap对象"
+				}
+			],
+			"ID":"saveAsBitmap",
+			"ReturnType":"",
+			"Name":"保存为Bitmap",
+			"ReturnDesc":""
+		}
+	],
 	"IOS":{
 		"MinVersion":"7.0",
 		"Support":1

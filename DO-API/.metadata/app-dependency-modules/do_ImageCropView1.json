@@ -1,13 +1,13 @@
 {
-	"Description":"图片裁剪视图，能设置view的基本属性，宽高等",
+	"Description":"图片裁剪视图，裁剪区域可以拖动和缩放，能设置view的基本属性，宽高等",
 	"Keyword":"图片处理",
 	"Html":{
 		"MinVersion":"5.0",
 		"Support":1
 	},
 	"Windows":{
-		"MinVersion":"10",
-		"Support":1
+		"MinVersion":"",
+		"Support":0
 	},
 	"asyncMethodes":[
 		{
@@ -26,21 +26,6 @@
 		"Support":1
 	},
 	"Properties":[
-		{
-			"Design":{
-				"Type":"Richtext",
-				"Data":[]
-			},
-			"DefaultValue":"",
-			"Group":"",
-			"Type":"String",
-			"EditType":"1",
-			"Description":"设置裁剪区域的宽高，width,height，中间用逗号隔开；裁剪区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示",
-			"Deprecated":false,
-			"Type_JavaScript":"String",
-			"ID":"cropArea",
-			"Name":"裁剪的区域"
-		},
 		{
 			"Design":{
 				"Type":"ImageSource",
@@ -68,11 +53,11 @@
 	"Version":"Internal",
 	"Events":[],
 	"UIType":"View",
-	"ID":"do_ImageCropView",
-	"Icon":"https://deviceone.blob.core.chinacloudapi.cn/component/D/20160121/do_ImageCropView/裁剪图片视图.jpg",
+	"ID":"do_ImageCropView1",
+	"Icon":"",
 	"IsContainer":"0",
 	"WindowsPhone":{
-		"MinVersion":"10",
-		"Support":1
+		"MinVersion":"",
+		"Support":0
 	}
 }

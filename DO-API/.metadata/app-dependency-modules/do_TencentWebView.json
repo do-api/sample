@@ -54,7 +54,7 @@
 		}
 	],
 	"IOS":{
-		"MinVersion":"8.0",
+		"MinVersion":"7.0",
 		"Support":1
 	},
 	"Properties":[
